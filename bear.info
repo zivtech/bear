@@ -1,1 +1,32 @@
 name = Bear
+description = Bear is a distribution built with the developer in mind. It comes loaded with modules and configuration to make setting up a powerful environment simple.
+core = 7.x
+version = 7.x-dev
+
+
+; Modules
+dependencies[] = coffee
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = diff
+dependencies[] = strongarm
+dependencies[] = ds
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = field_group
+dependencies[] = media
+dependencies[] = file_entity
+dependencies[] = panels
+dependencies[] = pathauto
+dependencies[] = token
+dependencies[] = styleguide
+dependencies[] = views
+dependencies[] = wysiwyg
+dependencies[] = date
+dependencies[] = menu_block
+dependencies[] = menu_position
+dependencies[] = redirect
+
+; Themes
+; --------
+dependencies[] = survivalkit
