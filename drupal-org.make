@@ -1,40 +1,40 @@
-; Make file for Bear Websites.
-; Project Bear provides developers with a set of essential modules and developer tools.
-; It is intended as the starting point for almost any website.
-
-; API version
-; ------------
-api = 2
-
-; Core version
-; ------------
 core = 7.x
 
+api = 2
+
 ; Modules
-projects[] = "coffee"
-projects[] = "ctools"
-projects[] = "features"
-projects[] = "diff"
-projects[] = "strongarm"
-projects[] = "ds"
-projects[] = "entity"
-projects[] = "entityreference"
-projects[] = "field_group"
-projects[] = "media"
-projects[] = "file_entity"
-projects[] = "panels"
-projects[] = "pathauto"
-projects[] = "token"
-projects[] = "styleguide"
-projects[] = "views"
-projects[] = "wysiwyg"
-projects[] = "date"
-projects[] = "menu_block"
-projects[] = "menu_position"
-projects[] = "redirect"
+projects[ctools][version] = "1.2"
+
+projects[diff][version] = "3.2"
+
+projects[ds][version] = "2.0"
+
+projects[entity][version] = "1.0-rc3"
+
+projects[entityreference][version] = "1.0"
+
+projects[field_group][version] = "1.1"
+
+projects[file_entity][version] = "2.0-unstable7"
+
+projects[media][version] = "1.2"
+
+projects[menu_block][version] = "2.3"
+
+projects[menu_position][version] = "1.1"
+
+projects[panels][version] = "3.3"
+
+projects[pathauto][version] = "1.2"
+
+projects[strongarm][version] = "2.0"
+
+projects[styleguide][version] = "1.0"
+
+projects[token][version] = "1.4"
+
+projects[wysiwyg][version] = "2.2"
 
 ; Themes
-; --------
-projects[] = "survivalkit"
-
+projects[survivalkit][version] = "1.x-dev"
 
