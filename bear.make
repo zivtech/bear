@@ -9,33 +9,13 @@ api = 2
 ; Core version
 ; ------------
 core = 7.x
-projects[drupal][type] = "core"
 
-; Modules
-projects[] = "coffee"
-projects[] = "ctools"
-projects[] = "features"
-projects[] = "diff"
-projects[] = "strongarm"
-projects[] = "ds"
-projects[] = "entity"
-projects[] = "entityreference"
-projects[] = "field_group"
-projects[] = "media"
-projects[] = "file_entity"
-projects[] = "panels"
-projects[] = "pathauto"
-projects[] = "token"
-projects[] = "styleguide"
-projects[] = "views"
-projects[] = "wysiwyg"
-projects[] = "date"
-projects[] = "menu_block"
-projects[] = "menu_position"
-projects[] = "redirect"
+;Include the definition for how to build Drupal core directly, including patches:
+; ------------
+includes[] = drupal-org-core.make
 
-; Themes
-; --------
-projects[] = "survivalkit"
-
-
+; Download the install profile and recursively build all its dependencies:
+projects[bear][type] = "profile"
+project[bear][download][type] = "git"
+project[bear][download][url] = "ryanissamson@git.drupal.org:sandbox/ryanissamson/1845934.git"
+project[bear][download][branch] = "7.x"
