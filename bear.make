@@ -7,4 +7,4 @@ projects[drupal][version] = "7.x"
 ; Profiles
 projects[bear][type] = "profile"
 projects[bear][download][type] = "get"
-projects[bear][download][url] = "file:///var/www/drupal_site/bear"
+projects[bear][download][url] = "file:///var/www/drupal_site/bear/drupal-org.make"
