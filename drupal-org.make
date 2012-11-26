@@ -9,7 +9,6 @@ api = 2
 ; Core version
 ; ------------
 core = 7.x
-projects[drupal][type] = "core"
 
 ; Modules
 projects[] = "coffee"
