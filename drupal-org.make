@@ -37,13 +37,13 @@ projects[wysiwyg][version] = "2.2"
 
 projects[coffee][version] = "1.0"
 
-project[features][version] = "1.0"
+projects[features][version] = "1.0"
 
-project[views][version] = "3.5"
+projects[views][version] = "3.5"
 
-project[date][version] = "2.6"
+projects[date][version] = "2.6"
 
-project[globalredirect][version] = "1.5"
+projects[globalredirect][version] = "1.5"
 
 ; Themes
 projects[survivalkit][version] = "1.x-dev"
