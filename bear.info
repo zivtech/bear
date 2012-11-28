@@ -56,3 +56,6 @@ dependencies[] = views
 dependencies[] = views_ui
 
 files[] = bear.profile
+
+# System Requirements
+php_memory_limit = 128M
