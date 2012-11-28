@@ -1,8 +1,9 @@
-name = bear
+name = Bear
 description = A profile to give developers the tools needed for just about any site.
 core = 7.x
 
 # Core Extensions
+dependencies[] = taxonomy
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
