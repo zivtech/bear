@@ -27,11 +27,16 @@ dependencies[] = update
 
 # Contrib Extensions
 dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
 dependencies[] = coffee
 dependencies[] = ctools
+dependencies[] = views_content
+dependencies[] = page_manager
 dependencies[] = date
+dependencies[] = date_popup
 dependencies[] = diff
 dependencies[] = ds
+dependencies[] = ds_extras
 dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = features
@@ -48,4 +53,6 @@ dependencies[] = strongarm
 dependencies[] = styleguide
 dependencies[] = wysiwyg
 dependencies[] = views
+dependencies[] = views_ui
+
 files[] = bear.profile
