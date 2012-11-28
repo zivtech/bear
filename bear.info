@@ -37,6 +37,7 @@ dependencies[] = date_popup
 dependencies[] = diff
 dependencies[] = ds
 dependencies[] = ds_extras
+dependencies[] = devel
 dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = features
