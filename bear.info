@@ -26,6 +26,7 @@ dependencies[] = toolbar
 dependencies[] = update
 
 # Contrib Extensions
+dependencies[] = admin_menu
 dependencies[] = coffee
 dependencies[] = ctools
 dependencies[] = date

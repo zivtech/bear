@@ -45,11 +45,16 @@ projects[date][version] = "2.6"
 
 projects[globalredirect][version] = "1.5"
 
+projects[admin_menu][version] = "3.0-rc3"
+
+
 ; Themes
 projects[survivalkit][version] = "1.x-dev"
 
 ; Libraries
 libraries[tinymce][download][type] = "file"
+
 libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.5.8.zip"
+
 libraries[tinymce][destination] = "libraries"
 
