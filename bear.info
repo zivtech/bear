@@ -3,7 +3,6 @@ description = A profile to give developers the tools needed for just about any s
 core = 7.x
 
 # Core Extensions
-dependencies[] = taxonomy
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
@@ -19,6 +18,7 @@ dependencies[] = menu
 dependencies[] = number
 dependencies[] = overlay
 dependencies[] = path
+dependencies[] = taxonomy
 dependencies[] = rdf
 dependencies[] = search
 dependencies[] = shortcut
