@@ -1,0 +1,9 @@
+name = Bear Necessities
+core = 7.x
+package = Bear
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = wysiwyg
+features[features_api][] = api:1
+features[filter][] = full_html
+features[wysiwyg][] = full_html

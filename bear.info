@@ -28,6 +28,7 @@ dependencies[] = update
 # Contrib Extensions
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
+dependencies[] = bear_necessities
 dependencies[] = coffee
 dependencies[] = ctools
 dependencies[] = views_content
