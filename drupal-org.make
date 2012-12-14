@@ -2,6 +2,7 @@ core = 7.x
 api = 2
 
 ; Modules
+projects[advagg][version] = "1.x-dev"
 projects[ctools][version] = "1.2"
 projects[diff][version] = "3.2"
 projects[ds][version] = "2.0"
