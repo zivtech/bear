@@ -11,6 +11,14 @@ function bear_install() {
   //  Disable unwanted modules.
   module_disable(array('overlay', 'toolbar'),TRUE);
 
+  //  Enable Survival Kit theme as default.
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'survivalkit')
+    ->execute();
+  variable_set('theme_default', 'survivalkit');
+
   // Enable the admin theme.
   db_update('system')
     ->fields(array('status' => 1))
