@@ -9,7 +9,7 @@ function bear_install() {
   include_once DRUPAL_ROOT . "/profiles/standard/standard.install";
   standard_install();
   //  Disable unwanted modules.
-  module_disable(array('overlay', 'toolbar'),TRUE);
+  module_disable(array('overlay', 'toolbar', 'color', 'rdf', 'dashboard', 'search'),TRUE);
 
   //  Enable Survival Kit theme as default.
   db_update('system')
