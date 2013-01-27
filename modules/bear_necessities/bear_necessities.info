@@ -1,8 +1,10 @@
 name = Bear Necessities
 core = 7.x
 package = Bear
+php = 5.2.4
 dependencies[] = features
 dependencies[] = filter
+dependencies[] = media
 dependencies[] = wysiwyg
 features[features_api][] = api:1
 features[filter][] = full_html

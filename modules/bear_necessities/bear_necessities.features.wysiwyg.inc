@@ -35,6 +35,9 @@ function bear_necessities_wysiwyg_default_profiles() {
           'formatselect' => 1,
           'styleselect' => 1,
         ),
+        'drupal' => array(
+          'media' => 1,
+        ),
       ),
       'toolbar_loc' => 'top',
       'toolbar_align' => 'left',
@@ -43,16 +46,15 @@ function bear_necessities_wysiwyg_default_profiles() {
       'verify_html' => 1,
       'preformatted' => 0,
       'convert_fonts_to_spans' => 1,
-      'remove_linebreaks' => 1,
+      'remove_linebreaks' => 0,
       'apply_source_formatting' => 0,
-      'paste_auto_cleanup_on_paste' => 0,
+      'paste_auto_cleanup_on_paste' => 1,
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
       'css_setting' => 'theme',
       'css_path' => '',
       'css_classes' => 'Image Left=img.left
 Image Right=img.right',
     ),
-    'rdf_mapping' => array(),
   );
 
   return $profiles;
