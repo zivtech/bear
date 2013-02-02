@@ -24,7 +24,7 @@ projects[features][version] = "2.x-dev"
 projects[views][version] = "3.5"
 projects[date][version] = "2.6"
 projects[globalredirect][version] = "1.5"
-projects[admin_menu][version] = "3.0-rc3"
+projects[admin_menu][version] = "3.0-rc4"
 projects[devel][version] = "1.3"
 
 ; Themes
