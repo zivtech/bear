@@ -4,10 +4,7 @@ core = 7.x
 
 # Core Extensions
 dependencies[] = block
-dependencies[] = color
-dependencies[] = comment
 dependencies[] = contextual
-dependencies[] = dashboard
 dependencies[] = dblog
 dependencies[] = field_ui
 dependencies[] = file
@@ -16,13 +13,8 @@ dependencies[] = options
 dependencies[] = list
 dependencies[] = menu
 dependencies[] = number
-dependencies[] = overlay
 dependencies[] = path
 dependencies[] = taxonomy
-dependencies[] = rdf
-dependencies[] = search
-dependencies[] = shortcut
-dependencies[] = toolbar
 dependencies[] = update
 
 # Contrib Extensions
