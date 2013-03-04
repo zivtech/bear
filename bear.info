@@ -20,6 +20,7 @@ dependencies[] = update
 # Contrib Extensions
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
+dependencies[] = admin_views
 dependencies[] = advagg
 dependencies[] = bear_necessities
 dependencies[] = coffee
