@@ -39,6 +39,7 @@ dependencies[] = features
 dependencies[] = field_group
 dependencies[] = file_entity
 dependencies[] = globalredirect
+dependencies[] = linkit
 dependencies[] = media
 dependencies[] = menu_block
 dependencies[] = menu_position

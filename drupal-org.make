@@ -26,6 +26,8 @@ projects[date][version] = "2.6"
 projects[globalredirect][version] = "1.5"
 projects[admin_menu][version] = "3.0-rc4"
 projects[devel][version] = "1.3"
+projects[admin_views][version] = "1.1"
+projects[linkit][version] = "2.5"
 
 ; Themes
 projects[survivalkit][version] = "1.x-dev"
