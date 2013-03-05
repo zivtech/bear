@@ -41,6 +41,7 @@ dependencies[] = file_entity
 dependencies[] = globalredirect
 dependencies[] = linkit
 dependencies[] = media
+dependencies[] = media_youtube
 dependencies[] = menu_block
 dependencies[] = menu_position
 dependencies[] = panels
