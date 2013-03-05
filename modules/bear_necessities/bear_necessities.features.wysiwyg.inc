@@ -35,6 +35,9 @@ function bear_necessities_wysiwyg_default_profiles() {
           'formatselect' => 1,
           'styleselect' => 1,
         ),
+        'linkit' => array(
+          'linkit' => 1,
+        ),
         'drupal' => array(
           'media' => 1,
         ),

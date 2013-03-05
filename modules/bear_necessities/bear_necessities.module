@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Bear Necessities feature.
  */
+
+include_once 'bear_necessities.features.inc';
