@@ -51,6 +51,7 @@ dependencies[] = strongarm
 dependencies[] = styleguide
 dependencies[] = wysiwyg
 dependencies[] = views
+dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 
 files[] = bear.profile
