@@ -50,6 +50,7 @@ dependencies[] = pathauto
 dependencies[] = strongarm
 dependencies[] = styleguide
 dependencies[] = wysiwyg
+dependencies[] = wysiwyg_linebreaks
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui

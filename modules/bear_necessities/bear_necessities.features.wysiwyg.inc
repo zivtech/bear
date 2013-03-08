@@ -40,6 +40,7 @@ function bear_necessities_wysiwyg_default_profiles() {
         ),
         'drupal' => array(
           'media' => 1,
+          'linebreaks' => 1,
         ),
       ),
       'toolbar_loc' => 'top',

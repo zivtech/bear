@@ -30,6 +30,7 @@ projects[admin_views][version] = "1.1"
 projects[linkit][version] = "2.5"
 projects[media_youtube][version] = "2.0-rc2"
 projects[views_bulk_operations][version] = "3.1"
+projects[wysiwyg_linebreaks][version] = "1.5"
 
 ; Themes
 projects[survivalkit][version] = "1.x-dev"
