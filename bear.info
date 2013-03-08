@@ -3,8 +3,9 @@ description = A profile to give developers the tools needed for just about any s
 core = 7.x
 
 # Core Extensions
-dependencies[] = block
 dependencies[] = contextual
+dependencies[] = block
+dependencies[] = comment
 dependencies[] = dblog
 dependencies[] = field_ui
 dependencies[] = file
