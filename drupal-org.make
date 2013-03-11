@@ -2,10 +2,10 @@ core = 7.x
 api = 2
 
 ; Modules
-projects[advagg][version] = "1.x-dev"
+projects[advagg][version] = "2.x-dev"
 projects[ctools][version] = "1.2"
 projects[diff][version] = "3.2"
-projects[ds][version] = "2.0"
+projects[ds][version] = "2.2"
 projects[entity][version] = "1.0"
 projects[entityreference][version] = "1.x-dev"
 projects[field_group][version] = "1.1"
@@ -17,7 +17,7 @@ projects[panels][version] = "3.3"
 projects[pathauto][version] = "1.2"
 projects[strongarm][version] = "2.0"
 projects[styleguide][version] = "1.0"
-projects[token][version] = "1.4"
+projects[token][version] = "1.5"
 projects[wysiwyg][version] = "2.2"
 projects[coffee][version] = "1.0"
 projects[features][version] = "2.x-dev"
