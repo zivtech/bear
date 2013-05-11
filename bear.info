@@ -36,11 +36,14 @@ dependencies[] = ds
 dependencies[] = ds_extras
 dependencies[] = devel
 dependencies[] = entity
+dependencies[] = entitycache
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = file_entity
-dependencies[] = globalredirect
+dependencies[] = redirect
+dependencies[] = libraries
+dependencies[] = link
 dependencies[] = linkit
 dependencies[] = media
 dependencies[] = media_youtube
@@ -54,6 +57,7 @@ dependencies[] = styleguide
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
+dependencies[] = xmlsitemap
 
 files[] = bear.profile
 
