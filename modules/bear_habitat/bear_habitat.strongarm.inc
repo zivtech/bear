@@ -24,7 +24,7 @@ function bear_habitat_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'habitat_disable_local';
   $strongarm->value = array(
-    0 => 'overlay',
+    0 => 'overlay',
     1 => 'bear_habitat_prod',
   );
   $export['habitat_disable_local'] = $strongarm;
@@ -34,11 +34,11 @@ function bear_habitat_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'habitat_disable_prod';
   $strongarm->value = array(
-    0 => 'habitat_ui',
-    1 => 'field_ui',
-    2 => 'devel',
-    3 => 'ds_ui',
-    4 => 'views_ui',
+    0 => 'habitat_ui',
+    1 => 'field_ui',
+    2 => 'devel',
+    3 => 'ds_ui',
+    4 => 'views_ui',
     5 => 'bear_habitat_local',
   );
   $export['habitat_disable_prod'] = $strongarm;
@@ -48,11 +48,11 @@ function bear_habitat_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'habitat_disable_test';
   $strongarm->value = array(
-    0 => 'habitat_ui',
-    1 => 'field_ui',
-    2 => 'devel',
-    3 => 'ds_ui',
-    4 => 'views_ui',
+    0 => 'habitat_ui',
+    1 => 'field_ui',
+    2 => 'devel',
+    3 => 'ds_ui',
+    4 => 'views_ui',
     5 => 'bear_habitat_local',
   );
   $export['habitat_disable_test'] = $strongarm;
@@ -71,11 +71,11 @@ function bear_habitat_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'habitat_enable_local';
   $strongarm->value = array(
-    0 => 'habitat_ui',
-    1 => 'field_ui',
-    2 => 'devel',
-    3 => 'ds_ui',
-    4 => 'views_ui',
+    0 => 'habitat_ui',
+    1 => 'field_ui',
+    2 => 'devel',
+    3 => 'ds_ui',
+    4 => 'views_ui',
     5 => 'bear_habitat_local',
   );
   $export['habitat_enable_local'] = $strongarm;
