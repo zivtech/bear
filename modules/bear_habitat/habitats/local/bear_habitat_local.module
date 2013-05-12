@@ -1,0 +1,8 @@
+<?php
+/**
+ * @file
+ * Code for the Bear Habitat Local feature.
+ */
+
+include_once 'bear_habitat_local.features.inc';
+
