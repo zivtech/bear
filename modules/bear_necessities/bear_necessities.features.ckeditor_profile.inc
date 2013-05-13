@@ -12,7 +12,7 @@ function bear_necessities_ckeditor_profile_defaults() {
     'Advanced' => array(
       'name' => 'Advanced',
       'settings' => array(
-        'ss' => '2',
+        'ss' => 2,
         'default' => 't',
         'show_toggle' => 't',
         'uicolor' => 'custom',
@@ -34,7 +34,7 @@ function bear_necessities_ckeditor_profile_defaults() {
         'language_direction' => 'default',
         'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
-        'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
+        'font_format' => 'p;h1;h2;h3;h4;h5;h6',
         'custom_formatting' => 'f',
         'formatting' => array(
           'custom_formatting_options' => array(
@@ -55,8 +55,6 @@ function bear_necessities_ckeditor_profile_defaults() {
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
         'UserFilesAbsolutePath' => '%d%b%f/',
-        'ckeditor_load_method' => 'ckeditor.js',
-        'ckeditor_load_time_out' => '0',
         'forcePasteAsPlainText' => 'f',
         'html_entities' => 'f',
         'scayt_autoStartup' => 't',
@@ -98,13 +96,6 @@ function bear_necessities_ckeditor_profile_defaults() {
             ),
             'default' => 'f',
           ),
-          'tableresize' => array(
-            'name' => 'tableresize',
-            'desc' => 'Table Resize plugin',
-            'path' => '%editor_path%plugins/tableresize/',
-            'buttons' => FALSE,
-            'default' => 't',
-          ),
         ),
       ),
       'input_formats' => array(
@@ -121,28 +112,20 @@ function bear_necessities_ckeditor_profile_defaults() {
     'Full' => array(
       'name' => 'Full',
       'settings' => array(
-        'ss' => '2',
+        'ss' => 2,
         'default' => 't',
         'show_toggle' => 't',
-        'uicolor' => 'default',
-        'uicolor_user' => 'default',
+        'uicolor' => 'custom',
+        'uicolor_user' => '#FF6969',
         'toolbar' => '[
-    [\'Source\'],
-    [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\', \'Scayt\'],
-    [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\',\'RemoveFormat\'],
-    [\'Image\',\'Media\',\'Flash\',\'Table\',\'HorizontalRule\',\'Smiley\',\'SpecialChar\',\'Iframe\'],
-    \'/\',
-    [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\'],
-    [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\',\'CreateDiv\'],
-    [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\',\'BidiLtr\',\'BidiRtl\'],
-    [\'Link\',\'Unlink\',\'Anchor\', \'Linkit\'],
-    [\'DrupalBreak\'],
-    \'/\',
-    [\'Format\',\'Font\',\'FontSize\'],
-    [\'TextColor\',\'BGColor\'],
-    [\'Maximize\', \'ShowBlocks\']
-]
-    ',
+    [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'Subscript\',\'Superscript\',\'SpecialChar\',\'Blockquote\',\'Format\'],
+    [\'BulletedList\',\'NumberedList\',\'Outdent\',\'Indent\',\'Table\'],
+    [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\'],
+    [\'linkit\',\'Unlink\'],
+    [\'PasteText\',\'PasteFromWord\',\'-\',\'Scayt\',\'RemoveFormat\'],
+    [\'Media\',\'Image\',\'HorizontalRule\'],
+    [\'Maximize\']
+]',
         'expand' => 't',
         'width' => '100%',
         'lang' => 'en',
@@ -162,7 +145,7 @@ function bear_necessities_ckeditor_profile_defaults() {
             'pre_indent' => 0,
           ),
         ),
-        'css_mode' => 'none',
+        'css_mode' => 'theme',
         'css_path' => '',
         'css_style' => 'theme',
         'styles_path' => '',
@@ -171,11 +154,9 @@ function bear_necessities_ckeditor_profile_defaults() {
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
         'UserFilesAbsolutePath' => '%d%b%f/',
-        'ckeditor_load_method' => 'ckeditor.js',
-        'ckeditor_load_time_out' => '0',
         'forcePasteAsPlainText' => 'f',
         'html_entities' => 'f',
-        'scayt_autoStartup' => 'f',
+        'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
         'js_conf' => '',
         'loadPlugins' => array(
@@ -191,16 +172,34 @@ function bear_necessities_ckeditor_profile_defaults() {
             ),
             'default' => 't',
           ),
-          'tableresize' => array(
-            'name' => 'tableresize',
-            'desc' => 'Table Resize plugin',
-            'path' => '%editor_path%plugins/tableresize/',
-            'buttons' => FALSE,
-            'default' => 't',
+          'linkit' => array(
+            'name' => 'linkit',
+            'desc' => 'Support for Linkit module',
+            'path' => '%base_path%profiles/bear/modules/linkit/editors/ckeditor/',
+            'buttons' => array(
+              'linkit' => array(
+                'label' => 'Linkit',
+                'icon' => 'linkit.png',
+              ),
+            ),
+          ),
+          'media' => array(
+            'name' => 'media',
+            'desc' => 'Plugin for inserting images from Drupal media module',
+            'path' => '%plugin_dir%media/',
+            'buttons' => array(
+              'Media' => array(
+                'label' => 'Media',
+                'icon' => 'images/icon.gif',
+              ),
+            ),
+            'default' => 'f',
           ),
         ),
       ),
-      'input_formats' => array(),
+      'input_formats' => array(
+        'full_html' => 'Full HTML',
+      ),
     ),
   );
   return $data;

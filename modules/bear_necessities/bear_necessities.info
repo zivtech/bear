@@ -11,6 +11,7 @@ dependencies[] = file_entity
 dependencies[] = filter
 dependencies[] = linkit
 dependencies[] = media
+datestamp = 1368319973
 features[ckeditor_profile][] = Advanced
 features[ckeditor_profile][] = CKEditor Global Profile
 features[ckeditor_profile][] = Full
