@@ -37,6 +37,5 @@ projects[views][version] = "3.7"
 projects[views_bulk_operations][version] = "3.1"
 
 ; Libraries
-libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1.1/ckeditor_4.1.1_standard.zip"
-libraries[ckeditor][destination] = "libraries"
