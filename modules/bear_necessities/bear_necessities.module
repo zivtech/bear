@@ -5,3 +5,24 @@
  */
 
 include_once 'bear_necessities.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function bear_necessities_form_node_type_form_alter(&$form, &$form_state, $form_id) {
+  if (array_key_exists('is_new', $form['#node_type'])) {
+    // Set 'Preview before submitting' to disabled.
+    $form['submission']['node_preview']['#default_value'] = DRUPAL_DISABLED;
+
+    // Set publishing options.
+    $form['workflow']['node_options']['#default_value'] = array('status', 'revision');
+
+    // Unset display author information.
+    $form['display']['node_submitted']['#default_value'] = FALSE;
+
+    // Set comments to hidden.
+    if (module_exists('comment')) {
+      $form['comment']['comment']['#default_value'] = COMMENT_NODE_HIDDEN;
+    }
+  }
+}
