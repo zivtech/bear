@@ -36,7 +36,12 @@ projects[token][version] = "1.5"
 projects[xmlsitemap][version] = "2.0-rc2"
 projects[views][version] = "3.7"
 projects[views_bulk_operations][version] = "3.1"
+projects[plupload][version] = "1.1"
+projects[multiform][version] = "1.0"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1.1/ckeditor_4.1.1_standard.zip"
+
+libraries[plupload][download][type] = "get"
+libraries[plupload][download][url] = "https://github.com/sheise/plupload/archive/master.zip"
