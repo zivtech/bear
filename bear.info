@@ -24,6 +24,7 @@ dependencies[] = admin_menu_toolbar
 dependencies[] = admin_views
 dependencies[] = advagg
 dependencies[] = bear_habitat
+dependencies[] = bear_inhabitants
 dependencies[] = bear_necessities
 dependencies[] = coffee
 dependencies[] = ckeditor
