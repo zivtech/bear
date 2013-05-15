@@ -44,4 +44,5 @@ libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1.1/ckeditor_4.1.1_standard.zip"
 
 libraries[plupload][download][type] = "get"
-libraries[plupload][download][url] = "https://github.com/sheise/plupload/archive/master.zip"
+libraries[plupload][download][url] = "http://plupload.com/downloads/plupload_1_5_7.zip"
+libraries[plupload][patch][] = "http://drupal.org/files/plupload-1_5_7-rm_examples-1903850-9.patch"
