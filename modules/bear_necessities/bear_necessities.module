@@ -30,11 +30,11 @@ function bear_necessities_form_node_type_form_alter(&$form, &$form_state, $form_
 /*
  * Implements hook_form_alter().
  */
-function bear_necessities_form_alter(&$form, &$form_state, $form_id) {
-  // If this is the form to edit node we want to hide revision
-  // information from people that do not have right to View
-  // Content Revision.
-  if (isset($form['#node_edit_form']) && $form['#node_edit_form'] == TRUE && !user_access('view revisions')) {
+function bear_necessities_form_node_form_alter(&$form, &$form_state, $form_id) {
+  // We want to hide revision information
+  // from people that do not have right
+  // to view Content Revision.
+  if (!user_access('view revisions')) {
     if (isset($form['revision_information']['#access'])) {
       $form['revision_information']['#access'] = FALSE;
     }
