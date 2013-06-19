@@ -46,3 +46,6 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[plupload][download][type] = "get"
 libraries[plupload][download][url] = "http://plupload.com/downloads/plupload_1_5_7.zip"
 libraries[plupload][patch][] = "http://drupal.org/files/plupload-1_5_7-rm_examples-1903850-9.patch"
+
+libraries[flexslider][download][type] = "get"
+libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.1.zip"
