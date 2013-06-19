@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Bear Show feature.
+ */
+
+include_once 'bear_show.features.inc';
