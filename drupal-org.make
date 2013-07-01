@@ -38,6 +38,11 @@ projects[views][version] = "3.7"
 projects[views_bulk_operations][version] = "3.1"
 projects[plupload][version] = "1.1"
 projects[multiform][version] = "1.0"
+projects[flexslider][version] = "7.x-2.0-alpha1"
+projects[flexslider_views_slideshow,][version] = "7.x-2.x-dev"
+projects[jquery_update][version] = "7.x-2.3"
+projects[module_filter][version] = "7.x-1.7"
+projects[views_slideshow][version] = "1.0"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
