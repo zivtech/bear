@@ -59,7 +59,7 @@ function bear_necessities_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
-        'js_conf' => 'config.allowedContent = true',
+        'js_conf' => 'config.allowedContent = true;',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
@@ -158,7 +158,7 @@ function bear_necessities_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
-        'js_conf' => 'config.allowedContent = true',
+        'js_conf' => 'config.allowedContent = true;',
         'loadPlugins' => array(
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',

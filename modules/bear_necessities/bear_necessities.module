@@ -48,6 +48,6 @@ function bear_necessities_form_ckeditor_admin_profile_form_alter(&$form, &$form_
   // By default turn off CKEditor's "Advanced Content Filter" which removes
   // html tags that do not have wysiwyg buttons enabled.
   if (empty($form['advanced']['js_conf']['#default_value'])) {
-    $form['advanced']['js_conf']['#default_value'] = 'config.allowedContent = true';
+    $form['advanced']['js_conf']['#default_value'] = 'config.allowedContent = true;';
   }
 }
