@@ -13,4 +13,9 @@ function bear_necessities_install() {
     ->fields(array('weight' => 100))
     ->condition('name', 'bear_necessities')
     ->execute();
+
+  // Set default date formats to American style
+  variable_set("date_format_long", "l, F j, Y - g:ia");
+  variable_set("date_format_medium", "F j, Y - g:ia");
+  variable_set("date_format_short", "m/d/Y - g:ia");
 }
