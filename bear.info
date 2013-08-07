@@ -44,8 +44,6 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = file_entity
-dependencies[] = flexslider
-dependencies[] = flexslider_views_slideshow
 dependencies[] = habitat
 dependencies[] = jquery_update
 dependencies[] = libraries
@@ -66,7 +64,6 @@ dependencies[] = strongarm
 dependencies[] = styleguide
 dependencies[] = views
 dependencies[] = views_bulk_operations
-dependencies[] = views_slideshow
 dependencies[] = views_ui
 dependencies[] = xmlsitemap
 
