@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_disable().
+ */
+function bear_show_disable(){
+  // Allow slidehow content type to be deletable.
+  db_query("UPDATE {node_type} SET custom = 1, locked = 0 WHERE type = 'slideshow'");
+}
