@@ -156,12 +156,9 @@ function bear_install() {
   // Set this as the administrator role.
   variable_set('user_admin_role', $admin_role->rid);
 
-  // Enable the admin theme.
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', 'seven')
-    ->execute();
+  // Enable seven and bear_skin themes and set defaults.
+  theme_enable(array('seven', 'bear_skin'));
+  variable_set('theme_default', 'bear_skin');
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
 }
