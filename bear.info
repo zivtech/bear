@@ -26,7 +26,6 @@ dependencies[] = advagg
 dependencies[] = bear_habitat
 dependencies[] = bear_inhabitants
 dependencies[] = bear_necessities
-dependencies[] = bear_skin
 dependencies[] = coffee
 dependencies[] = ckeditor
 dependencies[] = ctools
@@ -65,7 +64,6 @@ dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 dependencies[] = xmlsitemap
-dependencies[] = zen
 
 files[] = bear.profile
 

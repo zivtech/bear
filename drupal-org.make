@@ -54,3 +54,7 @@ libraries[plupload][patch][] = "http://drupal.org/files/plupload-1_5_7-rm_exampl
 
 libraries[flexslider][download][type] = "get"
 libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.1.zip"
+
+; Themes
+projects[zen][type] = "theme"
+projects[bear_skin][type] = "theme"
