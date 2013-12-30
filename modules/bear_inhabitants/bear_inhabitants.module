@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Bear Inhabitants feature.
  */
+
+include_once 'bear_inhabitants.features.inc';
