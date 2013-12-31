@@ -12,6 +12,7 @@ dependencies[] = file_entity
 dependencies[] = filter
 dependencies[] = media
 dependencies[] = media_internet
+dependencies[] = media_bulk_upload
 dependencies[] = menu
 dependencies[] = menu_position
 dependencies[] = node
