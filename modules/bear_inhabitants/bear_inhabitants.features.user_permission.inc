@@ -519,7 +519,7 @@ function bear_inhabitants_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
-    'module' => 'media',
+    'module' => 'media_bulk_upload',
   );
 
   // Exported permission: 'post comments'.
