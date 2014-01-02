@@ -5,6 +5,7 @@ package = Bear
 version = 7.x-1.x-dev
 project = bear
 dependencies[] = ckeditor
+dependencies[] = contextual
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = file_entity
