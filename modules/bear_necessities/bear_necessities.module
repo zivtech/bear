@@ -28,7 +28,7 @@ function bear_necessities_form_node_type_form_alter(&$form, &$form_state, $form_
 }
 
 /*
- * Implements hook_form_alter().
+ * Implements hook_form_FORM_ID_alter().
  */
 function bear_necessities_form_node_form_alter(&$form, &$form_state, $form_id) {
   // We want to hide revision information
@@ -39,16 +39,9 @@ function bear_necessities_form_node_form_alter(&$form, &$form_state, $form_id) {
       $form['revision_information']['#access'] = FALSE;
     }
   }
-  //This is remove the promote to frontpage, and make sticky options from node edit pages
+  // Remove 'promote to frontpage' and 'make sticky' options.
   unset($form['options']['sticky']);
   unset($form['options']['promote']);
-  if (strpos($form_id, 'node_admin_content') !== FALSE) {
-    $opt['publish'] = 'Publish selected content';
-    $opt['unpublish'] = 'Unpublish selected content';
-    $opt['delete'] = 'Delete selected content';
-    $opt['pathauto_update_alias'] = 'Update URL alias';
-    $form['admin']['options']['operation']['#options'] = $opt;
-  }
 }
 
 /**
