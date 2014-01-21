@@ -54,3 +54,22 @@ function bear_necessities_form_ckeditor_admin_profile_form_alter(&$form, &$form_
     $form['advanced']['js_conf']['#default_value'] = 'config.allowedContent = true;';
   }
 }
+
+/**
+ * Implements hook_menu_block_blocks().
+ */
+function bear_necessities_menu_block_blocks() {
+  return array(
+    'bear_necessities-1' => array(
+      'menu_name'   => 'main-menu',
+      'parent_mlid' => 0,
+      'title_link'  => 0,
+      'admin_title' => '',
+      'level'       => 1,
+      'follow'      => 0,
+      'depth'       => 0,
+      'expanded'    => 0,
+      'sort'        => 0,
+    ),
+  );
+}
