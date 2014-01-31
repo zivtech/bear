@@ -53,7 +53,7 @@ libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1.1/ckeditor_4.1.1_standard.zip"
 
 libraries[plupload][download][type] = "get"
-libraries[plupload][download][url] = "http://github.com/moxiecode/plupload/archive/v1.5.8.zip"
+libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
 libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
 
 libraries[flexslider][download][type] = "get"
