@@ -2,7 +2,6 @@ name = Bear Inhabitants
 description = Default user roles and their permission settings for bear.
 core = 7.x
 package = Bear
-version = 7.x-1.x-dev
 project = bear
 dependencies[] = admin_menu
 dependencies[] = coffee
