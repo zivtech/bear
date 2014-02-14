@@ -1,5 +1,9 @@
+; This drupal-org.make file downloads and applies all patches to contrib modules, themes, and 3rd party libraries.
+
 core = 7.x
 api = 2
+
+; Make sure to add new patches to the /patches folder when adding or updating patches below.
 
 ; Modules
 projects[admin_menu][version] = "3.0-rc4"
