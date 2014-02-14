@@ -1,0 +1,1067 @@
+From 9b16c56e61566b7c51f7346b78157309db5a581c Mon Sep 17 00:00:00 2001
+From: Wong Hoi Sing Edison <hswong3i@gmail.com>
+Date: Mon, 13 Jan 2014 09:39:00 +0800
+Subject: [PATCH] Issue #1903850: [meta] Patch for remove plupload library
+ examples folder for Drupal distribution.
+
+---
+ examples/bg.jpg                       |  Bin 5753 -> 0 bytes
+ examples/custom.html                  |   88 ---------------
+ examples/dump.php                     |   35 ------
+ examples/jquery/events.html           |  196 ---------------------------------
+ examples/jquery/jquery_ui_widget.html |  101 -----------------
+ examples/jquery/queue_widget.html     |  173 -----------------------------
+ examples/jquery/s3.php                |  158 --------------------------
+ examples/upload.php                   |  129 ----------------------
+ 8 files changed, 880 deletions(-)
+ delete mode 100644 examples/bg.jpg
+ delete mode 100644 examples/custom.html
+ delete mode 100644 examples/dump.php
+ delete mode 100644 examples/jquery/events.html
+ delete mode 100644 examples/jquery/jquery_ui_widget.html
+ delete mode 100644 examples/jquery/queue_widget.html
+ delete mode 100644 examples/jquery/s3.php
+ delete mode 100644 examples/upload.php
+
+diff --git a/examples/bg.jpg b/examples/bg.jpg
+deleted file mode 100644
+index 9b27383bc5e8ef5cbfe8184cb382f57bd6257d3b..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 5753
+zcmaJ@dpy+H`~Q4Cb1??vt_TgeYsR=UQZtR*?}SAyximvF#*E9jY<)zesBsA)xf3Oo
+zq_Q;?64g#Z<<=0jvSQU%wl=@1@9uuT-`DHAzvqw7InO!I^M0Ol&ij1Mv-Wgt8d$%B
+z$A|_17Z)P{1N>XoegWhi5+h<$01!ZmhrIz{Z5m-rPe@>sO-xu^Vt8cSo+x5O9Mgms
+z&NeY6l1zXt+j#8oh}ftE{GO=243@q2()F9#ct)hXcA%vP$%9RcqBERRIZ=M8p8gT3
+zu@SbB+S|6`xA4e3CYu?R5RT_D_p!KSp1t-raI(1nb=X83|IH*J)?S<XH7Y*H!y8YF
+z<3!;ti6lY<$%=%xG9{XtTUc9LZ^oOEOi3mrGZRxYf~hsx+>A^j;r|qEaWqb3G}+g|
+z@y}Rd&0hP@MI|RE6O+w}ah$y-rna`WUop(g2x1EYH-(iD&Lgn6oBl#@h~h?Y80-W_
+z91H&yF?>&4VuHQ4IMaVEfyw?G_J8ixe;9gr{Qss*=GP7Q2Fp$Gjrw=K{}Y(&pTdqZ
+z@r~lfC2}I7#O9m6I<v_%PE>e89LGN{Zr@+K=uMAHh~v`Z*m#<sCEg=Eg2DQ#f3x@S
+zAiJ=*3E`}WC>IBNZ7~9o!H6VVnVO4tm*i++X6;~Vx`SkEOQYJF?yz!jG&Qxhb=dxw
+zuR~l!A~TAW@Rx7o-@c}#fAsxI1twb@*&&L<NQ#Pd<is)Y-<C{f{Btf2|A_aeZ{$Db
+zLfY|<z9!;iOuioMe;o8*Lt^%P?fy+$vGO<ZqgZ0LbHub>djsIUkrjv(h_4U0HV$L~
+z(BFa(_Yg?&7lA|}zX}SC`X*?!gak%H0xc<t#Y##_|F?h$1OkObNutq`GE$OKGO{?a
+z$jW{*`m>S#m-gR&e`{+3Kpq3M0c{9S9)RRQggm&`18@NFtNi=&0}zM+B>!vV+oT)-
+zLP!*Z5`R$NW<hxf&{9B{Qhma;<IT4F?or%S@Mt;X!t^c9!9w$z+e0(7T0i;!ME-`e
+zHU>x|Kyd;Hd0-pxUa(G9YIgg5#wc(Iyj|)(kkS-{_0nsI$+5p#4#_pVWg}(RdHEx~
+z3M!B1Al3jLu5(0Yc3!7t+X_kM{TG^b#2H~6$nP+S4@|O+7cK$44O&t+H&#MXrD=Ii
+z@}?$@%jmg6O6AqPxxWhng4no#^Q^Rdk=-)`o74BKVUG?fz2WZ3;wv!p3{d0v*2jUU
+zjw>9GvTbLf#LL%u8@)<}f^}9YNvHed6ySOn!~s=`UT1Mt@E4&R_$D{cbAJ_IqwjJ+
+z%bq4rzIwgl9SQxTE_;Ct9h+LM-d!JHe0f$m+vU1vJ0^!aBWDqNL`EdJ&Nzmo`Ru14
+zkiNw=!@?Y%$XO?{+%(?}&{JZ&GPJj?E`awVid(&htcIZR%PS#<wi}0l8)MlocerR(
+zqM|O+=4$nQIwaCqO<M{hXdO^3Gf?HN?ePvE*5xPk$>#oodSrEWsFU56zTXccgFOb*
+zi$_kfP7i{D#3FC_<r>fj0xr7JW9gJgD_F6Ytd@NWZ;Ahuk5?_q_+ApuE)<TKai-6L
+z(B6ZseQ6ZOTup4CU*3DT@=kf45nGu~rUak5M>yeS?NMzzGAw)1RnG2;oN7q3_L%YA
+zyI>dbgB_%h>)Q`@fK2DPPHYbEN0Q1j%Z+(jG8%V+B$<7!`r|H=IWkvZFSCuBsHasG
+z0<ITZC3};7-!eK9T)d*b^+q#t#E~uK^GB)xJ)G;5>3LnCV-XslGm*0#W*{*UR`<3l
+zhlf##8FoC;6Lo>4q@DE9HNsG)8WUrA5#b(Yv7_rT=@`E%8)(|>K6#J=N#6QmIyVGq
+zHQ3)%2*e=44}|iS+fL4qk>;y@9d<n>&~hYs^N3F!IEt`p?|)*UYQ6-FX}rlDsMSGd
+zI^&rB%E%9ldPJvl$_$lyJV^R%>CPD11@=5xm%F_h=jrus4C*K~DzFA}KT)EEZXsj!
+zM2#f)QH|ltshNvY2tDm&(sC~@Qb3}1&RM+*%ql~U{qWMGsFc+Qz(c$24vatHA@fx`
+z;<w6Vfs_oxFT=3#-ct);h5d99WXxJrUBgJXpkDCRpZtsy%K192A_p%G&V#|<y)mCf
+zJ1JPq1C+RaRNv;qbE6=C>~8<<25hCxJ9slUvMtP?atR(e6XNrW(c75~6cw8^mhOYy
+zH03|=ilN38W$gP4LqIS)WLN8UO@~>$McSAWUavNujKMzPcT>PSyYL8Bd}qlRZ}x_7
+zBK+tINdzf=>;t4S^zN(am+13wA2zrhX4T*|4s4>ZK<bx8kr}S&OthhGG+D57tBWsZ
+zLmc32QDp$tP>Ug6qKj?u;2=0`%Qk8`1Mr6R^xhT-1zh(sZ&lk6dv^(o)^p4B8Sk3M
+z;UH?ut=Irpik%?P_Y!!3j*CHR37j`)*Fv5AU;CB1JP`o`6%{GZGWEmjDfGJ*p&VOa
+z6GnQm%P%J4b2LXt(Z5<0m|@MRhDF~Emc8jkXCw5|SSkez`jODDBsKIU1um@3C+c}<
+zYDiU+8yk(}K9VT`U1{fDO*4LRKXn#~Ou2>8bu@!#HaJh-@SwnW^YK*c`?a}W+SR(T
+zr-naTEr26tXU*KDQOXK>X}LuY4Z=1Bl%R+d?|{H}u;{KuM~z@`f*hWO1V*^INt#=)
+zQ_MnLW?YcCw{!C#5Dy6B_bu4!36*PZEzU&0m?2-GV+2e4I!hJQXQFT32F<Qb-Wu?v
+z?dPkKLaDuz<*ANBwF%s8#>?`X)DDUC6QP>ppGpyPc9iI`JIo^Hyi0HW$5e_xhd|u;
+z_$C#ga_qW{6V%G2Ot+@Yfpz{93hCt!%vu0TZ)6gUAU+$g))V4TiySV%2QwJGSi|Ma
+z)d<k#ir+wCR!u|Qol#I$X->Dy--86-Kgu+qsvplC(-28X$#-S+?@3qydF;NRmX~A!
+z`+aX{wkx@9S^eyp34s%sQ%{i#%A8X$8+1nb#q90Z^ZFEKqmmXK@#8HD{3v(VEg!|l
+zBVds{w52+_LI+(6;2Z8#g;2N-&+mUwtyw9PzFji@^39W|`2|4mTcvCNA0j}z6x(f>
+z@q7e0>ROx{Uhqj^HLAHaplUN198c>8I-4cal(dg{X7aGK=Due-c6WZ3ssxm!A_+HU
+zbRM5YSnlLr(Cbc;!&ttKvS*Y?ffZSI^_>g8<Tzt*!yZ#wmC!kLC4TN<lAH}kZ~Bzs
+zF$V#gpgU2SV%YN$iHwE$+@58c_*Yw5eyq#ZCTuYTL<l-nUVM7!2!^CiTwmGs=3XNF
+z;JhHM)J{o2U)lBt3km=sAxk!X;kzBXq|r=*_7l5PZPY(VYOv1E=YC*?8zWgC$o89p
+z%J<$Eb*)DaV~^<uKdM?*%>j@r*w*SP#L)`Mte$$=sv}=D-fBSci&N}bbemMrcM6<$
+zjqTEsmGagr0#*O|juQsPa>~t_Mb70batf~A<E7_XvrxDlr>=r8SnU|aT>>|(-NWZP
+zz--+G`LuGjv-FrG!SUFuu$MniR?Fkw-v(~XOBC%F%4AG`;N{vn^fcnl_I6ck6S`xD
+zHL5My@eMnZwsoLn61@uEBpHjT7Aaf<j+?qQ1`ZB^?cF(Uh}WMeD(kXEo<VjrU}X4&
+zqKC-Xt@zgyo9~S;0(xpgWxkTM>M_vJQIb!q&l)J`0CB{QnXb^}tm8_MCC6~JuDcdN
+zAqJ!<mCl1F>8(&5l<AC7vvJN<63m0N6m=gng!oMjQaWKHoh?*=H4=?>zFSQdv*pM-
+z7hf8+1FUaNt9NghA462hc3Q5JEv0oJBD}7q?l$qPqXTLVMQec7{E_uCM|Wv`c91}y
+zh<D#TKS=8UW1SnY@kz!_&bUq;k@M&M-pCLnA;P>8RdcAWOb`oXsx{4OB2P{MDxDcC
+zmP)E;2B7R?8}a<q<P--`hAI0hbKt=gQ?yPM{;h0h>i}LZq9wk?S?@+wyM)3!7P3u$
+zS2bq0b|vJj(FxDPGyZ@?h3OC?qujYa7RXhed{On{4zNDhL7=QqT~tV6%j~2a@ov4e
+zi3d%ya^f+>J#AB<WnRl_!;iPauA15{0zY*6&jQBC;rXj@)H$4@L=^cq_+0GHA;!r9
+zafP9EuI5Oe%Q0*Y^);Lqi*g>V4$WNy5+r~DmlwHGuC-A5vYd*yDD)7tyasfm^Am59
+zO|FO*7GUJ~X8H$gYr4YV6X0HlecS%@_4+-jBE=n-7_+t>u~xs|EC<Rxcskh#YBwSv
+zfbCgT)efDo#xxfjx&E9Ci|+L2sN!_JrVwYe&O5yXb<=+gGhh%I#2%!9r^H$0=0vaA
+zmh`3pdvEl3C^(m4?nIvy8OY)&%N2<m1kvwrR2*?y)g?B9zDu0>=BQFXQ2hzCR3soh
+z)#J-NNOaeJaqQwoI#%tsWa}C|3i2VsY%t^WEax%1QvBeRKY6>V*|KCZ26T@1Z<<Iw
+zFRs3nF3#8lvfU^gSZF%kRxyCSC(#0AZ!N)|h6^!BTFKMEs#RDvi^9gepPYPN{g&d}
+z_tv~8auP3#EilELDW|AFKRndGoc8@1pa?8xn!ET*^j>L%O3H~u8N%*g?mFWL$|2>0
+zBj=rQGJCF<M5lMxJq9a+QT|tb>+e$MVQSV@|LHABV?ej-Y_8K%lQR<9b?x#V^Q2D{
+zr+8dZF5Y0S_5cPu+iVbDhLEpBI<9K^pOnxLNgu^Xr`BDFhdmI5<LM(FPC+;srv6Mk
+zmiws;vti#fQ=oJrEfMY@S$vM8dF3s2Bk{h^^Iso~{Uq=n;cnH}xA2=^0O?xwX`a5T
+z?kU;ga0-arPKr0OFOw$&wPs!P2@tAcV^SaV9*oQvDI)fs^guroa1VC=3}{X!!!uI>
+zU8if_x<Z#TD}KC`Td09vR?Y4R{8elA^cdbmZa&xu*-#q?YODd(@AD>YHOK;d)#4EI
+zx(0a(a8)N<*QJgkoaD|a-H4QysAz^~*cMwI&Sq~5g7O=ltCl6vm?C4th91*f>+akP
+zf}U7AxmVugA%`&Q?@2s)3xB8HX!eH)qaLg%CvFYVjdkm;w`qjQ$=<8$j@)uL2of=_
+z;`M|rR>hD^qT_cjJe|7)(W7tU2`AK8VYcUb33E;2GE{Qi4t+reE{Be*FCFtS^Yk1^
+zfM;&?d$W@~g-no7M-52d;V05<4`WBMd8f2KI|>zwt*J;Zrn>SPg)Y(mIleISh7h%Y
+z2g^><3I#?U9)&B6pB{j_?;>YBn=lxvv^E?$kJu7MIL|qVplIz3<YAtCf3Ge*38sGV
+zHpIe}32@C5Uk4A_-}A$4Dr(Lt6eY^3&;0(3q|}wXFHF(n_TkSfNiPALiP|My--$k<
+z^iH2!iRCSnXw8*ZYXJZA{)jVhKKG&S$3w<l@aw7#>=k55#ygVSk8`8_zF9LT_j{|e
+z?D$4LZT@5dHlI~={rjd9jZjCoXvkk#CvFrNo?)r!zLAX80-JU07xwk%U0Vb;n)QTX
+zhV@tMDD?VIp&^F{M~0wKPuEem@AkCIhqySl7blfJ1Wgg4d3z#C8ljJ+<9m>mm*teV
+zUtWL9FucB+K*=zUaU72Wf8xmiD&m4IeKJfw*~%TsZMZv-44=@VH|rG+&x1w%(p|?G
+zw;5pbIhWQWk_X&D$_w^S7kA){fncG3>oK+0c*U}_2h5ZoxF?V_y!5c2oi-ID3FYro
+zQWSfp&kq4A7Q?M$zdU5hNp_C=C?X+8TZ*E%PJ4}QEu@&xjT>^G^MHkL(t5@Pc=uEE
+zPbyI*%j%zat-*(?`zchqN|*0Ceou@vN~K(FyM-~kq+Ka^*7c%;e6|o{vCe{B{$N7~
+zDi)MpyzPKyg1dVGNDokm{xOVvP|AhABMCf-=tjgU-$yd0qnmirhd;hS+E^61ZC%Eg
+zj@S(QpsRKn!7>uFPS@LAQw46}{fu}6wDBnPDB;3HPn$IXoC2<1p`Gkk(kHlxpKjvn
+z1qmV_99>c?7{C}AzB`N@Pc|--I9|FFZhSoQk~WLDRFASc<u{O<D*id$7;nHAzi>-{
+z+d7Rq-7*9X_`Tpyo${}gV$-!_!6_j)i7~oWPGNWUUC}9#LG%Jbh@^2tldptNi`J1n
+zlmKfPFhcoCkE~!X7Qoj*?`QGRaCI}d3nr`Uf~~>EipV+rm?XIOe&_nt4oSr1dpJ~2
+zDXF$*<%<~%9O|;~JAI71{`k-EOW&;FiTX2No?`tWM0u6y6zzaJI%clZ2&uSL+=aHo
+zBjix`zNs>39%@FB^CcQV3+#lC%f=t7$<!w{nydX3o!QyggNqm7SB04wW}c6#ryyIm
+zr{_}X8*aV=DtX%u-8P7E^BDqiB#*~Td!M>i1J8-}8yAASj9j>7=MSx!mk3!<b4BJ0
+zUO^$9FYj_`U&(bS`uQ9jC>xV`c)hH(Gvt1&sZXRkpCnXkFMO$%Bv=AZs&DL>D<GlF
+zDJ@sO@TE?9T8{r>E0ZdaBWfSbGg1cB5@DAlx+vf!2JIv+y$&sZ;%YqRKj&dXQlKpa
+zVvi+h0oXnGcve=i$X&2OKqpL{c{P;2X$hQ~ynoNqMqLdr+4*|lAXh*S13O*a-j)cJ
+z#+A(v7EAn^Ct+WynQuTaH|cAa&ts(BhNRs2iyerXnw+ETIC!<%=JH{W&6o{FUSo*N
+zAR?kiGE2scKL!EzM-4qu9>jNoSWYqUSU(KBH(!rt)$Bc-Ldn@~0grT~m8=xDXo$?u
+z6mN;pvKWI#hnEaJr8@c2nqEFe*p}5SG_#gpLs|^=rVtGR>RU%@VB}caQ0C-J3rM);
+za12-Z9zJfhYG8E8Zw01}pXpcU*@j`>yR6UO%2%8T)VugQ<@<ccO$ALF)kap0S~k{N
+z=ck}9*?srdfc!GQ4v=nnjpgd9%>?^jhaP%$#mfRpOt>o5u0Z_&Pw%2i^*jWafY;T<
+z5ZC@Mr`^$|_B|M)pZ9~VKtLmSn%g~iY+21>0(Yf%R=?>7X%PJzF5s$ngy%sBv5Dwg
+Ms_thXyY}q=0Jy;wm;e9(
+
+diff --git a/examples/custom.html b/examples/custom.html
+deleted file mode 100644
+index 0672ced..0000000
+--- a/examples/custom.html
++++ /dev/null
+@@ -1,88 +0,0 @@
+-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+-<head>
+-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+-
+-<title>Plupload - Custom example</title>
+-
+-<style type="text/css">
+-	body {
+-		font-family:Verdana, Geneva, sans-serif;
+-		font-size:13px;
+-		color:#333;
+-		background:url(bg.jpg);
+-	}
+-</style>
+-
+-<script type="text/javascript" src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script>
+-
+-<script type="text/javascript" src="../src/javascript/plupload.js"></script>
+-<script type="text/javascript" src="../src/javascript/plupload.gears.js"></script>
+-<script type="text/javascript" src="../src/javascript/plupload.silverlight.js"></script>
+-<script type="text/javascript" src="../src/javascript/plupload.flash.js"></script>
+-<script type="text/javascript" src="../src/javascript/plupload.browserplus.js"></script>
+-<script type="text/javascript" src="../src/javascript/plupload.html4.js"></script>
+-<script type="text/javascript" src="../src/javascript/plupload.html5.js"></script>
+-
+-</head>
+-<body>
+-
+-<h1>Custom example</h1>
+-
+-<p>Shows you how to use the core plupload API.</p>
+-
+-<div id="container">
+-    <div id="filelist">No runtime found.</div>
+-    <br />
+-    <a id="pickfiles" href="javascript:;">[Select files]</a> 
+-    <a id="uploadfiles" href="javascript:;">[Upload files]</a>
+-</div>
+-
+-
+-<script type="text/javascript">
+-// Custom example logic
+-function $(id) {
+-	return document.getElementById(id);	
+-}
+-
+-
+-var uploader = new plupload.Uploader({
+-	runtimes : 'gears,html5,flash,silverlight,browserplus',
+-	browse_button : 'pickfiles',
+-	container: 'container',
+-	max_file_size : '10mb',
+-	url : 'upload.php',
+-	resize : {width : 320, height : 240, quality : 90},
+-	flash_swf_url : '../js/plupload.flash.swf',
+-	silverlight_xap_url : '../js/plupload.silverlight.xap',
+-	filters : [
+-		{title : "Image files", extensions : "jpg,gif,png"},
+-		{title : "Zip files", extensions : "zip"}
+-	]
+-});
+-
+-uploader.bind('Init', function(up, params) {
+-	$('filelist').innerHTML = "<div>Current runtime: " + params.runtime + "</div>";
+-});
+-
+-uploader.init();
+-
+-uploader.bind('FilesAdded', function(up, files) {
+-	for (var i in files) {
+-		$('filelist').innerHTML += '<div id="' + files[i].id + '">' + files[i].name + ' (' + plupload.formatSize(files[i].size) + ') <b></b></div>';
+-	}
+-});
+-
+-uploader.bind('UploadProgress', function(up, file) {
+-	$(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+-});
+-
+-$('uploadfiles').onclick = function() {
+-	uploader.start();
+-	return false;
+-};
+-
+-
+-</script>
+-</body>
+-</html>
+\ No newline at end of file
+diff --git a/examples/dump.php b/examples/dump.php
+deleted file mode 100644
+index 2aacd20..0000000
+--- a/examples/dump.php
++++ /dev/null
+@@ -1,35 +0,0 @@
+-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+-<head>
+-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+-<title>Plupload - Form dump</title>
+-<style type="text/css">
+-	body {
+-		font-family:Verdana, Geneva, sans-serif;
+-		font-size:13px;
+-		color:#333;
+-		background:url(bg.jpg);
+-	}
+-</style>
+-</head>
+-<body>
+-
+-<h1>Post dump</h1>
+-
+-<p>Shows the form items posted.</p>
+-
+-<table>
+-	<tr>
+-		<th>Name</th>
+-		<th>Value</th>
+-	</tr>
+-	<?php $count = 0; foreach ($_POST as $name => $value) { ?>
+-	<tr class="<?php echo $count % 2 == 0 ? 'alt' : ''; ?>">
+-		<td><?php echo htmlentities(stripslashes($name)) ?></td>
+-		<td><?php echo nl2br(htmlentities(stripslashes($value))) ?></td>
+-	</tr>
+-	<?php } ?>
+-</table>
+-
+-</body>
+-</html>
+diff --git a/examples/jquery/events.html b/examples/jquery/events.html
+deleted file mode 100644
+index 388cd86..0000000
+--- a/examples/jquery/events.html
++++ /dev/null
+@@ -1,196 +0,0 @@
+-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+-<head>
+-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+-<link rel="stylesheet" href="../../js/jquery.plupload.queue/css/jquery.plupload.queue.css" type="text/css" media="screen" />
+-<title>Plupload - Events example</title>
+-<style type="text/css">
+-	body {
+-		font-family:Verdana, Geneva, sans-serif;
+-		font-size:13px;
+-		color:#333;
+-		background:url(../bg.jpg);
+-	}
+-</style>
+-
+-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+-<script type="text/javascript" src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script>
+-
+-<script type="text/javascript" src="../../src/javascript/plupload.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.gears.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.silverlight.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.flash.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.browserplus.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.html4.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.html5.js"></script>
+-<script type="text/javascript" src="../../js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+-
+-</head>
+-<body>
+-
+-<form method="post" action="dump.php">
+-	<h1>Events example</h1>
+-
+-	<p>Shows how to bind and use all available events.</p>
+-
+-	<h3>Log messages</h3>
+-	<textarea id="log" style="width: 100%; height: 150px; font-size: 11px" spellcheck="false" wrap="off"></textarea>
+-
+-	<h3>Queue widget</h3>
+-	<div id="uploader" style="width: 450px; height: 330px;">Your browser doesn't support upload.</div>
+-	<a id="clear" href="#">Clear queue</a>
+-</form>
+-<script type="text/javascript">
+-$(function() {
+-	function log() {
+-		var str = "";
+-
+-		plupload.each(arguments, function(arg) {
+-			var row = "";
+-
+-			if (typeof(arg) != "string") {
+-				plupload.each(arg, function(value, key) {
+-					// Convert items in File objects to human readable form
+-					if (arg instanceof plupload.File) {
+-						// Convert status to human readable
+-						switch (value) {
+-							case plupload.QUEUED:
+-								value = 'QUEUED';
+-								break;
+-
+-							case plupload.UPLOADING:
+-								value = 'UPLOADING';
+-								break;
+-
+-							case plupload.FAILED:
+-								value = 'FAILED';
+-								break;
+-
+-							case plupload.DONE:
+-								value = 'DONE';
+-								break;
+-						}
+-					}
+-
+-					if (typeof(value) != "function") {
+-						row += (row ? ', ': '') + key + '=' + value;
+-					}
+-				});
+-
+-				str += row + " ";
+-			} else { 
+-				str += arg + " ";
+-			}
+-		});
+-
+-		$('#log').val($('#log').val() + str + "\r\n");
+-	}
+-
+-	$("#uploader").pluploadQueue({
+-		// General settings
+-		runtimes: 'html5,gears,browserplus,silverlight,flash,html4',
+-		url: '../upload.php',
+-		max_file_size: '10mb',
+-		chunk_size: '1mb',
+-		unique_names: true,
+-
+-		// Resize images on clientside if we can
+-		resize: {width: 320, height: 240, quality: 90},
+-
+-		// Specify what files to browse for
+-		filters: [
+-			{title: "Image files", extensions: "jpg,gif,png"},
+-			{title: "Zip files", extensions: "zip"}
+-		],
+-
+-		// Flash/Silverlight paths
+-		flash_swf_url: '../../js/plupload.flash.swf',
+-		silverlight_xap_url: '../../js/plupload.silverlight.xap',
+-
+-		// PreInit events, bound before any internal events
+-		preinit: {
+-			Init: function(up, info) {
+-				log('[Init]', 'Info:', info, 'Features:', up.features);
+-			},
+-
+-			UploadFile: function(up, file) {
+-				log('[UploadFile]', file);
+-
+-				// You can override settings before the file is uploaded
+-				// up.settings.url = 'upload.php?id=' + file.id;
+-				// up.settings.multipart_params = {param1: 'value1', param2: 'value2'};
+-			}
+-		},
+-
+-		// Post init events, bound after the internal events
+-		init: {
+-			Refresh: function(up) {
+-				// Called when upload shim is moved
+-				log('[Refresh]');
+-			},
+-
+-			StateChanged: function(up) {
+-				// Called when the state of the queue is changed
+-				log('[StateChanged]', up.state == plupload.STARTED ? "STARTED": "STOPPED");
+-			},
+-
+-			QueueChanged: function(up) {
+-				// Called when the files in queue are changed by adding/removing files
+-				log('[QueueChanged]');
+-			},
+-
+-			UploadProgress: function(up, file) {
+-				// Called while a file is being uploaded
+-				log('[UploadProgress]', 'File:', file, "Total:", up.total);
+-			},
+-
+-			FilesAdded: function(up, files) {
+-				// Callced when files are added to queue
+-				log('[FilesAdded]');
+-
+-				plupload.each(files, function(file) {
+-					log('  File:', file);
+-				});
+-			},
+-
+-			FilesRemoved: function(up, files) {
+-				// Called when files where removed from queue
+-				log('[FilesRemoved]');
+-
+-				plupload.each(files, function(file) {
+-					log('  File:', file);
+-				});
+-			},
+-
+-			FileUploaded: function(up, file, info) {
+-				// Called when a file has finished uploading
+-				log('[FileUploaded] File:', file, "Info:", info);
+-			},
+-
+-			ChunkUploaded: function(up, file, info) {
+-				// Called when a file chunk has finished uploading
+-				log('[ChunkUploaded] File:', file, "Info:", info);
+-			},
+-
+-			Error: function(up, args) {
+-				// Called when a error has occured
+-
+-				// Handle file specific error and general error
+-				if (args.file) {
+-					log('[error]', args, "File:", args.file);
+-				} else {
+-					log('[error]', args);
+-				}
+-			}
+-		}
+-	});
+-
+-	$('#log').val('');
+-	$('#clear').click(function(e) {
+-		e.preventDefault();
+-		$("#uploader").pluploadQueue().splice();
+-	});
+-});
+-</script>
+-</body>
+-</html>
+\ No newline at end of file
+diff --git a/examples/jquery/jquery_ui_widget.html b/examples/jquery/jquery_ui_widget.html
+deleted file mode 100644
+index 26255c0..0000000
+--- a/examples/jquery/jquery_ui_widget.html
++++ /dev/null
+@@ -1,101 +0,0 @@
+-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+-<head>
+-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+-<title>Plupload - jQuery UI Widget</title>
+-<style type="text/css">
+-	body {
+-		font-family:Verdana, Geneva, sans-serif;
+-		font-size:13px;
+-		color:#333;
+-		background:url(../bg.jpg);
+-	}
+-</style>
+-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" />
+-<link rel="stylesheet" href="../../src/javascript/jquery.ui.plupload/css/jquery.ui.plupload.css" type="text/css" />
+-
+-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+-<script type="text/javascript" src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script>
+-
+-<script type="text/javascript" src="../../src/javascript/plupload.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.gears.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.silverlight.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.flash.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.browserplus.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.html4.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.html5.js"></script>
+-<script type="text/javascript" src="../../src/javascript/jquery.ui.plupload/jquery.ui.plupload.js"></script>
+-
+-</head>
+-<body>
+-
+-<h1>jQuery UI Widget</h1>
+-
+-<p>You can see this example with different themes on the <a href="http://plupload.com/example_jquery_ui.php">www.plupload.com</a> website.</p>
+-
+-<form  method="post" action="../dump.php">
+-	<div id="uploader">
+-		<p>Your browser doesn't have Flash, Silverlight, Gears, BrowserPlus or HTML5 support.</p>
+-	</div>
+-</form>
+-<script type="text/javascript">
+-// Convert divs to queue widgets when the DOM is ready
+-$(function() {
+-	$("#uploader").plupload({
+-		// General settings
+-		runtimes : 'flash,html5,browserplus,silverlight,gears,html4',
+-		url : '../upload.php',
+-		max_file_size : '1000mb',
+-		max_file_count: 20, // user can add no more then 20 files at a time
+-		chunk_size : '1mb',
+-		rename: true,
+-		multiple_queues : true,
+-
+-		// Resize images on clientside if we can
+-		resize : {width : 320, height : 240, quality : 90},
+-		
+-		// Rename files by clicking on their titles
+-		rename: true,
+-		
+-		// Sort files
+-		sortable: true,
+-
+-		// Specify what files to browse for
+-		filters : [
+-			{title : "Image files", extensions : "jpg,gif,png"},
+-			{title : "Zip files", extensions : "zip,avi"}
+-		],
+-
+-		// Flash settings
+-		flash_swf_url : '../../js/plupload.flash.swf',
+-
+-		// Silverlight settings
+-		silverlight_xap_url : '../../js/plupload.silverlight.xap'
+-	});
+-
+-	// Client side form validation
+-	$('form').submit(function(e) {
+-        var uploader = $('#uploader').plupload('getUploader');
+-
+-        // Files in queue upload them first
+-        if (uploader.files.length > 0) {
+-            // When all files are uploaded submit form
+-            uploader.bind('StateChanged', function() {
+-                if (uploader.files.length === (uploader.total.uploaded + uploader.total.failed)) {
+-                    $('form')[0].submit();
+-                }
+-            });
+-                
+-            uploader.start();
+-        } else
+-            alert('You must at least upload one file.');
+-
+-        return false;
+-    });
+-	 
+-
+-});
+-</script>
+-</body>
+-</html>
+\ No newline at end of file
+diff --git a/examples/jquery/queue_widget.html b/examples/jquery/queue_widget.html
+deleted file mode 100644
+index 5884857..0000000
+--- a/examples/jquery/queue_widget.html
++++ /dev/null
+@@ -1,173 +0,0 @@
+-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+-<head>
+-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+-<title>Plupload - Queue widget example</title>
+-<style type="text/css">
+-	body {
+-		font-family:Verdana, Geneva, sans-serif;
+-		font-size:13px;
+-		color:#333;
+-		background:url(../bg.jpg);
+-	}
+-</style>
+-<link rel="stylesheet" href="../../js/jquery.plupload.queue/css/jquery.plupload.queue.css" type="text/css" media="screen" />
+-
+-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+-<script type="text/javascript" src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script>
+-
+-<script type="text/javascript" src="../../src/javascript/plupload.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.gears.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.silverlight.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.flash.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.browserplus.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.html4.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.html5.js"></script>
+-<script type="text/javascript" src="../../src/javascript/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+-
+-</head>
+-<body>
+-
+-<form method="post" action="../dump.php">
+-	<h1>Queue widget example</h1>
+-
+-	<p>Shows the jQuery Plupload Queue widget and under different runtimes.</p>
+-
+-	<div style="float: left; margin-right: 20px">
+-		<h3>Flash runtime</h3>
+-		<div id="flash_uploader" style="width: 450px; height: 330px;">Your browser doesn't have Flash installed.</div>
+-
+-		<h3>Gears runtime</h3>
+-		<div id="gears_uploader" style="width: 450px; height: 330px;">Your browser doesn't have Gears installed.</div>
+-	</div>
+-
+-	<div style="float: left; margin-right: 20px">
+-		<h3>Silverlight runtime</h3>
+-		<div id="silverlight_uploader" style="width: 450px; height: 330px;">Your browser doesn't have Silverlight installed.</div>
+-
+-		<h3>HTML 5 runtime</h3>
+-		<div id="html5_uploader" style="width: 450px; height: 330px;">Your browser doesn't support native upload. Try Firefox 3 or Safari 4.</div>
+-	</div>
+-
+-	<div style="float: left; margin-right: 20px">
+-		<h3>BrowserPlus runtime</h3>
+-		<div id="browserplus_uploader" style="width: 450px; height: 330px;">Your browser doesn't have BrowserPlus installed.</div>
+-
+-		<h3>HTML 4 runtime</h3>
+-		<div id="html4_uploader" style="width: 450px; height: 330px;">Your browser doesn't have HTML 4 support.</div>
+-	</div>
+-
+-	<br style="clear: both" />
+-
+-	<input type="submit" value="Send" />
+-</form>
+-
+-<script type="text/javascript">
+-$(function() {
+-	// Setup flash version
+-	$("#flash_uploader").pluploadQueue({
+-		// General settings
+-		runtimes : 'flash',
+-		url : '../upload.php',
+-		max_file_size : '10mb',
+-		chunk_size : '1mb',
+-		rename : true,
+-		filters : [
+-			{title : "Image files", extensions : "jpg,gif,png"},
+-			{title : "Zip files", extensions : "zip"}
+-		],
+-
+-		// Resize images on clientside if we can
+-		resize : {width : 320, height : 240, quality : 90},
+-
+-		// Flash settings
+-		flash_swf_url : '../../js/plupload.flash.swf'
+-	});
+-
+-	// Setup gears version
+-	$("#gears_uploader").pluploadQueue({
+-		// General settings
+-		runtimes : 'gears',
+-		url : '../upload.php',
+-		max_file_size : '10mb',
+-		chunk_size : '1mb',
+-		unique_names : true,
+-		filters : [
+-			{title : "Image files", extensions : "jpg,gif,png"},
+-			{title : "Zip files", extensions : "zip"}
+-		],
+-
+-		// Resize images on clientside if we can
+-		resize : {width : 320, height : 240, quality : 90}
+-	});
+-
+-	// Setup silverlight version
+-	$("#silverlight_uploader").pluploadQueue({
+-		// General settings
+-		runtimes : 'silverlight',
+-		url : '../upload.php',
+-		max_file_size : '10mb',
+-		chunk_size : '1mb',
+-		unique_names : true,
+-		filters : [
+-			{title : "Image files", extensions : "jpg,gif,png"},
+-			{title : "Zip files", extensions : "zip"}
+-		],
+-
+-		// Resize images on clientside if we can
+-		resize : {width : 320, height : 240, quality : 90},
+-
+-		// Silverlight settings
+-		silverlight_xap_url : '../../js/plupload.silverlight.xap'
+-	});
+-
+-	// Setup html5 version
+-	$("#html5_uploader").pluploadQueue({
+-		// General settings
+-		runtimes : 'html5',
+-		url : '../upload.php',
+-		max_file_size : '10mb',
+-		chunk_size : '1mb',
+-		unique_names : true,
+-		filters : [
+-			{title : "Image files", extensions : "jpg,gif,png"},
+-			{title : "Zip files", extensions : "zip"}
+-		],
+-
+-		// Resize images on clientside if we can
+-		resize : {width : 320, height : 240, quality : 90}
+-	});
+-
+-	// Setup browserplus version
+-	$("#browserplus_uploader").pluploadQueue({
+-		// General settings
+-		runtimes : 'browserplus',
+-		url : '../upload.php',
+-		max_file_size : '10mb',
+-		chunk_size : '1mb',
+-		unique_names : true,
+-		filters : [
+-			{title : "Image files", extensions : "jpg,gif,png"},
+-			{title : "Zip files", extensions : "zip"}
+-		],
+-
+-		// Resize images on clientside if we can
+-		resize : {width : 320, height : 240, quality : 90}
+-	});
+-
+-	// Setup html4 version
+-	$("#html4_uploader").pluploadQueue({
+-		// General settings
+-		runtimes : 'html4',
+-		url : '../upload.php',
+-		unique_names : true,
+-		filters : [
+-			{title : "Image files", extensions : "jpg,gif,png"},
+-			{title : "Zip files", extensions : "zip"}
+-		]
+-	});
+-});
+-</script>
+-
+-</body>
+-</html>
+\ No newline at end of file
+diff --git a/examples/jquery/s3.php b/examples/jquery/s3.php
+deleted file mode 100644
+index e960afc..0000000
+--- a/examples/jquery/s3.php
++++ /dev/null
+@@ -1,158 +0,0 @@
+-<?php 
+-/* 
+-In order to upload files to S3 using Flash runtime, one should start by placing crossdomain.xml into the bucket.
+-crossdomain.xml can be as simple as this:
+-
+-<?xml version="1.0"?>
+-<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+-<cross-domain-policy>
+-<allow-access-from domain="*" secure="false" />
+-</cross-domain-policy>
+-
+-In our tests SilverLight didn't require anything special and worked with this configuration just fine. It may fail back
+-to the same crossdomain.xml as last resort.
+-
+-!!!Important!!! Plupload UI Widget here, is used only for demo purposes and is not required for uploading to S3.
+-*/
+-
+-// important variables that will be used throughout this example
+-$bucket = 'BUCKET';
+-
+-// these can be found on your Account page, under Security Credentials > Access Keys
+-$accessKeyId = 'ACCESS_KEY_ID';
+-$secret = 'SECRET_ACCESS_KEY';
+-
+-
+-// hash_hmac — Generate a keyed hash value using the HMAC method 
+-// (PHP 5 >= 5.1.2, PECL hash >= 1.1)
+-if (!function_exists('hash_hmac')) :
+-// based on: http://www.php.net/manual/en/function.sha1.php#39492
+-function hash_hmac($algo, $data, $key, $raw_output = false)
+-{
+-	$blocksize = 64;
+-    if (strlen($key) > $blocksize)
+-        $key = pack('H*', $algo($key));
+-    
+-	$key = str_pad($key, $blocksize, chr(0x00));
+-    $ipad = str_repeat(chr(0x36), $blocksize);
+-    $opad = str_repeat(chr(0x5c), $blocksize);
+-    $hmac = pack('H*', $algo(($key^$opad) . pack('H*', $algo(($key^$ipad) . $data))));
+-	
+-	return $raw_output ? $hmac : bin2hex($hmac);
+-}
+-endif;
+-
+-// prepare policy
+-$policy = base64_encode(json_encode(array(
+-	// ISO 8601 - date('c'); generates uncompatible date, so better do it manually
+-	'expiration' => date('Y-m-d\TH:i:s.000\Z', strtotime('+1 day')),  
+-	'conditions' => array(
+-		array('bucket' => $bucket),
+-		array('acl' => 'public-read'),
+-		array('starts-with', '$key', ''),
+-		// for demo purposes we are accepting only images
+-		array('starts-with', '$Content-Type', 'image/'),
+-		// "Some versions of the Adobe Flash Player do not properly handle HTTP responses that have an empty body. 
+-		// To configure POST to return a response that does not have an empty body, set success_action_status to 201.
+-		// When set, Amazon S3 returns an XML document with a 201 status code." 
+-		// http://docs.amazonwebservices.com/AmazonS3/latest/dev/HTTPPOSTFlash.html
+-		array('success_action_status' => '201'),
+-		// Plupload internally adds name field, so we need to mention it here
+-		array('starts-with', '$name', ''), 	
+-		// One more field to take into account: Filename - gets silently sent by FileReference.upload() in Flash
+-		// http://docs.amazonwebservices.com/AmazonS3/latest/dev/HTTPPOSTFlash.html
+-		array('starts-with', '$Filename', ''), 
+-	)
+-)));
+-
+-// sign policy
+-$signature = base64_encode(hash_hmac('sha1', $policy, $secret, true));
+-
+-?>
+-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+-<head>
+-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+-<title>Plupload to Amazon S3 Example</title>
+-
+-<style type="text/css">
+-	body {
+-		font-family:Verdana, Geneva, sans-serif;
+-		font-size:13px;
+-		color:#333;
+-		background:url(../bg.jpg);
+-	}
+-</style>
+-
+-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" />
+-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+-<script src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+-
+-<!-- Load plupload and all it's runtimes and finally the UI widget -->
+-<link rel="stylesheet" href="../../js/jquery.ui.plupload/css/jquery.ui.plupload.css" type="text/css" />
+-
+-<script type="text/javascript" src="../../src/javascript/plupload.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.gears.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.silverlight.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.flash.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.browserplus.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.html4.js"></script>
+-<script type="text/javascript" src="../../src/javascript/plupload.html5.js"></script>
+-<script type="text/javascript" src="../../js/jquery.ui.plupload/jquery.ui.plupload.js"></script>
+-<!--<script type="text/javascript" src="http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js"></script>-->
+-
+-</head>
+-<body>
+-
+-<h1>Plupload to Amazon S3 Example</h1>
+-
+-<div id="uploader">
+-    <p>Your browser doesn't have Flash, Silverlight, Gears, BrowserPlus or HTML5 support.</p>
+-</div>
+-
+-<script type="text/javascript">
+-// Convert divs to queue widgets when the DOM is ready
+-$(function() {
+-	$("#uploader").plupload({
+-		runtimes : 'flash,silverlight',
+-		url : 'http://<?php echo $bucket; ?>.s3.amazonaws.com/',
+-		max_file_size : '10mb',
+-		
+-		multipart: true,
+-		multipart_params: {
+-			'key': '${filename}', // use filename as a key
+-			'Filename': '${filename}', // adding this to keep consistency across the runtimes
+-			'acl': 'public-read',
+-			'Content-Type': 'image/jpeg',
+-			'success_action_status': '201',
+-			'AWSAccessKeyId' : '<?php echo $accessKeyId; ?>',		
+-			'policy': '<?php echo $policy; ?>',
+-			'signature': '<?php echo $signature; ?>'
+-		},
+-		
+-		// !!!Important!!! 
+-		// this is not recommended with S3, since it will force Flash runtime into the mode, with no progress indication
+-		//resize : {width : 800, height : 600, quality : 60},  // Resize images on clientside, if possible 
+-		
+-		// optional, but better be specified directly
+-		file_data_name: 'file',
+-		
+-		// re-use widget (not related to S3, but to Plupload UI Widget)
+-		multiple_queues: true,
+-
+-		// Specify what files to browse for
+-		filters : [
+-			{title : "JPEG files", extensions : "jpg"}
+-		],
+-
+-		// Flash settings
+-		flash_swf_url : '../../js/plupload.flash.swf',
+-
+-		// Silverlight settings
+-		silverlight_xap_url : '../../js/plupload.silverlight.xap'
+-	});
+-});
+-</script>
+-
+-</body>
+-</html>
+\ No newline at end of file
+diff --git a/examples/upload.php b/examples/upload.php
+deleted file mode 100644
+index 70f16d9..0000000
+--- a/examples/upload.php
++++ /dev/null
+@@ -1,129 +0,0 @@
+-<?php
+-/**
+- * upload.php
+- *
+- * Copyright 2009, Moxiecode Systems AB
+- * Released under GPL License.
+- *
+- * License: http://www.plupload.com/license
+- * Contributing: http://www.plupload.com/contributing
+- */
+-
+-// HTTP headers for no cache etc
+-header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+-header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+-header("Cache-Control: no-store, no-cache, must-revalidate");
+-header("Cache-Control: post-check=0, pre-check=0", false);
+-header("Pragma: no-cache");
+-
+-// Settings
+-$targetDir = ini_get("upload_tmp_dir") . DIRECTORY_SEPARATOR . "plupload";
+-//$targetDir = 'uploads';
+-
+-$cleanupTargetDir = true; // Remove old files
+-$maxFileAge = 5 * 3600; // Temp file age in seconds
+-
+-// 5 minutes execution time
+-@set_time_limit(5 * 60);
+-
+-// Uncomment this one to fake upload time
+-// usleep(5000);
+-
+-// Get parameters
+-$chunk = isset($_REQUEST["chunk"]) ? intval($_REQUEST["chunk"]) : 0;
+-$chunks = isset($_REQUEST["chunks"]) ? intval($_REQUEST["chunks"]) : 0;
+-$fileName = isset($_REQUEST["name"]) ? $_REQUEST["name"] : '';
+-
+-// Clean the fileName for security reasons
+-$fileName = preg_replace('/[^\w\._]+/', '_', $fileName);
+-
+-// Make sure the fileName is unique but only if chunking is disabled
+-if ($chunks < 2 && file_exists($targetDir . DIRECTORY_SEPARATOR . $fileName)) {
+-	$ext = strrpos($fileName, '.');
+-	$fileName_a = substr($fileName, 0, $ext);
+-	$fileName_b = substr($fileName, $ext);
+-
+-	$count = 1;
+-	while (file_exists($targetDir . DIRECTORY_SEPARATOR . $fileName_a . '_' . $count . $fileName_b))
+-		$count++;
+-
+-	$fileName = $fileName_a . '_' . $count . $fileName_b;
+-}
+-
+-$filePath = $targetDir . DIRECTORY_SEPARATOR . $fileName;
+-
+-// Create target dir
+-if (!file_exists($targetDir))
+-	@mkdir($targetDir);
+-
+-// Remove old temp files	
+-if ($cleanupTargetDir) {
+-	if (is_dir($targetDir) && ($dir = opendir($targetDir))) {
+-		while (($file = readdir($dir)) !== false) {
+-			$tmpfilePath = $targetDir . DIRECTORY_SEPARATOR . $file;
+-
+-			// Remove temp file if it is older than the max age and is not the current file
+-			if (preg_match('/\.part$/', $file) && (filemtime($tmpfilePath) < time() - $maxFileAge) && ($tmpfilePath != "{$filePath}.part")) {
+-				@unlink($tmpfilePath);
+-			}
+-		}
+-		closedir($dir);
+-	} else {
+-		die('{"jsonrpc" : "2.0", "error" : {"code": 100, "message": "Failed to open temp directory."}, "id" : "id"}');
+-	}
+-}	
+-
+-// Look for the content type header
+-if (isset($_SERVER["HTTP_CONTENT_TYPE"]))
+-	$contentType = $_SERVER["HTTP_CONTENT_TYPE"];
+-
+-if (isset($_SERVER["CONTENT_TYPE"]))
+-	$contentType = $_SERVER["CONTENT_TYPE"];
+-
+-// Handle non multipart uploads older WebKit versions didn't support multipart in HTML5
+-if (strpos($contentType, "multipart") !== false) {
+-	if (isset($_FILES['file']['tmp_name']) && is_uploaded_file($_FILES['file']['tmp_name'])) {
+-		// Open temp file
+-		$out = @fopen("{$filePath}.part", $chunk == 0 ? "wb" : "ab");
+-		if ($out) {
+-			// Read binary input stream and append it to temp file
+-			$in = @fopen($_FILES['file']['tmp_name'], "rb");
+-
+-			if ($in) {
+-				while ($buff = fread($in, 4096))
+-					fwrite($out, $buff);
+-			} else
+-				die('{"jsonrpc" : "2.0", "error" : {"code": 101, "message": "Failed to open input stream."}, "id" : "id"}');
+-			@fclose($in);
+-			@fclose($out);
+-			@unlink($_FILES['file']['tmp_name']);
+-		} else
+-			die('{"jsonrpc" : "2.0", "error" : {"code": 102, "message": "Failed to open output stream."}, "id" : "id"}');
+-	} else
+-		die('{"jsonrpc" : "2.0", "error" : {"code": 103, "message": "Failed to move uploaded file."}, "id" : "id"}');
+-} else {
+-	// Open temp file
+-	$out = @fopen("{$filePath}.part", $chunk == 0 ? "wb" : "ab");
+-	if ($out) {
+-		// Read binary input stream and append it to temp file
+-		$in = @fopen("php://input", "rb");
+-
+-		if ($in) {
+-			while ($buff = fread($in, 4096))
+-				fwrite($out, $buff);
+-		} else
+-			die('{"jsonrpc" : "2.0", "error" : {"code": 101, "message": "Failed to open input stream."}, "id" : "id"}');
+-
+-		@fclose($in);
+-		@fclose($out);
+-	} else
+-		die('{"jsonrpc" : "2.0", "error" : {"code": 102, "message": "Failed to open output stream."}, "id" : "id"}');
+-}
+-
+-// Check if file has been uploaded
+-if (!$chunks || $chunk == $chunks - 1) {
+-	// Strip the temp .part suffix off 
+-	rename("{$filePath}.part", $filePath);
+-}
+-
+-die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
+-- 
+1.7.9.5
+

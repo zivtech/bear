@@ -1,0 +1,15 @@
+ includes/path.inc | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/includes/path.inc b/includes/path.inc
+index 234430e..f5de3de 100644
+--- a/includes/path.inc
++++ b/includes/path.inc
+@@ -416,6 +416,7 @@ function path_load($conditions) {
+   }
+   return $select
+     ->fields('url_alias')
++    ->orderBy('pid', 'DESC')
+     ->execute()
+     ->fetchAssoc();
+ }

@@ -1,0 +1,102 @@
+diff --git a/plugins/media/library.js b/plugins/media/library.js
+index 1295ad5..ecff3fb 100644
+--- a/plugins/media/library.js
++++ b/plugins/media/library.js
+@@ -102,12 +102,12 @@
+     },
+ 
+     /**
+-       * Attach function, called when a rich text editor loads.
+-       * This finds all [[tags]] and replaces them with the html
+-       * that needs to show in the editor.
+-       *
+-       */
+-    attach: function (content, settings, instanceId) {
++     * Attach function, called when a rich text editor loads.
++     * This finds all [[tags]] and replaces them with the html
++     * that needs to show in the editor.
++     *
++     */
++    attach: function (content) {
+       var matches = content.match(/\[\[.*?\]\]/g);
+       this.initializeTagMap();
+       var tagmap = Drupal.settings.tagmap;
+@@ -125,12 +125,18 @@
+             var _tag = inlineTag;
+             _tag = _tag.replace('[[','');
+             _tag = _tag.replace(']]','');
+-            mediaObj = JSON.parse(_tag);
+-
+-            var imgElement = $(mediaMarkup);
+-            this.addImageAttributes(imgElement, mediaObj.fid, mediaObj.view_mode);
+-            var toInsert = this.outerHTML(imgElement);
+-            content = content.replace(inlineTag, toInsert);
++            try {
++              mediaObj = JSON.parse(_tag);
++            }
++            catch(err) {
++              mediaObj = null;
++            }
++            if(mediaObj) {
++              var imgElement = $(mediaMarkup);
++              this.addImageAttributes(imgElement, mediaObj.fid, mediaObj.view_mode);
++              var toInsert = this.outerHTML(imgElement);
++              content = content.replace(inlineTag, toInsert);
++            }
+           }
+           else {
+             debug.debug("Could not find content for " + inlineTag);
+@@ -141,9 +147,9 @@
+     },
+ 
+     /**
+-       * Detach function, called when a rich text editor detaches
+-       */
+-    detach: function (content, settings, instanceId) {
++     * Detach function, called when a rich text editor detaches
++     */
++    detach: function (content) {
+       var content = $('<div>' + content + '</div>');
+       $('img.media-image',content).each(function (elem) {
+         var tag = Drupal.settings.ckeditor.plugins['media'].createTag($(this));
+@@ -156,9 +162,9 @@
+     },
+ 
+     /**
+-       * @param jQuery imgNode
+-       *  Image node to create tag from
+-       */
++     * @param jQuery imgNode
++     *  Image node to create tag from
++     */
+     createTag: function (imgNode) {
+       // Currently this is the <img> itself
+       // Collect all attribs to be stashed into tagContent
+diff --git a/plugins/media/plugin.js b/plugins/media/plugin.js
+index 363f843..6c4b0be 100644
+--- a/plugins/media/plugin.js
++++ b/plugins/media/plugin.js
+@@ -1,5 +1,5 @@
+ /*
+-Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
++Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+ For licensing, see LICENSE.html or http://ckeditor.com/license
+ */
+ 
+@@ -50,6 +50,16 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
+         command: 'media',
+         icon: this.path + 'images/icon.gif'
+       });
++
++      // Ensure tokens instead the html element is saved.
++      editor.on('getData', function( event ) {
++        event.data.dataValue = Drupal.settings.ckeditor.plugins['media'].detach(event.data.dataValue);
++      });
++      // Ensure the tokens are replaced by placeholders while editing.
++      editor.on('setData', function( event ) {
++        event.data.dataValue = Drupal.settings.ckeditor.plugins['media'].attach(event.data.dataValue);
++      });
++
+     }
+   });
+ 

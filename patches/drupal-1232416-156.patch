@@ -1,0 +1,53 @@
+diff --git a/misc/ajax.js b/misc/ajax.js
+index 90c3bb8..c3c07cf 100644
+--- a/misc/ajax.js
++++ b/misc/ajax.js
+@@ -202,16 +202,16 @@ Drupal.ajax = function (base, element, element_settings) {
+  * will test to see if the key press is valid to trigger this event and
+  * if it is, trigger it for us and prevent other keypresses from triggering.
+  * In this case we're handling RETURN and SPACEBAR keypresses (event codes 13
+- * and 32. RETURN is often used to submit a form when in a textfield, and 
+- * SPACE is often used to activate an element without submitting. 
++ * and 32. RETURN is often used to submit a form when in a textfield, and
++ * SPACE is often used to activate an element without submitting.
+  */
+ Drupal.ajax.prototype.keypressResponse = function (element, event) {
+   // Create a synonym for this to reduce code confusion.
+   var ajax = this;
+ 
+   // Detect enter key and space bar and allow the standard response for them,
+-  // except for form elements of type 'text' and 'textarea', where the 
+-  // spacebar activation causes inappropriate activation if #ajax['keypress'] is 
++  // except for form elements of type 'text' and 'textarea', where the
++  // spacebar activation causes inappropriate activation if #ajax['keypress'] is
+   // TRUE. On a text-type widget a space should always be a space.
+   if (event.which == 13 || (event.which == 32 && element.type != 'text' && element.type != 'textarea')) {
+     $(ajax.element_settings.element).trigger(ajax.element_settings.event);
+@@ -448,7 +448,10 @@ Drupal.ajax.prototype.getEffect = function (response) {
+  * Handler for the form redirection error.
+  */
+ Drupal.ajax.prototype.error = function (response, uri) {
+-  alert(Drupal.ajaxError(response, uri));
++  // Fix for autocomplete terminated error.
++  if (response.status != 0) {
++    alert(Drupal.ajaxError(response, uri));
++  }
+   // Remove the progress element.
+   if (this.progress.element) {
+     $(this.progress.element).remove();
+diff --git a/misc/autocomplete.js b/misc/autocomplete.js
+index 8f7ac60..980c1ca 100644
+--- a/misc/autocomplete.js
++++ b/misc/autocomplete.js
+@@ -306,7 +306,10 @@ Drupal.ACDB.prototype.search = function (searchString) {
+         }
+       },
+       error: function (xmlhttp) {
+-        alert(Drupal.ajaxError(xmlhttp, db.uri));
++        // Fix for autocomplete terminated error.
++        if (xmlhttp.status != 0) {
++          alert(Drupal.ajaxError(xmlhttp, db.uri));
++        }
+       }
+     });
+   }, this.delay);

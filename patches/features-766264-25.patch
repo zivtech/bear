@@ -1,0 +1,47 @@
+diff --git a/features.export.inc b/features.export.inc
+index 2f32c95..83e1c7a 100644
+--- a/features.export.inc
++++ b/features.export.inc
+@@ -410,7 +410,7 @@ function features_detect_overrides($module) {
+     foreach ($states[$module->name] as $component => $state) {
+       if ($state != FEATURES_DEFAULT) {
+         $normal = features_get_normal($component, $module->name);
+-        $default = features_get_default($component, $module->name);
++        $default = features_get_default_explicit($component, $module->name);
+         _features_sanitize($normal);
+         _features_sanitize($default);
+ 
+@@ -659,7 +659,7 @@ function features_get_signature($state = 'default', $module_name, $component, $r
+       $codecache = variable_get('features_codecache', array());
+       return isset($codecache[$module_name][$component]) ? $codecache[$module_name][$component] : FALSE;
+     case 'default':
+-      $objects = features_get_default($component, $module_name, TRUE, $reset);
++      $objects = features_get_default_explicit($component, $module_name, TRUE, $reset);
+       break;
+     case 'normal':
+       $objects = features_get_normal($component, $module_name, $reset);
+@@ -817,6 +817,24 @@ function features_get_default($component, $module_name = NULL, $alter = TRUE, $r
+ }
+ 
+ /**
++ * Get explicitly declared defaults for a given module/component pair.
++ */
++function features_get_default_explicit($component, $module_name = NULL, $alter = TRUE, $reset = FALSE) {
++  $objects = features_get_default($component, $module_name, $alter, $reset);
++  // Restrict altered defaults to those explicitly provided by module.
++  if (!empty($objects) && is_array($objects) && features_get_default_alter_hook($component)) {
++    $module = features_get_features($module_name);
++    if (empty($module->info['features'][$component])) {
++      $objects = array();
++    }
++    else {
++      $objects = array_intersect_key($objects, drupal_map_assoc($module->info['features'][$component]));
++    }
++  }
++  return $objects;
++}
++
++/**
+  * Get a map of components to their providing modules.
+  */
+ function features_get_default_map($component, $attribute = NULL, $callback = NULL, $reset = FALSE) {
