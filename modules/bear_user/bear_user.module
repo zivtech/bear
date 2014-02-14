@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Bear User feature.
+ */
+
+include_once 'bear_user.features.inc';

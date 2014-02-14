@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * bear_inhabitants.features.inc
+ * bear_user.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function bear_inhabitants_ctools_plugin_api($module = NULL, $api = NULL) {
+function bear_user_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }

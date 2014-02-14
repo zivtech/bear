@@ -38,4 +38,3 @@ features[variable][] = node_preview_slideshow
 features[variable][] = node_submitted_slideshow
 features[views_view][] = slideshow
 features_exclude[dependencies][ctools] = ctools
-project path = profiles/bear/module

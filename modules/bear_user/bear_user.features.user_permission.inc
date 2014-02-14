@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * bear_inhabitants.features.user_permission.inc
+ * bear_user.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function bear_inhabitants_user_default_permissions() {
+function bear_user_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'access administration menu'.

@@ -1,4 +1,4 @@
-name = Bear Inhabitants
+name = Bear User
 description = Default user roles and their permission settings for bear.
 core = 7.x
 package = Bear
