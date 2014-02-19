@@ -10,6 +10,7 @@ dependencies[] = dblog
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = help
+dependencies[] = node
 dependencies[] = options
 dependencies[] = list
 dependencies[] = menu
