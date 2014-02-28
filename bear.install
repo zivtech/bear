@@ -13,7 +13,7 @@ function bear_install() {
   $filtered_html_format = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
-    'weight' => 0,
+    'weight' => -10,
     'filters' => array(
       // URL filter.
       'filter_url' => array(
@@ -44,7 +44,7 @@ function bear_install() {
   $full_html_format = array(
     'format' => 'full_html',
     'name' => 'Full HTML',
-    'weight' => 1,
+    'weight' => -9,
     'filters' => array(
       // URL filter.
       'filter_url' => array(
@@ -71,6 +71,33 @@ function bear_install() {
   );
   $full_html_format = (object) $full_html_format;
   filter_format_save($full_html_format);
+
+  $plain_text_format = array(
+    'format' => 'plain_text',
+    'name' => 'Plain Text',
+    'weight' => -8,
+    'filters' => array(
+      'filter_html_escape' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_url' => array(
+        'weight' => 1,
+        'status' => 1,
+        'settings' => array(
+          'filter_url_length' => 72,
+        ),
+      ),
+      'filter_autop' => array(
+        'weight' => 2,
+        'status' => 1,
+        'settings' => array(),
+      ),
+    ),
+  );
+  $plain_text_format = (object) $plain_text_format;
+  filter_format_save($plain_text_format);
 
   // Enable some standard blocks.
   $default_theme = variable_get('theme_default', 'bartik');
