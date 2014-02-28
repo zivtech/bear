@@ -74,7 +74,7 @@ function bear_install() {
 
   $plain_text_format = array(
     'format' => 'plain_text',
-    'name' => 'Plain Text',
+    'name' => 'Plain text',
     'weight' => -8,
     'filters' => array(
       'filter_html_escape' => array(
