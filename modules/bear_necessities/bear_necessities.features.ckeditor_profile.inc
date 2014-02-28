@@ -76,7 +76,7 @@ function bear_necessities_ckeditor_profile_defaults() {
           'linkit' => array(
             'name' => 'linkit',
             'desc' => 'Support for Linkit module',
-            'path' => drupal_get_path('module', 'linkit') . '/editors/ckeditor/',
+            'path' => '/sites/all/modules/linkit/editors/ckeditor/',
             'buttons' => array(
               'linkit' => array(
                 'label' => 'Linkit',
@@ -175,7 +175,7 @@ function bear_necessities_ckeditor_profile_defaults() {
           'linkit' => array(
             'name' => 'linkit',
             'desc' => 'Support for Linkit module',
-            'path' => '%base_path%profiles/bear/modules/linkit/editors/ckeditor/',
+            'path' => '/sites/all/modules/linkit/editors/ckeditor/',
             'buttons' => array(
               'linkit' => array(
                 'label' => 'Linkit',
