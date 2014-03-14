@@ -9,8 +9,6 @@ api = 2
 projects[admin_menu][version] = "3.0-rc4"
 projects[admin_views][version] = "1.2"
 projects[advagg][version] = "2.4"
-projects[ckeditor][version] = "1.13"
-projects[ckeditor][patch][] = "http://drupal.org/files/ckeditor-fix-media-integration-1504696-4.patch"
 projects[coffee][version] = "1.0"
 projects[ctools][version] = "1.4"
 projects[date][version] = "2.7"
@@ -51,10 +49,12 @@ projects[flexslider_views_slideshow][version] = "2.x-dev"
 projects[jquery_update][version] = "2.3"
 projects[module_filter][version] = "1.7"
 projects[views_slideshow][version] = "3.0"
+projects[wysiwyg][version] = "2.x-dev"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.1.1/ckeditor_4.1.1_standard.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.3/ckeditor_4.3.3_full.zip"
+
 
 libraries[plupload][download][type] = "get"
 libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
