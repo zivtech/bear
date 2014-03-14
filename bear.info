@@ -28,7 +28,6 @@ dependencies[] = bear_habitat
 dependencies[] = bear_necessities
 dependencies[] = bear_user
 dependencies[] = coffee
-dependencies[] = ckeditor
 dependencies[] = ctools
 dependencies[] = views_content
 dependencies[] = page_manager
@@ -64,6 +63,7 @@ dependencies[] = styleguide
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
+dependencies[] = wysiwyg
 dependencies[] = xmlsitemap
 
 files[] = bear.profile
