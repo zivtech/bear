@@ -133,16 +133,6 @@ function bear_user_user_default_permissions() {
     'module' => 'menu',
   );
 
-  // Exported permission: 'administer menu positions'.
-  $permissions['administer menu positions'] = array(
-    'name' => 'administer menu positions',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'menu_position',
-  );
-
   // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',

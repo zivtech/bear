@@ -9,6 +9,7 @@ api = 2
 projects[admin_menu][version] = "3.0-rc4"
 projects[admin_views][version] = "1.2"
 projects[advagg][version] = "2.4"
+projects[breadcrumbs_by_path] = "1.0-alpha11"
 projects[coffee][version] = "1.0"
 projects[ctools][version] = "1.4"
 projects[date][version] = "2.7"
