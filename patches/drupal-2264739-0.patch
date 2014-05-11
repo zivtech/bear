@@ -1,0 +1,129 @@
+diff --git a/modules/field/field.form.inc b/modules/field/field.form.inc
+index 280f778..814f9fc 100644
+--- a/modules/field/field.form.inc
++++ b/modules/field/field.form.inc
+@@ -201,6 +201,8 @@ function field_multiple_value_form($field, $instance, $langcode, $items, &$form,
+ 
+   $field_elements = array();
+ 
++  $orderable = !isset($instance['widget']['orderable']) || $instance['widget']['orderable'];
++
+   $function = $instance['widget']['module'] . '_field_widget_form';
+   if (function_exists($function)) {
+     for ($delta = 0; $delta <= $max; $delta++) {
+@@ -223,7 +225,7 @@ function field_multiple_value_form($field, $instance, $langcode, $items, &$form,
+       );
+       if ($element = $function($form, $form_state, $field, $instance, $langcode, $items, $delta, $element)) {
+         // Input field for the delta (drag-n-drop reordering).
+-        if ($multiple) {
++        if ($multiple && $orderable) {
+           // We name the element '_weight' to avoid clashing with elements
+           // defined by widget.
+           $element['_weight'] = array(
+@@ -254,7 +256,7 @@ function field_multiple_value_form($field, $instance, $langcode, $items, &$form,
+ 
+     if ($field_elements) {
+       $field_elements += array(
+-        '#theme' => 'field_multiple_value_form',
++        '#theme' => $orderable ? 'field_multiple_value_orderable_form' : 'field_multiple_value_form',
+         '#field_name' => $field['field_name'],
+         '#cardinality' => $field['cardinality'],
+         '#title' => $title,
+@@ -289,7 +291,7 @@ function field_multiple_value_form($field, $instance, $langcode, $items, &$form,
+ /**
+  * Returns HTML for an individual form element.
+  *
+- * Combine multiple values into a table with drag-n-drop reordering.
++ * Combine multiple values into a form element.
+  * TODO : convert to a template.
+  *
+  * @param $variables
+@@ -303,6 +305,45 @@ function theme_field_multiple_value_form($variables) {
+   $output = '';
+ 
+   if ($element['#cardinality'] > 1 || $element['#cardinality'] == FIELD_CARDINALITY_UNLIMITED) {
++    $required = !empty($element['#required']) ? theme('form_required_marker', $variables) : '';
++    $output .= '<label>' . t('!title !required', array('!title' => $element['#title'], '!required' => $required)) . '</label>';
++    foreach (element_children($element) as $key) {
++      if ($key === 'add_more') {
++        $add_more_button = &$element[$key];
++      }
++      else {
++        $output .= drupal_render($element[$key]);
++      }
++    }
++    $output .= $element['#description'] ? '<div class="description">' . $element['#description'] . '</div>' : '';
++    $output .= '<div class="clearfix">' . drupal_render($add_more_button) . '</div>';
++  }
++  else {
++    foreach (element_children($element) as $key) {
++      $output .= drupal_render($element[$key]);
++    }
++  }
++
++  return $output;
++}
++
++/**
++ * Returns HTML for an individual form element.
++ *
++ * Combine multiple values into a table with drag-n-drop reordering.
++ * TODO : convert to a template.
++ *
++ * @param $variables
++ *   An associative array containing:
++ *   - element: A render element representing the form element.
++ *
++ * @ingroup themeable
++ */
++function theme_field_multiple_value_orderable_form($variables) {
++  $element = $variables['element'];
++  $output = '';
++
++  if ($element['#cardinality'] > 1 || $element['#cardinality'] == FIELD_CARDINALITY_UNLIMITED) {
+     $table_id = drupal_html_id($element['#field_name'] . '_values');
+     $order_class = $element['#field_name'] . '-delta-order';
+     $required = !empty($element['#required']) ? theme('form_required_marker', $variables) : '';
+diff --git a/modules/field/field.module b/modules/field/field.module
+index 52faf35..1de1e1a 100644
+--- a/modules/field/field.module
++++ b/modules/field/field.module
+@@ -327,6 +327,9 @@ function field_theme() {
+     'field_multiple_value_form' => array(
+       'render element' => 'element',
+     ),
++    'field_multiple_value_orderable_form' => array(
++      'render element' => 'element',
++    ),
+   );
+ }
+ 
+diff --git a/modules/field_ui/field_ui.admin.inc b/modules/field_ui/field_ui.admin.inc
+index 5d74a5c..dbba2d5 100644
+--- a/modules/field_ui/field_ui.admin.inc
++++ b/modules/field_ui/field_ui.admin.inc
+@@ -1681,6 +1681,14 @@ function field_ui_widget_type_form($form, &$form_state, $instance) {
+     '#default_value' => $instance['widget']['type'],
+     '#description' => t('The type of form element you would like to present to the user when creating this field in the %type type.', array('%type' => $bundle_label)),
+   );
++  if ($field['cardinality'] != 1) {
++    $form['basic']['orderable'] = array(
++      '#type' => 'checkbox',
++      '#title' => t('Orderable'),
++      '#default_value' => isset($instance['widget']['orderable']) ? $instance['widget']['orderable'] : TRUE,
++      '#description' => t('Orderable multiple fields widgets are in a table with drag and drop.'),
++    );
++  }
+ 
+   $form['actions'] = array('#type' => 'actions');
+   $form['actions']['submit'] = array('#type' => 'submit', '#value' => t('Continue'));
+@@ -1709,6 +1717,9 @@ function field_ui_widget_type_form_submit($form, &$form_state) {
+ 
+   $instance['widget']['type'] = $form_values['widget_type'];
+   $instance['widget']['module'] = $widget_module;
++  if (isset($form_values['orderable'])) {
++    $instance['widget']['orderable'] = $form_values['orderable'];
++  }
+ 
+   try {
+     field_update_instance($instance);
