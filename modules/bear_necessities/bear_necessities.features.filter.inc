@@ -29,7 +29,7 @@ function bear_necessities_filter_default_formats() {
         'weight' => 1,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <table> <tr> <td> <thead> <tbody> <th> <u> <s> <h2> <h3> <h4> <h5>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
