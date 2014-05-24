@@ -139,7 +139,7 @@ function bear_necessities_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_page';
-  $strongarm->value = 0;
+  $strongarm->value = FALSE;
   $export['node_submitted_page'] = $strongarm;
 
   return $export;
