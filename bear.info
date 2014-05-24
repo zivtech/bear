@@ -52,6 +52,7 @@ dependencies[] = media_youtube
 dependencies[] = menu_block
 dependencies[] = module_filter
 dependencies[] = multiform
+dependencies[] = page_manager_templates
 dependencies[] = panels
 dependencies[] = plupload
 dependencies[] = token
