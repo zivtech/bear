@@ -10,7 +10,7 @@ include_once 'bear_necessities.features.inc';
  * Implements hook_form_FORM_ID_alter().
  */
 function bear_necessities_form_node_type_form_alter(&$form, &$form_state, $form_id) {
-  if (array_key_exists('is_new', $form['#node_type'])) {
+  if (empty($form['#node_type']->type)) {
     // Set 'Preview before submitting' to disabled.
     $form['submission']['node_preview']['#default_value'] = DRUPAL_DISABLED;
 
