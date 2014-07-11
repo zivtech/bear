@@ -13,3 +13,4 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/fix_for_autocomplete
 projects[drupal][patch][] = "http://drupal.org/files/issues/drupal-undefinedindex_fileupload-1903010-4.patch"
 projects[drupal][patch][] = "http://drupal.org/files/issues/death-to-tabledrag.patch"
 projects[drupal][patch][] = "http://drupal.org/files/issues/drupal-2285917-3.patch"
+projects[drupal][patch][] = "http://drupal.org/files/schema-relative-1783278-7-D7-do-not-test.patch"
