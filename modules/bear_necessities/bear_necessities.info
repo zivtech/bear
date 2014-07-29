@@ -72,6 +72,7 @@ features[variable][] = comment_preview_page
 features[variable][] = comment_subject_field_page
 features[variable][] = field_bundle_settings_node__page
 features[variable][] = jquery_update_jquery_version
+features[variable][] = media_wysiwyg_wysiwyg_browser_plugins
 features[variable][] = menu_options_page
 features[variable][] = menu_parent_page
 features[variable][] = node_admin_theme
