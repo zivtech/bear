@@ -27,13 +27,12 @@ function bear_show_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'time';
   $handler->display->display_options['cache']['results_lifespan'] = '-1';
   $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '518400';
+  $handler->display->display_options['cache']['output_lifespan'] = '-1';
   $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'slideshow';
-  $handler->display->display_options['style_options']['flexslider_views_slideshow']['caption_field'] = 'none';
   $handler->display->display_options['style_options']['slideshow_type'] = 'flexslider_views_slideshow';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
@@ -120,6 +119,26 @@ function bear_show_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['pane_category']['name'] = 'Bear Show';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Contextual Block by Page */
+  $handler = $view->new_display('block', 'Contextual Block by Page', 'block_1');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Page (field_page) */
+  $handler->display->display_options['arguments']['field_page_target_id']['id'] = 'field_page_target_id';
+  $handler->display->display_options['arguments']['field_page_target_id']['table'] = 'field_data_field_page';
+  $handler->display->display_options['arguments']['field_page_target_id']['field'] = 'field_page_target_id';
+  $handler->display->display_options['arguments']['field_page_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_page_target_id']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['field_page_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_page_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_page_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_page_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_page_target_id']['validate']['type'] = 'node';
+  $handler->display->display_options['arguments']['field_page_target_id']['validate_options']['access'] = TRUE;
+  $handler->display->display_options['block_description'] = 'Page Slideshow';
   $export['slideshow'] = $view;
 
   return $export;

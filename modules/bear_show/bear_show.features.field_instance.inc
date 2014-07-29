@@ -15,7 +15,7 @@ function bear_show_field_default_field_instances() {
     'bundle' => 'slideshow',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the pages you want this image to be included in the slideshow region. Separate pages with a coma.',
+    'description' => 'Enter the pages you want this image to be included. Separate pages with a comma. This feature is used by the "Page Slideshow" block, which can be placed in any region.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -153,7 +153,7 @@ function bear_show_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Enter the pages you want this image to be included in the slideshow region. Separate pages with a coma.');
+  t('Enter the pages you want this image to be included. Separate pages with a comma. This feature is used by the "Page Slideshow" block, which can be placed in any region.');
   t('Image');
   t('Page');
   t('Tagline');
