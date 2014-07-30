@@ -2,6 +2,7 @@ name = Bear Home
 description = A Default homepage for Bear.
 core = 7.x
 package = Bear
+project = bear
 dependencies[] = bear_show
 dependencies[] = ctools
 dependencies[] = page_manager

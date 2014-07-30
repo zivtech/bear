@@ -85,7 +85,7 @@ function bear_home_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Welcome to Bear Starter Kit',
       'title' => '',
-      'body' => '<p>Bear Starter Kit is a Drupal installation profile that is to be used as a helpful starting point for new Drupal site builds. Bear Starter Kit comes bundled with useful Drupal modules, a responsive Drupal theme, and patches that fix outstanding project issues. It is not a true Drupal distribution, and developers should feel free to modify the included features to their needs, as well as update contributed modules and themes as one normally would. Please report any issues to the Bear issue queue.</p>',
+      'body' => '<p><a href="https://drupal.org/project/bear">Bear Starter Kit</a> is a Drupal installation profile that is to be used as a helpful starting point for new Drupal site builds. Bear Starter Kit comes bundled with useful Drupal modules, the Bear Skin responsive Drupal theme, and patches that fix outstanding conributed project issues.</p><p><strong>Bear Starter Kit is Not a true Drupal distribution!</strong> Developers should feel free to modify the included features to their needs, as well as update contributed modules and themes as one normally would. Please report any issues to the Bear issue queue. You can start by modifying this Panel, <a href="/admin/structure/pages/nojs/operation/page-bear_home/handlers/page_bear_home_panel_context/content">Edit Bear Home</a>.</p>',
       'format' => 'filtered_html',
       'substitute' => TRUE,
     );
