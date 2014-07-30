@@ -68,7 +68,7 @@ function bear_show_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'Slideshow is empty.';
+  $handler->display->display_options['empty']['area']['content'] = 'The Bear Main Slideshow is empty. <a href="/node/add/slideshow">Add Slideshow Content</a> to display a Flexslider Views Slideshow of images.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -117,8 +117,8 @@ function bear_show_views_default_views() {
     'slideshow' => 'slideshow',
   );
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: Bear Main Slideshow */
+  $handler = $view->new_display('panel_pane', 'Bear Main Slideshow', 'panel_pane_1');
   $handler->display->display_options['pane_category']['name'] = 'Bear Show';
   $handler->display->display_options['pane_category']['weight'] = '0';
 
