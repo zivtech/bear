@@ -18,6 +18,7 @@ function bear_necessities_wysiwyg_default_profiles() {
       'default' => 1,
       'user_choose' => 0,
       'show_toggle' => 1,
+      'add_to_summaries' => 1,
       'theme' => '',
       'language' => 'en',
       'buttons' => array(
@@ -51,10 +52,10 @@ function bear_necessities_wysiwyg_default_profiles() {
       'acf_mode' => 0,
       'acf_allowed_content' => '',
       'css_setting' => 'self',
-      'css_path' => 'sites/all/themes/bear_skin/bear.css',
+      'css_path' => '%t/css/bear.css',
       'stylesSet' => '',
       'block_formats' => 'p,h2,h3,h4,h5',
-      'advanced__active_tab' => 'edit-basic',
+      'advanced__active_tab' => 'edit-css',
       'forcePasteAsPlainText' => 0,
     ),
   );
@@ -67,6 +68,7 @@ function bear_necessities_wysiwyg_default_profiles() {
       'default' => 1,
       'user_choose' => 0,
       'show_toggle' => 1,
+      'add_to_summaries' => 1,
       'theme' => '',
       'language' => 'en',
       'buttons' => array(
@@ -105,10 +107,10 @@ function bear_necessities_wysiwyg_default_profiles() {
       'acf_mode' => 0,
       'acf_allowed_content' => '',
       'css_setting' => 'self',
-      'css_path' => 'sites/all/themes/bear_skin/bear.css',
+      'css_path' => '%t/css/bear.css',
       'stylesSet' => '',
       'block_formats' => 'p,h2,h3,h4,h5',
-      'advanced__active_tab' => 'edit-paste',
+      'advanced__active_tab' => 'edit-css',
       'forcePasteAsPlainText' => 0,
     ),
   );
