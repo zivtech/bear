@@ -1,0 +1,15 @@
+diff --git a/css/linkit.css b/css/linkit.css
+index 8e98c08..d4e8d2c 100644
+--- a/css/linkit.css
++++ b/css/linkit.css
+@@ -87,4 +87,8 @@
+ 
+ span.mceIcon.mce_linkit {
+   background: transparent url(../editors/tinymce/images/linkit.png) no-repeat 0 0;
+-}
+\ No newline at end of file
++}
++
++.ui-dialog.ui-front {
++  z-index: 2000;
++}
