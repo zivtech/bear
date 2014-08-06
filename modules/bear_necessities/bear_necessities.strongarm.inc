@@ -37,7 +37,7 @@ user/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'breadcrumbs_by_path_exclude_paths';
-  $strongarm->value = '';
+  $strongarm->value = '<front>';
   $export['breadcrumbs_by_path_exclude_paths'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -150,7 +150,7 @@ user/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_admin_theme';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['node_admin_theme'] = $strongarm;
 
   $strongarm = new stdClass();
