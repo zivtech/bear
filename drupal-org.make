@@ -114,4 +114,3 @@ libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/
 ; Themes
 projects[zen][type] = "theme"
 projects[bear_skin][type] = "theme"
-projects[shiny][type] = "theme"
