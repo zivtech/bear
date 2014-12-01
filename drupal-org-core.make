@@ -3,7 +3,7 @@
 api = 2
 core = 7.x
 
-projects[drupal][version] = 7.33
+projects[drupal][version] = 7.34
 
 ; Make sure to add new patches to the /patches folder when adding or updating patches below.
 
