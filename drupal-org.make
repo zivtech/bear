@@ -38,6 +38,7 @@ projects[entityreference][subdir] = contrib
 projects[features][version] = "2.2"
 projects[features][subdir] = contrib
 projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
+projects[features][patch][] = "http://www.drupal.org/files/issues/2381739-features-mtime.patch"
 projects[field_collection][version] = "1.0-beta8"
 projects[field_collection][subdir] = contrib
 projects[field_group][version] = "1.4"
