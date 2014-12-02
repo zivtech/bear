@@ -39,6 +39,7 @@ dependencies[] = entity
 dependencies[] = entity_view_mode
 dependencies[] = entitycache
 dependencies[] = entityreference
+dependencies[] = environment_indicator
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = file_entity

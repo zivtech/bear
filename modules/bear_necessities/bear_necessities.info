@@ -23,7 +23,6 @@ dependencies[] = picture
 dependencies[] = strongarm
 dependencies[] = variable_realm
 dependencies[] = wysiwyg
-datestamp = 1415996881
 features[breakpoint_group][] = bear_default
 features[breakpoints][] = custom.user.full
 features[breakpoints][] = custom.user.mobile
