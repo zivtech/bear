@@ -28,13 +28,9 @@ function bear_necessities_form_node_type_form_alter(&$form, &$form_state, $form_
 }
 
 /*
- * Implements hook_form_node_form_alter().
+ * Implements hook_node_form_alter().
  */
 function bear_necessities_form_node_form_alter(&$form, &$form_state) {
-  // Remove 'promote to frontpage' and 'make sticky' options.
-  unset($form['options']['sticky']);
-  unset($form['options']['promote']);
-
   // We want to hide revision information from people that do not have permission
   // to view content revisions.
   if (module_exists('workbench_moderation') && isset($form['revision_information']['workbench_moderation_state_new'])) {
@@ -45,6 +41,9 @@ function bear_necessities_form_node_form_alter(&$form, &$form_state) {
       $form['revision_information']['#access'] = FALSE;
     }
   }
+  // Remove 'promote to frontpage' and 'make sticky' options.
+  unset($form['options']['sticky']);
+  unset($form['options']['promote']);
 }
 
 /**
