@@ -50,6 +50,7 @@ dependencies[] = linkit
 dependencies[] = media
 dependencies[] = media_youtube
 dependencies[] = menu_block
+dependencies[] = menu_expanded
 dependencies[] = module_filter
 dependencies[] = multiform
 dependencies[] = page_manager_templates
