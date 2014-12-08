@@ -15,11 +15,11 @@ function bear_necessities_default_environment_indicator_environment() {
   $environment->api_version = 1;
   $environment->machine = 'dev_environment';
   $environment->name = 'Dev environment';
-  $environment->regexurl = '.dev.*.com';
+  $environment->regexurl = '.*dev*';
   $environment->settings = array(
     'color' => '#f65e05',
     'text_color' => '#ffffff',
-    'weight' => '99',
+    'weight' => '95',
     'position' => 'top',
     'fixed' => 1,
   );
@@ -49,7 +49,7 @@ function bear_necessities_default_environment_indicator_environment() {
   $environment->settings = array(
     'color' => '#aa3333',
     'text_color' => '#ffffff',
-    'weight' => '99',
+    'weight' => '95',
     'position' => 'top',
     'fixed' => 1,
   );
@@ -60,11 +60,11 @@ function bear_necessities_default_environment_indicator_environment() {
   $environment->api_version = 1;
   $environment->machine = 'staging_environment';
   $environment->name = 'Staging environment';
-  $environment->regexurl = '.stg.*.com';
+  $environment->regexurl = '.*stg*';
   $environment->settings = array(
     'color' => '#a79b1c',
     'text_color' => '#ffffff',
-    'weight' => '99',
+    'weight' => '95',
     'position' => 'top',
     'fixed' => 1,
   );
