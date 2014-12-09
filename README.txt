@@ -28,3 +28,5 @@ As of bear-7.x-1.5, we have started moving bear’s submodules to their own cont
 bear_show - Bear Slideshow - https://www.drupal.org/project/bear_show
 
 bear_home - Bear Homepage - https://www.drupal.org/project/bear_home
+
+bear_habitat - Bear Habitat - https://www.drupal.org/project/bear_habitat
