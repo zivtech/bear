@@ -19,7 +19,7 @@ It is recommended that if building bear using Drush from Drupal.org directly tha
 
 Core/Module Updates and Patch Maintenance:
 
-Look at Bear as a starter kit not as a profile that will get updates. Start with Bear, then fork from it. This means you update core and modules on your own. Bear loves patches, and when you do updates you'll want to be sure you don't lose them. We recommend using https://github.com/davereid/drush-patchfile to maintain the patches to core and contributed modules as you do updates. To use this, uncomment the includes lines in the patches.make file after you build bear.
+Look at Bear as a starter kit not as a profile that will get updates. Start with Bear, then fork from it. This means you update core and modules on your own. Bear loves patches, and when you do updates you'll want to be sure you don't lose them. We recommend using https://github.com/davereid/drush-patchfile to maintain the patches to core and contributed modules as you do updates. To use this, uncomment the includes lines in the patches.make file in the bear profile after you build bear. You should also move that patches.make file up to the webroot.
 
 Bear Contributed Modules:
 
