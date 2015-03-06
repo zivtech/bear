@@ -32,8 +32,6 @@ projects[features][patch][] = "http://www.drupal.org/files/issues/2381739-featur
 projects[field_collection][version] = "1.0-beta8"
 projects[field_group][version] = "1.4"
 projects[file_entity][version] = "2.x-dev"
-projects[flexslider][version] = "2.0-alpha3"
-projects[flexslider_views_slideshow][version] = "2.x-dev"
 projects[habitat][version] = "1.0"
 projects[jquery_update][version] = "2.5"
 projects[libraries][version] = "2.2"
@@ -69,8 +67,6 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[plupload][download][type] = "get"
 libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
 libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
-libraries[flexslider][download][type] = "get"
-libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.1.zip"
 
 ; Themes
 projects[zen][type] = "theme"
