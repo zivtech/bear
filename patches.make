@@ -1,10 +1,6 @@
 ; This patches.make file is used by https://bitbucket.org/davereid/drush-patchfile
 ; Our project contains patches for both Drupal core and contrib modules/themes.
 
-; Uncomment these lines after the install profile has been built to use this workflow.
-; includes[] = drupal-org.make
-; includes[] = drupal-org-core.make
-
 ; @see https://www.drupal.org/node/1934086#comment-7137850
 projects[drupal][patch][] = "http://drupal.org/files/drupal-1934086-path_load_order-1.patch"
 
