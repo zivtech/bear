@@ -182,6 +182,9 @@ function bear_install() {
   variable_set('node_preview_page', 0);
   variable_set('node_submitted_page', FALSE);
 
+  // Default pathauto setting to match menu positions.
+  variable_set('pathauto_node_pattern', "[node:menu-link:parents:join-path]/[node:title]");
+
   // Allow visitor account creation with administrative approval.
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
 
