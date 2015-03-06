@@ -176,11 +176,10 @@ function bear_install() {
     node_add_body_field($type);
   }
 
-  // Default "Basic page" to not be promoted and have comments disabled.
-  variable_set('node_options_page', array('status'));
+  // Default "Basic page" settings.
+  variable_set('node_options_page', array('status', 'revision'));
   variable_set('comment_page', COMMENT_NODE_HIDDEN);
-
-  // Don't display date and author information for "Basic page" nodes by default.
+  variable_set('node_preview_page', 0);
   variable_set('node_submitted_page', FALSE);
 
   // Allow visitor account creation with administrative approval.
