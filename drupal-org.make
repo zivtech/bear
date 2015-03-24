@@ -1,4 +1,4 @@
-; This drupal-org.make file downloads and applies all patches to contrib modules, themes, and 3rd party libraries.
+; This drupal-org.make file downloads contrib modules, themes, and 3rd party libraries.
 
 core = 7.x
 api = 2
@@ -65,3 +65,6 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 ; Themes
 projects[zen][type] = "theme"
 projects[bear_skin][type] = "theme"
+
+; Include the patches.
+includes[] = patches.make
