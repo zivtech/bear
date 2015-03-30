@@ -27,6 +27,7 @@ dependencies[] = bear_necessities
 dependencies[] = bear_user
 dependencies[] = block_class
 dependencies[] = breadcrumbs_by_path
+dependencies[] = chosen
 dependencies[] = coffee
 dependencies[] = ctools
 dependencies[] = views_content

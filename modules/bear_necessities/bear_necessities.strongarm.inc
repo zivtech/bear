@@ -43,6 +43,13 @@ user/*';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'chosen_minimum_multiple';
+  $strongarm->value = 0;
+  $export['chosen_minimum_multiple'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'default_environment_indicator_environment';
   $strongarm->value = array(
     'default_environment' => TRUE,
