@@ -25,5 +25,3 @@ projects[features][patch][] = "http://www.drupal.org/files/issues/alter_override
 ; @see https://www.drupal.org/node/1036962#comment-9255301
 projects[views][patch][] = "http://www.drupal.org/files/issues/1036962-views-ajax-destination-65.patch"
 
-; @see https://www.drupal.org/node/1903850#comment-8368059
-libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
