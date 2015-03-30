@@ -27,6 +27,8 @@ projects[entitycache][version] = "1.2"
 projects[entityreference][version] = "1.1"
 projects[environment_indicator][version] = "2.5"
 projects[features][version] = "2.4"
+; @see https://www.drupal.org/node/766264#comment-8818877
+projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
 projects[field_collection][version] = "1.0-beta8"
 projects[field_group][version] = "1.4"
 projects[file_entity][version] = "2.x-dev"
@@ -54,6 +56,8 @@ projects[styleguide][version] = "1.1"
 projects[token][version] = "1.6"
 projects[xmlsitemap][version] = "2.2"
 projects[views][version] = "3.10"
+; @see https://www.drupal.org/node/1036962#comment-9255301
+projects[views][patch][] = "http://www.drupal.org/files/issues/1036962-views-ajax-destination-65.patch"
 projects[views_bulk_operations][version] = "3.2"
 projects[views_slideshow][version] = "3.1"
 projects[wysiwyg][version] = "2.x-dev"
@@ -69,5 +73,3 @@ libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm
 projects[zen][type] = "theme"
 projects[bear_skin][type] = "theme"
 
-; Include the patches.
-includes[] = patches.make
