@@ -23,5 +23,3 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/death-to-tabledrag.p
 ; @see https://www.drupal.org/node/1783278#comment-9735933
  projects[drupal][patch][] = "https://www.drupal.org/files/issues/schema-relative-1783278-17-D7-do-not-test.patch"
 
-; @see https://www.drupal.org/node/766264#comment-8818877
-projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
