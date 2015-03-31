@@ -42,6 +42,7 @@ dependencies[] = entity_view_mode
 dependencies[] = entitycache
 dependencies[] = entityreference
 dependencies[] = features
+dependencies[] = fences
 dependencies[] = field_group
 dependencies[] = file_entity
 dependencies[] = habitat

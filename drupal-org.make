@@ -30,6 +30,7 @@ projects[environment_indicator][version] = "2.5"
 projects[features][version] = "2.4"
 ; @see https://www.drupal.org/node/766264#comment-8818877
 projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
+projects[fences][version] = "1.0"
 projects[field_collection][version] = "1.0-beta8"
 projects[field_group][version] = "1.4"
 projects[file_entity][version] = "2.x-dev"
