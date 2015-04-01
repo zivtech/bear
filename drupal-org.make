@@ -26,7 +26,7 @@ projects[entity][version] = "1.6"
 projects[entity_view_mode][version] = "1.0-rc1"
 projects[entitycache][version] = "1.2"
 projects[entityreference][version] = "1.1"
-projects[environment_indicator][version] = "2.5"
+projects[environment_indicator][version] = "2.6"
 projects[features][version] = "2.4"
 ; @see https://www.drupal.org/node/766264#comment-8818877
 projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
