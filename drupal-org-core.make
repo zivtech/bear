@@ -3,8 +3,6 @@
 api = 2
 core = 7.x
 
-projects[drupal][version] = 7.35
-
 ; @see https://www.drupal.org/node/1934086#comment-7137850
 projects[drupal][patch][] = "http://drupal.org/files/drupal-1934086-path_load_order-1.patch"
 
