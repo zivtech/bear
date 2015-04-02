@@ -19,5 +19,5 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/drupal-undefinedinde
 projects[drupal][patch][] = "http://drupal.org/files/issues/death-to-tabledrag.patch"
 
 ; @see https://www.drupal.org/node/1783278#comment-9735933
- projects[drupal][patch][] = "https://www.drupal.org/files/issues/schema-relative-1783278-17-D7-do-not-test.patch"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/schema-relative-1783278-17-D7-do-not-test.patch"
 
