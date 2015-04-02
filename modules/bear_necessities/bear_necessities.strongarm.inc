@@ -81,5 +81,12 @@ user/*';
   $strongarm->value = '1';
   $export['node_admin_theme'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_403';
+  $strongarm->value = 'access-denied';
+  $export['site_403'] = $strongarm;
+
   return $export;
 }
