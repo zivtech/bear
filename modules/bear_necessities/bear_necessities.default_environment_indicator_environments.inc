@@ -15,7 +15,7 @@ function bear_necessities_default_environment_indicator_environment() {
   $environment->api_version = 1;
   $environment->machine = 'dev_environment';
   $environment->name = 'Dev environment';
-  $environment->regexurl = '.*dev*';
+  $environment->regexurl = '.*dev.*';
   $environment->settings = array(
     'color' => '#f65e05',
     'text_color' => '#ffffff',
@@ -30,7 +30,7 @@ function bear_necessities_default_environment_indicator_environment() {
   $environment->api_version = 1;
   $environment->machine = 'live_environment';
   $environment->name = 'Live environment';
-  $environment->regexurl = '.*.com';
+  $environment->regexurl = '.*\.com';
   $environment->settings = array(
     'color' => '#29a41a',
     'text_color' => '#ffffff',
@@ -45,7 +45,7 @@ function bear_necessities_default_environment_indicator_environment() {
   $environment->api_version = 1;
   $environment->machine = 'local_environment';
   $environment->name = 'Local environment';
-  $environment->regexurl = '.*.local';
+  $environment->regexurl = '.*\.local';
   $environment->settings = array(
     'color' => '#aa3333',
     'text_color' => '#ffffff',
@@ -60,7 +60,7 @@ function bear_necessities_default_environment_indicator_environment() {
   $environment->api_version = 1;
   $environment->machine = 'staging_environment';
   $environment->name = 'Staging environment';
-  $environment->regexurl = '.*stg*';
+  $environment->regexurl = '.*stg.*';
   $environment->settings = array(
     'color' => '#a79b1c',
     'text_color' => '#ffffff',
