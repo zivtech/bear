@@ -18,6 +18,8 @@ function bear_necessities_default_page_manager_pages() {
   $page->path = 'access-denied';
   $page->access = array(
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array();
   $page->arguments = array();
@@ -28,13 +30,13 @@ function bear_necessities_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_access_denied_403__anonymous';
+  $handler->name = 'page_access_denied_403__custom_access_denied';
   $handler->task = 'page';
   $handler->subtask = 'access_denied_403';
   $handler->handler = 'panel_context';
-  $handler->weight = 0;
+  $handler->weight = 1;
   $handler->conf = array(
-    'title' => 'Anonymous',
+    'title' => 'Custom Access Denied',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -43,22 +45,7 @@ function bear_necessities_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
-    'name' => 'anonymous',
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 1,
-            ),
-          ),
-          'context' => 'logged-in-user',
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
+    'name' => 'custom_access_denied',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -71,11 +58,11 @@ function bear_necessities_default_page_manager_pages() {
   );
   $display->cache = array();
   $display->title = 'Access denied';
-  $display->uuid = 'f9e30a27-ea52-46e0-8414-d67f0947a4b0';
+  $display->uuid = 'a56aacd9-d83c-4291-ab69-11f94c43c9a9';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-25361b8d-c1cc-4c1a-8ed1-0beeb372f6cb';
+    $pane->pid = 'new-d8a8b6a6-e6bc-4beb-bac7-dcf544af0ab3';
     $pane->panel = 'middle';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -96,11 +83,11 @@ function bear_necessities_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '25361b8d-c1cc-4c1a-8ed1-0beeb372f6cb';
-    $display->content['new-25361b8d-c1cc-4c1a-8ed1-0beeb372f6cb'] = $pane;
-    $display->panels['middle'][0] = 'new-25361b8d-c1cc-4c1a-8ed1-0beeb372f6cb';
+    $pane->uuid = 'd8a8b6a6-e6bc-4beb-bac7-dcf544af0ab3';
+    $display->content['new-d8a8b6a6-e6bc-4beb-bac7-dcf544af0ab3'] = $pane;
+    $display->panels['middle'][0] = 'new-d8a8b6a6-e6bc-4beb-bac7-dcf544af0ab3';
     $pane = new stdClass();
-    $pane->pid = 'new-5545e7d3-ecad-4fdb-ac74-1b80678eb0d1';
+    $pane->pid = 'new-beaa6534-8c06-4319-8cba-bf79ef68ac3f';
     $pane->panel = 'middle';
     $pane->type = 'block';
     $pane->subtype = 'user-login';
@@ -119,11 +106,11 @@ function bear_necessities_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '5545e7d3-ecad-4fdb-ac74-1b80678eb0d1';
-    $display->content['new-5545e7d3-ecad-4fdb-ac74-1b80678eb0d1'] = $pane;
-    $display->panels['middle'][1] = 'new-5545e7d3-ecad-4fdb-ac74-1b80678eb0d1';
+    $pane->uuid = 'beaa6534-8c06-4319-8cba-bf79ef68ac3f';
+    $display->content['new-beaa6534-8c06-4319-8cba-bf79ef68ac3f'] = $pane;
+    $display->panels['middle'][1] = 'new-beaa6534-8c06-4319-8cba-bf79ef68ac3f';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-25361b8d-c1cc-4c1a-8ed1-0beeb372f6cb';
+  $display->title_pane = 'new-d8a8b6a6-e6bc-4beb-bac7-dcf544af0ab3';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['access_denied_403'] = $page;
