@@ -60,7 +60,7 @@ projects[] = xmlsitemap
 projects[views][patch][] = "http://www.drupal.org/files/issues/1036962-views-ajax-destination-65.patch"
 projects[] = views_bulk_operations
 projects[] = views_slideshow
-projects[] = wysiwyg
+projects[wysiwyg][version] = "2.x-dev"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
