@@ -42,7 +42,6 @@ projects[media][version] = "2.x-dev"
 projects[media_youtube][version] = "2.x-dev"
 projects[] = menu_block
 projects[] = menu_expanded
-projects[] = menu_position
 projects[] = module_filter
 projects[] = multiform
 projects[] = page_manager_templates
