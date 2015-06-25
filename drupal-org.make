@@ -27,6 +27,7 @@ projects[] = entity_view_mode
 projects[] = entitycache
 projects[] = entityreference
 projects[] = environment_indicator
+projects[] = features
 projects[] = fences
 projects[] = field_collection
 projects[] = field_group
