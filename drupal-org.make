@@ -27,8 +27,8 @@ projects[] = entity_view_mode
 projects[] = entitycache
 projects[] = entityreference
 projects[] = environment_indicator
-projects[] = features
 projects[] = fences
+projects[] = features
 projects[] = field_collection
 projects[] = field_group
 projects[file_entity][version] = "2.x-dev"
@@ -38,7 +38,7 @@ projects[] = libraries
 projects[] = link
 projects[linkit][version] = "2.x-dev"
 projects[media][version] = "2.x-dev"
-projects[media_youtube][version] = "2.x-dev"
+projects[media_youtube][version] = "3.x-dev"
 projects[] = menu_block
 projects[] = menu_expanded
 projects[] = module_filter
@@ -72,3 +72,4 @@ libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm
 ; Themes
 projects[zen][type] = "theme"
 projects[bear_skin][type] = "theme"
+
