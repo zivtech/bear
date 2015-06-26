@@ -3,7 +3,6 @@ description = A profile to give developers the tools needed for just about any s
 core = 7.x
 
 # Core Extensions
-dependencies[] = comment
 dependencies[] = contextual
 dependencies[] = block
 dependencies[] = dblog
