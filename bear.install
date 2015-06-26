@@ -178,7 +178,6 @@ function bear_install() {
 
   // Default "Basic page" settings.
   variable_set('node_options_page', array('status', 'revision'));
-  variable_set('comment_page', COMMENT_NODE_HIDDEN);
   variable_set('node_preview_page', 0);
   variable_set('node_submitted_page', FALSE);
 
@@ -190,8 +189,8 @@ function bear_install() {
 
   // Enable default permissions for system roles.
   $filtered_html_permission = filter_permission_name($filtered_html_format);
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access comments', $filtered_html_permission));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', 'access comments', 'post comments', 'skip comment approval', $filtered_html_permission));
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', $filtered_html_permission));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', $filtered_html_permission));
 
   // Create a default role for site administrators, with all available permissions assigned.
   $admin_role = new stdClass();
@@ -211,18 +210,16 @@ function bear_install() {
     'access administration menu',
     'access administration pages',
     'access coffee',
-    'access comments',
     'access content',
     'access content overview',
     'access user profiles',
     'add media from remote sources',
-    'administer comments',
     'administer files',
     'administer media browser',
     'administer menu',
     'administer nodes',
     'administer url aliases',
-    'administer users',  
+    'administer users',
     'bypass node access',
     'change own username',
     'create url aliases',
@@ -248,14 +245,11 @@ function bear_install() {
     'edit any image files',
     'edit any video files',
     'edit own audio files',
-    'edit own comments',
     'edit own document files',
     'edit own image files',
     'edit own video files',
     'import media',
-    'post comments',
     'revert revisions',
-    'skip comment approval',
     'use text format filtered_html',
     'use text format full_html',
     'view files',
