@@ -14,19 +14,19 @@ function bear_necessities_filter_default_formats() {
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
-    'cache' => 1,
+    'cache' => 0,
     'status' => 1,
     'weight' => -10,
     'filters' => array(
       'filter_url' => array(
-        'weight' => 0,
+        'weight' => -46,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
       'filter_html' => array(
-        'weight' => 1,
+        'weight' => -45,
         'status' => 1,
         'settings' => array(
           'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <table> <tr> <td> <thead> <tbody> <th> <u> <s> <h2> <h3> <h4> <h5>',
@@ -34,13 +34,13 @@ function bear_necessities_filter_default_formats() {
           'filter_html_nofollow' => 0,
         ),
       ),
-      'media_filter' => array(
-        'weight' => 2,
+      'filter_htmlcorrector' => array(
+        'weight' => -43,
         'status' => 1,
         'settings' => array(),
       ),
-      'filter_htmlcorrector' => array(
-        'weight' => 10,
+      'assets_filter' => array(
+        'weight' => -42,
         'status' => 1,
         'settings' => array(),
       ),
@@ -51,29 +51,29 @@ function bear_necessities_filter_default_formats() {
   $formats['full_html'] = array(
     'format' => 'full_html',
     'name' => 'Full HTML',
-    'cache' => 1,
+    'cache' => 0,
     'status' => 1,
     'weight' => -9,
     'filters' => array(
       'filter_url' => array(
-        'weight' => 0,
+        'weight' => -47,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
       'filter_autop' => array(
-        'weight' => 1,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'media_filter' => array(
-        'weight' => 2,
+        'weight' => -45,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => 10,
+        'weight' => -43,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'assets_filter' => array(
+        'weight' => -42,
         'status' => 1,
         'settings' => array(),
       ),
