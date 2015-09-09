@@ -49,7 +49,6 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = fences
 dependencies[] = field_group
-dependencies[] = file_entity
 dependencies[] = habitat
 dependencies[] = jquery_update
 dependencies[] = libraries

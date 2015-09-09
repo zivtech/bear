@@ -19,14 +19,14 @@ function bear_necessities_filter_default_formats() {
     'weight' => -10,
     'filters' => array(
       'filter_url' => array(
-        'weight' => -46,
+        'weight' => 0,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
       'filter_html' => array(
-        'weight' => -45,
+        'weight' => 1,
         'status' => 1,
         'settings' => array(
           'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <table> <tr> <td> <thead> <tbody> <th> <u> <s> <h2> <h3> <h4> <h5>',
@@ -34,13 +34,13 @@ function bear_necessities_filter_default_formats() {
           'filter_html_nofollow' => 0,
         ),
       ),
-      'filter_htmlcorrector' => array(
-        'weight' => -43,
+      'assets_filter' => array(
+        'weight' => 2,
         'status' => 1,
         'settings' => array(),
       ),
-      'assets_filter' => array(
-        'weight' => -42,
+      'filter_htmlcorrector' => array(
+        'weight' => 10,
         'status' => 1,
         'settings' => array(),
       ),
@@ -56,24 +56,24 @@ function bear_necessities_filter_default_formats() {
     'weight' => -9,
     'filters' => array(
       'filter_url' => array(
-        'weight' => -47,
+        'weight' => 0,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
       'filter_autop' => array(
-        'weight' => -45,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'filter_htmlcorrector' => array(
-        'weight' => -43,
+        'weight' => 1,
         'status' => 1,
         'settings' => array(),
       ),
       'assets_filter' => array(
-        'weight' => -42,
+        'weight' => 2,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_htmlcorrector' => array(
+        'weight' => 10,
         'status' => 1,
         'settings' => array(),
       ),

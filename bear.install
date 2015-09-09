@@ -31,7 +31,7 @@ function bear_install() {
         ),
       ),
       // Media Filter.
-      'media_filter' => array(
+      'assets_filter' => array(
         'weight' => 2,
         'status' => 1,
         'settings' => array(),
@@ -61,8 +61,8 @@ function bear_install() {
         'weight' => 1,
         'status' => 1,
       ),
-      // Media Filter.
-      'media_filter' => array(
+      // Assets Filter.
+      'assets_filter' => array(
         'weight' => 2,
         'status' => 1,
         'settings' => array(),
@@ -214,7 +214,6 @@ function bear_install() {
     'access content',
     'access content overview',
     'access user profiles',
-    'add media from remote sources',
     'administer assets',
     'administer asset types',
     'administer menu',
@@ -236,7 +235,6 @@ function bear_install() {
     'revert revisions',
     'use text format filtered_html',
     'use text format full_html',
-    'view files',
     'view own unpublished content',
     'view revisions',
     'view style guides',
