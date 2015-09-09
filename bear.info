@@ -62,7 +62,6 @@ dependencies[] = page_manager_templates
 dependencies[] = panels
 dependencies[] = pathauto
 dependencies[] = picture
-dependencies[] = plupload
 dependencies[] = token
 dependencies[] = redirect
 dependencies[] = responsive_menus

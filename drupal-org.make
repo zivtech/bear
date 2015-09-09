@@ -48,7 +48,6 @@ projects[] = panels
 projects[panelizer][version] = "3.x-dev"
 projects[] = pathauto
 projects[] = picture
-projects[] = plupload
 projects[] = redirect
 projects[] = responsive_menus
 ; @see https://www.drupal.org/node/2568763#comment-10331417
@@ -67,9 +66,6 @@ libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.2/ckeditor_3.6.6.2.zip"
 libraries[chosen][download][type] = "get"
 libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.4.2/chosen_v1.4.2.zip"
-libraries[plupload][download][type] = "get"
-libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
-libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
 libraries[sidr][download][type] = "get"
 libraries[sidr][download][url] = "https://github.com/artberri/sidr-package/archive/1.2.1.zip"
 
