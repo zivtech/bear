@@ -69,4 +69,3 @@ features[variable][] = responsive_menus_sidr_on_open
 features[variable][] = responsive_menus_sidr_trigger_txt
 features[variable][] = responsive_menus_style
 features[variable][] = site_403
-features_exclude[dependencies][media_wysiwyg] = media_wysiwyg
