@@ -23,7 +23,6 @@ dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 dependencies[] = admin_views
 dependencies[] = asset
-dependencies[] = asset_audio
 dependencies[] = asset_document
 dependencies[] = asset_image
 dependencies[] = asset_video
