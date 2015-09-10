@@ -39,6 +39,11 @@ function bear_necessities_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
+      'kill_nbsp' => array(
+        'status' => 1,
+        'weight' => 1,
+        'settings' => array(),
+      ),
       'filter_htmlcorrector' => array(
         'weight' => 10,
         'status' => 1,
@@ -70,6 +75,11 @@ function bear_necessities_filter_default_formats() {
       'assets_filter' => array(
         'weight' => 2,
         'status' => 1,
+        'settings' => array(),
+      ),
+      'kill_nbsp' => array(
+        'status' => 1,
+        'weight' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(

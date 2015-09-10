@@ -36,6 +36,11 @@ function bear_install() {
         'status' => 1,
         'settings' => array(),
       ),
+      'kill_nbsp' => array(
+        'status' => 1,
+        'weight' => 1,
+        'settings' => array(),
+      ),
       // HTML corrector filter.
       'filter_htmlcorrector' => array(
         'weight' => 10,
@@ -65,6 +70,11 @@ function bear_install() {
       'assets_filter' => array(
         'weight' => 2,
         'status' => 1,
+        'settings' => array(),
+      ),
+      'kill_nbsp' => array(
+        'status' => 1,
+        'weight' => 1,
         'settings' => array(),
       ),
       // HTML corrector filter.
@@ -210,6 +220,7 @@ function bear_install() {
     'access administration menu',
     'access administration pages',
     'access assets overview',
+    'access search widget',
     'access coffee',
     'access content',
     'access content overview',
