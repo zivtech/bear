@@ -35,7 +35,10 @@ projects[] = field_collection
 projects[] = field_group
 projects[] = habitat
 projects[] = jquery_update
-projects[] = jplayer
+; We are using jPlayer dev version so that it can correctly detect the jPlayer
+; library without additional human intervention beyond downloading the package.
+; @see https://www.drupal.org/node/2376929#comment-9410689
+projects[jplayer][version] = "2.x-dev"
 projects[] = libraries
 projects[] = link
 projects[linkit][version] = "2.x-dev"
@@ -68,6 +71,8 @@ libraries[chosen][download][type] = "get"
 libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.4.2/chosen_v1.4.2.zip"
 libraries[sidr][download][type] = "get"
 libraries[sidr][download][url] = "https://github.com/artberri/sidr-package/archive/1.2.1.zip"
+libraries[jplayer][download][type] = "get"
+libraries[jplayer][download][url] = "https://github.com/happyworm/jPlayer/archive/2.9.2.tar.gz"
 
 ; Themes
 projects[zen][type] = "theme"
