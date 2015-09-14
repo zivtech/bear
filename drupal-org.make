@@ -50,6 +50,7 @@ projects[] = pathauto
 projects[] = picture
 projects[] = plupload
 projects[] = redirect
+projects[] = semantic_ui_api
 projects[] = strongarm
 projects[] = styleguide
 projects[] = token
