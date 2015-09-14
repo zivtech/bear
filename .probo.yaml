@@ -2,9 +2,9 @@ steps:
   - name: bear
     plugin: 'Shell'
   - name: Create a fake site
-    command: 'drush fec bear'
+    command: 'drush fec bear ;'
   - name: Empty out the install we don't want...
-    command: 'drush --root=/var/www/bear/webroot sql-drop'
+    command: 'drush --root=/var/www/bear/webroot sql-drop -y ;'
   - name: Checkout the commit
     command: 'cd /var/www/bear ; git clone git@github.com:zivtech/bear.git ; cd bear ; git checkout -f $COMMIT_REF .'
   - name: Run the make file
@@ -12,9 +12,9 @@ steps:
   - name: Run the make file
     command: 'cd /var/www/bear ; rm -r code ; mv bearbuild code ;'
   - name: Rewrite settings.php file
-    command: 'drush fetcher-task ensure_settings_file bear -y'
+    command: 'drush fetcher-task ensure_settings_file bear -y ;'
   - name: Install bear
-    command: 'drush --root=/var/www/bear/webroot si bear'
+    command: 'drush --root=/var/www/bear/webroot si bear -y ;'
   - name: Fix permissions
-    command: 'chown -R www-data:www-data /var/www/bear/public_files'
+    command: 'chown -R www-data:www-data /var/www/bear/public_files ;'
 
