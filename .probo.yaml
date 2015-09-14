@@ -1,14 +1,6 @@
 steps:
   - name: bear
-    plugin: 'DrushFetcher'
-    params:
-      yes: 'true'
-      verbose: 'true'
-      sql-sync: 'true'
-      remote-environment: staging
-      local-environment: probo
-    config:
-      settings_php.snippets: []
+    plugin: 'Shell'
   - name: Force checkout git commit
     command: 'cd /var/www/bear ; git clone git@github.com:zivtech/bear.git ; cd bear ; git checkout -f $COMMIT_REF .'
   - name: Fix permissions
