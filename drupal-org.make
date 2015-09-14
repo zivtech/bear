@@ -50,6 +50,7 @@ projects[] = pathauto
 projects[] = picture
 projects[] = plupload
 projects[] = redirect
+projects[] = responsive_menus
 projects[] = semantic_ui_api
 projects[] = strongarm
 projects[] = styleguide
