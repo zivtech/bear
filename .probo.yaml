@@ -1,7 +1,11 @@
 steps:
   - name: bear
     plugin: 'Shell'
-  - name: Force checkout git commit
-    command: 'cd /var/www/bear ; git clone git@github.com:zivtech/bear.git ; cd bear ; git checkout -f $COMMIT_REF .'
-  - name: Fix permissions
-    command: 'chown -R www-data:www-data /var/www/bear/public_files'
+    - name: Create a fake site
+      command: 'drush fec bear'
+    - name: Checkout the commit
+      command: 'cd /var/www/bear ; git clone git@github.com:zivtech/bear.git ; cd bear ; git checkout -f $COMMIT_REF .'
+    - name: Run the make file
+      command: 'cd /var/www/bear/bear ; drush make bear-buid.make /var/www/bear/bearbuild ;'
+    - name: Fix permissions
+      command: 'chown -R www-data:www-data /var/www/bear/public_files'
