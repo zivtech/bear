@@ -10,8 +10,6 @@ steps:
     config:
       settings_php.snippets: []
   - name: Force checkout git commit
-    command: 'cd /var/www/bear/webroot ; git checkout -f $COMMIT_REF .'
-  - name: Rewrite settings.php file
-    command: 'drush fetcher-task ensure_settings_file bear --remote-environment=staging -y'
+    command: 'cd /var/www/bear ; git clone git@github.com:zivtech/bear.git ; cd bear ; git checkout -f $COMMIT_REF .'
   - name: Fix permissions
     command: 'chown -R www-data:www-data /var/www/bear/public_files'
