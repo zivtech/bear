@@ -13,7 +13,5 @@ steps:
     command: 'cd /var/www/bear/webroot ; git checkout -f $COMMIT_REF .'
   - name: Rewrite settings.php file
     command: 'drush fetcher-task ensure_settings_file bear --remote-environment=staging -y'
-  - name: Revert all features
-    command: 'drush --root="/var/www/bear/webroot" fra -y'
   - name: Fix permissions
     command: 'chown -R www-data:www-data /var/www/bear/public_files'
