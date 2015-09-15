@@ -30,8 +30,3 @@ bear_show - Bear Slideshow - https://www.drupal.org/project/bear_show
 bear_home - Bear Homepage - https://www.drupal.org/project/bear_home
 
 bear_habitat - Bear Habitat - https://www.drupal.org/project/bear_habitat
-
-## Semantic UI API
-The Semantic UI API is also included, however, the make file as provided by Semantic UI API goes against their install instructions.
-To fix this the contents of "sites/all/libraries/semantic_ui/dist" must be moved to "sites/all/libaries/semantic_ui".
-You may also delete the contents of "sites/all/libraries/semantic_ui" and install per the instructions from http://www.drupal.org/project/semantic_ui_api.

@@ -51,7 +51,8 @@ projects[] = picture
 projects[] = plupload
 projects[] = redirect
 projects[] = responsive_menus
-projects[] = semantic_ui_api
+; @see https://www.drupal.org/node/2568763#comment-10331417
+projects[semantic_ui_api][patch][] = "http://www.drupal.org/files/issues/2568763-2-semantic_ui_api-detect_path.patch"
 projects[] = strongarm
 projects[] = styleguide
 projects[] = token
