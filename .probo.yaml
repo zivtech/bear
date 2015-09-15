@@ -1,6 +1,6 @@
 steps:
-  - name: bear
-    plugin: 'Shell'
+  - name: Install zip
+    command: 'apt-get install zip'
   - name: Create a fake site
     command: 'drush fec bear ;'
   - name: Empty out the install we don't want...
