@@ -29,7 +29,7 @@ projects[] = entityreference
 projects[] = environment_indicator
 projects[] = features
 ; @see https://www.drupal.org/node/766264#comment-8818877
-projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
+;projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
 projects[] = fences
 projects[] = field_collection
 projects[] = field_group
