@@ -1,0 +1,19 @@
+steps:
+  - name: Install zip
+    command: 'apt-get install -y zip'
+  - name: Create a fake site
+    command: "drush fec bear --json-config='{\"settings_php.snippets\": []}'"
+  - name: Checkout the commit
+    command: 'cd /var/www/bear ; git clone git@github.com:zivtech/bear.git ; cd bear ; git checkout -f $COMMIT_REF .'
+  - name: Run the make file
+    command: 'cd /var/www/bear/bear ; drush make build-bear.make /var/www/bear/bearbuild  --force-complete;'
+  - name: Replace default code with bear code
+    command: 'cd /var/www/bear ; rm -r code ; mv bearbuild code ;'
+  - name: Add the bear repo
+    command: 'mv /var/www/bear/bear /var/www/bear/code/profiles/bear'
+  - name: Rewrite settings.php file
+    command: 'drush fetcher-task ensure_settings_file bear -y ;'
+  - name: Install bear
+    command: 'drush --root=/var/www/bear/webroot si bear -y ;'
+  - name: Fix permissions
+    command: 'chown -R www-data:www-data /var/www/bear/public_files ;'
