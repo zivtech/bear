@@ -2,7 +2,7 @@ steps:
   - name: Install zip
     command: 'apt-get install -y zip'
   - name: Create a fake site
-    command: 'drush fec bear'
+    command: 'drush fec bear --json-config='{"settings_php.snippets": []}'
   - name: Checkout the commit
     command: 'cd /var/www/bear ; git clone git@github.com:zivtech/bear.git ; cd bear ; git checkout -f $COMMIT_REF .'
   - name: Run the make file
