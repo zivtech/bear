@@ -7,7 +7,5 @@ api = 2
 defaults[projects][subdir] = contrib
 
 projects[pathauto][download][type] = git
-projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
-projects[pathauto][download][revision] = 37d11303bf7c1202bc94f92d1877027248e59e40
-; @see https://www.drupal.org/node/2168193#comment-10102122
-projects[pathauto][patch][] = https://www.drupal.org/files/issues/2168193_pathauto_D8-port_45.patch
+projects[pathauto][download][url] = http://github.com/md-systems/pathauto.git
+projects[pathauto][download][revision] = 219085840ed08ea6e64abc28f63f379ca05f7079
