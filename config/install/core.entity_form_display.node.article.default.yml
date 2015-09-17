@@ -3,12 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - node.type.article
   module:
-    - comment
     - entity_reference
     - image
     - path
@@ -70,11 +68,6 @@ content:
     settings:
       display_label: true
     weight: 16
-    third_party_settings: {  }
-  comment:
-    type: comment_default
-    weight: 20
-    settings: {  }
     third_party_settings: {  }
   path:
     type: path
