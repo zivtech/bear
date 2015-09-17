@@ -7,6 +7,7 @@
 use Drupal\comment\Plugin\Field\FieldType\CommentItemInterface;
 use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
+use Drupal\user\Entity\Role;
 
 /**
  * Implements hook_install().
@@ -47,6 +48,31 @@ function _bear_setup_users_and_roles() {
   $user = User::load(1);
   $user->roles[] = 'administrator';
   $user->save();
+
+  _bear_setup_role_editor();
+}
+
+/**
+ * Setup the editor role.
+ */
+function _bear_setup_role_editor() {
+  user_role_grant_permissions('editor', array(
+    'access administration pages',
+    'access content overview',
+    'access toolbar',
+    'administer menu',
+    'administer nodes',
+    'administer url aliases',
+    'administer users',
+    'bypass node access',
+    'change own username',
+    'create url aliases',
+    'revert all revisions',
+    'use_text_format_basic_html',
+    'use_text_format_full_html',
+    'view all revisions',
+    'view the administration theme'
+  ));
 }
 
 /**

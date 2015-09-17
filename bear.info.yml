@@ -40,6 +40,8 @@ dependencies:
   - views_ui
   - tour
   # Contrib extensions.
+  - admin_toolbar
+  - admin_toolbar_tools
 themes:
   - bartik
   - seven

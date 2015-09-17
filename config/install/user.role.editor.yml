@@ -1,0 +1,5 @@
+id: editor
+label: Editor
+weight: 2
+langcode: en
+is_admin: false
