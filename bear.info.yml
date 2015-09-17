@@ -39,6 +39,9 @@ dependencies:
   # Contrib extensions.
   - admin_toolbar
   - admin_toolbar_tools
+  - coffee
+  - pathauto
+  - token
 themes:
   - bartik
   - seven
