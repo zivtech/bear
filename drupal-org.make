@@ -24,3 +24,4 @@ projects[] = token
 ; Libraries.
 
 ; Themes.
+projects[bear_skin][type] = "theme"
