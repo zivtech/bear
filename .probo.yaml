@@ -1,4 +1,6 @@
 steps:
+  - name: Install zip
+    command: 'apt-get install -y zip'
   - name: Create a fake site
     command: "drush fec bear --json-config='{\"settings_php.snippets\": []}'"
   - name: Run the make file
