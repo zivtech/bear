@@ -1,6 +1,4 @@
 steps:
-  - name: Install zip
-    command: 'apt-get install -y zip'
   - name: Create a fake site
     command: "drush fec bear --json-config='{\"settings_php.snippets\": []}'"
   - name: Fix permissions
@@ -11,6 +9,8 @@ steps:
     command: 'cd /var/www/bear ; rm -r code ; mv bearbuild code'
   - name: Add the bear profile  to the bear build
     command: 'rm -rf /var/www/bear/code/profiles/bear ; cp -r $SRC_DIR /var/www/bear/code/profiles/bear'
+  - name: Add the bear repo.
+    command: 'mv /var/www/bear/bear /var/www/bear/code/profiles/bear'
   - name: Rewrite settings.php file
     command: 'drush fetcher-task ensure_settings_file bear -y'
   - name: Install bear
