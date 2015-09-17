@@ -4,7 +4,6 @@
  * Install, update and uninstall functions for the bear installation profile.
  */
 
-use Drupal\comment\Plugin\Field\FieldType\CommentItemInterface;
 use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
 use Drupal\user\Entity\Role;
@@ -41,8 +40,8 @@ function _bear_setup_users_and_roles() {
   $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(TRUE);
 
   // Enable default permissions for system roles.
-  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('access comments'));
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access comments', 'post comments', 'skip comment approval'));
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('use text format basic_html'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('use text format basic_html'));
 
   // Assign user 1 the "administrator" role.
   $user = User::load(1);
@@ -68,8 +67,8 @@ function _bear_setup_role_editor() {
     'change own username',
     'create url aliases',
     'revert all revisions',
-    'use_text_format_basic_html',
-    'use_text_format_full_html',
+    'use text format basic_html',
+    'use text format full_html',
     'view all revisions',
     'view the administration theme'
   ));

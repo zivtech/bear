@@ -1,9 +1,11 @@
-format: full_html
-name: 'Full HTML'
+langcode: en
 status: true
+dependencies:
+  module:
+    - editor
+name: 'Full HTML'
+format: full_html
 weight: 1
-roles:
-  - administrator
 filters:
   filter_align:
     id: filter_align
@@ -29,7 +31,19 @@ filters:
     status: true
     weight: 11
     settings: {  }
-langcode: en
-dependencies:
-  module:
-    - editor
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <h2> <h3> <h4> <h5> <h6> <s> <sup> <sub> <img> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <u>'
+      filter_html_help: true
+      filter_html_nofollow: false
