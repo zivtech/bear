@@ -20,4 +20,4 @@ steps:
   - name: Fix permissions
     command: 'chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
   - name: Run behat tests
-    command: 'cd /var/www/bear/webroot/profiles/bear/tests ; composer install ; ./bin/behat'
+    command: 'cd /var/www/bear/webroot/profiles/bear/tests ; composer install ; ./bin/behat --profile probo'
