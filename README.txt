@@ -4,7 +4,7 @@ Bear is a Drupal 8 Starter Kit, not a full Drupal 8 distribution. It was origina
 
 To use it:
 
-    drush make build-bear.make /web/path/bear
+    drush make build-a-bear.make /web/path/bear
     cd /web/path/bear
     drush site-install bear --yes --sites-subdir=default --db-url=PUT_YOUR_DB_SPEC_HERE --db-su=DBUSER --db-su-pw=DBPASSWORD --account-name=admin --account-pass=secretsecret
 

@@ -1,7 +1,7 @@
 ; Use this file to build a full distribution including Drupal core and the
 ; Bear install profile using the following command:
 ;
-; drush make build-bear.make <target directory>
+; drush make build-a-bear.make <target directory>
 
 api = 2
 core = 8.x
