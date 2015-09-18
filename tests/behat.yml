@@ -17,3 +17,22 @@ default:
         alias: 'local'
       drupal:
         drupal_root: '/var/www/bear_updates/webroot'
+probo:
+  #suites:
+  #  default:
+  #    contexts:
+  #      - FeatureContext
+  #      - Drupal\DrupalExtension\Context\DrupalContext
+  #      - Drupal\DrupalExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      selenium2: ~
+      base_url: http://localhost
+    Drupal\DrupalExtension\Extension:
+      blackbox: ~
+      api_driver: 'drupal'
+      drush:
+        alias: 'local'
+      drupal:
+        drupal_root: '/var/www/bear/webroot'
