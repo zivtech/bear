@@ -9,6 +9,10 @@ defaults[projects][subdir] = contrib
 ; Modules.
 projects[] = admin_toolbar
 
+projects[devel][download][type] = git
+projects[coffee][download][url] = http://git.drupal.org/project/devel.git
+projects[devel][download][revision] = 76ff3d32e6bae2d94bee96d52f21370d09aef309
+
 projects[coffee][download][type] = git
 projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
 projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
