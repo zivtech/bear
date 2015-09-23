@@ -73,5 +73,5 @@ libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm
 projects[zen][type] = "theme"
 projects[bear_skin][type] = "theme"
 projects[bear_skin][download][type] = git
-projects[bear][download][url] = http://git.drupal.org/project/bear_skin.git
-projects[bear][download][branch] = 7.x-2.x
+projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
+projects[bear_skin][download][branch] = 7.x-2.x
