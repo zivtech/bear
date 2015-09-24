@@ -7,7 +7,9 @@ api = 2
 defaults[projects][subdir] = contrib
 
 ; Modules.
-projects[] = admin_toolbar
+projects[admin_toolbar][download][type] = git
+projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_toolbar.git
+projects[admin_toolbar][download][revision] = ce0a2f844820473a1b0968abe1d6fb7c92611430
 
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
