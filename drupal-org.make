@@ -32,11 +32,15 @@ projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
 
+
+
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://github.com/md-systems/pathauto.git
 projects[pathauto][download][revision] = 219085840ed08ea6e64abc28f63f379ca05f7079
 
-projects[] = token
+projects[token][download][type] = git
+projects[pathauto][download][url] = http://git.drupal.org/project/token.git
+projects[token][download][revision] = b17c78fa7f5c8bc332b3006311e959a1058a1dac
 
 ; Libraries.
 
