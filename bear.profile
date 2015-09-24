@@ -25,3 +25,31 @@ function bear_form_install_configure_submit($form, FormStateInterface $form_stat
   $site_mail = $form_state->getValue('site_mail');
   ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();
 }
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node_type_form().
+ *
+ * Hide promote and stiky form elements.
+ */
+function bear_form_node_type_form_alter(&$form, FormStateInterface $form_state) {
+  if (isset($form['workflow']['options']['#options']['promote'])) {
+    unset($form['workflow']['options']['#options']['promote']);
+  }
+  if (isset($form['workflow']['options']['#options']['sticky'])) {
+    unset($form['workflow']['options']['#options']['sticky']);
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node_form().
+ *
+ * Hide promote and stiky form elements.
+ */
+function bear_form_node_form_alter(&$form, FormStateInterface $form_state) {
+  if (isset($form['promote'])) {
+    $form['promote']['#access'] = FALSE;
+  }
+  if (isset($form['sticky'])) {
+    $form['sticky']['#access'] = FALSE;
+  }
+}
