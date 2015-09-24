@@ -41,6 +41,7 @@ dependencies:
   - admin_toolbar_tools
   - coffee
   - devel
+  - field_group
   - pathauto
   - token
 themes:

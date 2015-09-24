@@ -27,6 +27,11 @@ projects[entity_embed][download][type] = git
 projects[entity_embed][download][url] = http://github.com/drupal-media/entity_embed
 projects[entity_embed][download][revision] = 3e9ddc42bad060a085b76903d62155b0fe2a4013
 
+
+projects[field_group][download][type] = git
+projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
+projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
+
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://github.com/md-systems/pathauto.git
 projects[pathauto][download][revision] = 219085840ed08ea6e64abc28f63f379ca05f7079
