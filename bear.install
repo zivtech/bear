@@ -57,7 +57,9 @@ function _bear_setup_users_and_roles() {
 function _bear_setup_role_editor() {
   user_role_grant_permissions('editor', array(
     'access administration pages',
+    'access coffee',
     'access content overview',
+    'access in-place editing',
     'access toolbar',
     'administer menu',
     'administer nodes',
@@ -66,6 +68,7 @@ function _bear_setup_role_editor() {
     'bypass node access',
     'change own username',
     'create url aliases',
+    'delete all revisions',
     'revert all revisions',
     'use text format basic_html',
     'use text format full_html',
