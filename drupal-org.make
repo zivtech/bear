@@ -6,6 +6,8 @@ api = 2
 ; Specify default subdirectory for projects.
 defaults[projects][subdir] = contrib
 
+; Please use git download type and pin to a specific git revision.
+; This will ensure Bear always builds with the same versions of it's dependencies in a given release.
 ; Modules.
 projects[admin_toolbar][download][type] = git
 projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_toolbar.git
@@ -14,6 +16,10 @@ projects[admin_toolbar][download][revision] = ce0a2f844820473a1b0968abe1d6fb7c92
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
 projects[devel][download][revision] = 76ff3d32e6bae2d94bee96d52f21370d09aef309
+
+projects[diff][download][type] = git
+projects[diff][download][url] = http://git.drupal.org/project/diff.git
+projects[diff][download][revision] =7f8f95b750f5da2b12f80a83cb4f739d421478e3
 
 projects[coffee][download][type] = git
 projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
