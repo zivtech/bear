@@ -13,6 +13,12 @@ projects[admin_toolbar][download][type] = git
 projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_toolbar.git
 projects[admin_toolbar][download][revision] = ce0a2f844820473a1b0968abe1d6fb7c92611430
 
+projects[coffee][download][type] = git
+projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
+projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
+; @see https://www.drupal.org/node/2486843#comment-10268935
+projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
+
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
 projects[devel][download][revision] = 76ff3d32e6bae2d94bee96d52f21370d09aef309
@@ -21,12 +27,6 @@ projects[diff][download][type] = git
 projects[diff][download][url] = http://git.drupal.org/project/diff.git
 projects[diff][download][revision] =7f8f95b750f5da2b12f80a83cb4f739d421478e3
 
-projects[coffee][download][type] = git
-projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
-projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
-; @see https://www.drupal.org/node/2486843#comment-10268935
-projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
-
 projects[entity_browser][download][type] = git
 projects[entity_browser][download][url] = http://github.com/drupal-media/entity_browser
 projects[entity_browser][download][revision] = e483550fdaced7a4eb0a09237e5e58bbbd315381
@@ -34,7 +34,6 @@ projects[entity_browser][download][revision] = e483550fdaced7a4eb0a09237e5e58bbb
 projects[entity_embed][download][type] = git
 projects[entity_embed][download][url] = http://github.com/drupal-media/entity_embed
 projects[entity_embed][download][revision] = 3e9ddc42bad060a085b76903d62155b0fe2a4013
-
 
 projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
