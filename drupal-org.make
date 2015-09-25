@@ -52,7 +52,3 @@ projects[token][download][revision] = b17c78fa7f5c8bc332b3006311e959a1058a1dac
 ; Libraries.
 
 ; Themes.
-projects[bear_skin][type] = "theme"
-projects[bear_skin][download][type] = git
-projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
-projects[bear_skin][download][revision] = d9e5d5fca99bd1b6a6b59b7163772011265241ac
