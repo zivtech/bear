@@ -31,19 +31,10 @@ projects[diff][download][url] = http://git.drupal.org/project/diff.git
 projects[diff][download][branch] = 8.x-1.x
 projects[diff][download][revision] =7f8f95b750f5da2b12f80a83cb4f739d421478e3
 
-projects[entity_browser][download][type] = git
-projects[entity_browser][download][url] = http://github.com/drupal-media/entity_browser
-projects[entity_browser][download][revision] = e483550fdaced7a4eb0a09237e5e58bbbd315381
-
-projects[entity_embed][download][type] = git
-projects[entity_embed][download][url] = http://github.com/drupal-media/entity_embed
-projects[entity_embed][download][revision] = 3e9ddc42bad060a085b76903d62155b0fe2a4013
-
 projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
 projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
-
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
