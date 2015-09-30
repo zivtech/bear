@@ -6,7 +6,7 @@ steps:
   - name: Create a fake site
     command: "drush fec bear --json-config='{\"settings_php.snippets\": []}' --local-environment=probo"
   - name: Run the make file
-    command: 'cd $SRC_DIR ; drush make build-bear.make /var/www/bear/bearbuild --force-complete'
+    command: 'cd $SRC_DIR ; drush make build-a-bear.make /var/www/bear/bearbuild --force-complete'
   - name: Replace default code with the bear build
     command: 'cd /var/www/bear ; rm -r code ; mv bearbuild code'
   - name: Add the bear profile  to the bear build
