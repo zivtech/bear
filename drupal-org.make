@@ -11,20 +11,24 @@ defaults[projects][subdir] = contrib
 ; Modules.
 projects[admin_toolbar][download][type] = git
 projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_toolbar.git
+projects[admin_toolbar][download][branch] = 8.x-1.x
 projects[admin_toolbar][download][revision] = ce0a2f844820473a1b0968abe1d6fb7c92611430
 
 projects[coffee][download][type] = git
 projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
+projects[coffee][download][branch] = 8.x-1.x
 projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
 ; @see https://www.drupal.org/node/2486843#comment-10268935
 projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
 
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
+projects[devel][download][branch] = 8.x-1.x
 projects[devel][download][revision] = 76ff3d32e6bae2d94bee96d52f21370d09aef309
 
 projects[diff][download][type] = git
 projects[diff][download][url] = http://git.drupal.org/project/diff.git
+projects[diff][download][branch] = 8.x-1.x
 projects[diff][download][revision] =7f8f95b750f5da2b12f80a83cb4f739d421478e3
 
 projects[entity_browser][download][type] = git
@@ -37,6 +41,7 @@ projects[entity_embed][download][revision] = 3e9ddc42bad060a085b76903d62155b0fe2
 
 projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
+projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
 
 
@@ -47,6 +52,7 @@ projects[pathauto][download][revision] = 219085840ed08ea6e64abc28f63f379ca05f707
 
 projects[token][download][type] = git
 projects[token][download][url] = http://git.drupal.org/project/token.git
+projects[token][download][branch] = 8.x-1.x
 projects[token][download][revision] = b17c78fa7f5c8bc332b3006311e959a1058a1dac
 
 ; Libraries.
@@ -55,4 +61,5 @@ projects[token][download][revision] = b17c78fa7f5c8bc332b3006311e959a1058a1dac
 projects[bear_skin][type] = "theme"
 projects[bear_skin][download][type] = git
 projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
+projects[bear_skin][download][branch] = 8.x-1.x
 projects[bear_skin][download][revision] = d9e5d5fca99bd1b6a6b59b7163772011265241ac
