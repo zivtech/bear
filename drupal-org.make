@@ -1,77 +1,58 @@
 ; This drupal-org.make file downloads contrib modules, themes, and 3rd party libraries.
 
-core = 7.x
+core = 8.x
 api = 2
 
-; Patches should now all be handled by patches.make file thanks to https://bitbucket.org/davereid/drush-patchfile.
+; Specify default subdirectory for projects.
+defaults[projects][subdir] = contrib
 
-; Specify default subdirectory for projects
-defaults[projects][subdir] = "contrib"
+; Please use git download type and pin to a specific git revision.
+; This will ensure Bear always builds with the same versions of it's dependencies in a given release.
+; Modules.
+projects[admin_toolbar][download][type] = git
+projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_toolbar.git
+projects[admin_toolbar][download][revision] = ce0a2f844820473a1b0968abe1d6fb7c92611430
 
-; Modules
-projects[] = admin_menu
-projects[] = admin_views
-projects[] = advagg
-projects[] = bear_habitat
-projects[] = block_class
-projects[] = breadcrumbs_by_path
-projects[] = breakpoints
-projects[] = chosen
-projects[] = coffee
-projects[] = ctools
-projects[] = date
-projects[] = devel
-projects[] = diff
-projects[] = entity
-projects[] = entity_view_mode
-projects[] = entitycache
-projects[] = entityreference
-projects[] = environment_indicator
-projects[] = features
-projects[] = fences
-projects[] = field_collection
-projects[] = field_group
-projects[file_entity][version] = "2.x-dev"
-projects[] = habitat
-projects[] = jquery_update
-projects[] = libraries
-projects[] = link
-projects[linkit][version] = "2.x-dev"
-projects[media][version] = "2.x-dev"
-projects[media_youtube][version] = "3.x-dev"
-projects[] = menu_block
-projects[] = menu_expanded
-projects[] = module_filter
-projects[] = multiform
-projects[] = page_manager_templates
-projects[] = panels
-projects[panelizer][version] = "3.x-dev"
-projects[] = pathauto
-projects[] = picture
-projects[] = plupload
-projects[] = redirect
-projects[] = strongarm
-projects[] = styleguide
-projects[] = token
-projects[] = xmlsitemap
-; @see https://www.drupal.org/node/1036962#comment-9255301
-projects[views][patch][] = "http://www.drupal.org/files/issues/1036962-views-ajax-destination-65.patch"
-projects[] = views_bulk_operations
-projects[] = views_slideshow
-projects[wysiwyg][version] = "2.x-dev"
+projects[coffee][download][type] = git
+projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
+projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
+; @see https://www.drupal.org/node/2486843#comment-10268935
+projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
 
-; Libraries
-libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.3/ckeditor_4.3.3_full.zip"
-libraries[chosen][download][type] = "get"
-libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.4.2/chosen_v1.4.2.zip"
-libraries[plupload][download][type] = "get"
-libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
-libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
+projects[devel][download][type] = git
+projects[devel][download][url] = http://git.drupal.org/project/devel.git
+projects[devel][download][revision] = 76ff3d32e6bae2d94bee96d52f21370d09aef309
 
-; Themes
-projects[zen][type] = "theme"
+projects[diff][download][type] = git
+projects[diff][download][url] = http://git.drupal.org/project/diff.git
+projects[diff][download][revision] =7f8f95b750f5da2b12f80a83cb4f739d421478e3
+
+projects[entity_browser][download][type] = git
+projects[entity_browser][download][url] = http://github.com/drupal-media/entity_browser
+projects[entity_browser][download][revision] = e483550fdaced7a4eb0a09237e5e58bbbd315381
+
+projects[entity_embed][download][type] = git
+projects[entity_embed][download][url] = http://github.com/drupal-media/entity_embed
+projects[entity_embed][download][revision] = 3e9ddc42bad060a085b76903d62155b0fe2a4013
+
+projects[field_group][download][type] = git
+projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
+projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
+
+
+; Currently lives on Github.
+projects[pathauto][download][type] = git
+projects[pathauto][download][url] = http://github.com/md-systems/pathauto.git
+projects[pathauto][download][revision] = 219085840ed08ea6e64abc28f63f379ca05f7079
+
+projects[token][download][type] = git
+projects[token][download][url] = http://git.drupal.org/project/token.git
+projects[token][download][revision] = b17c78fa7f5c8bc332b3006311e959a1058a1dac
+
+; Libraries.
+
+; Themes.
 projects[bear_skin][type] = "theme"
 projects[bear_skin][download][type] = git
 projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
-projects[bear_skin][download][branch] = 7.x-2.x
+projects[bear_skin][download][revision] = d9e5d5fca99bd1b6a6b59b7163772011265241ac

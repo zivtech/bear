@@ -1,221 +1,66 @@
 <?php
+/**
+ * @file
+ * Install, update and uninstall functions for the bear installation profile.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\user\RoleInterface;
+use Drupal\user\Entity\Role;
 
 /**
- * Implement hook_install().
+ * Implements hook_install().
  *
  * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
  */
 function bear_install() {
-  // See standard_install().
-  // This contains less setup than standard install, but similar.
+  _bear_setup_base_configurations();
+  _bear_setup_users_and_roles();
+  _bear_setup_site_wide_contact();
+  _bear_setup_shortcuts();
+  _bear_setup_themes();
+}
 
-  // Add text formats.
-  $filtered_html_format = array(
-    'format' => 'filtered_html',
-    'name' => 'Filtered HTML',
-    'weight' => -10,
-    'filters' => array(
-      // URL filter.
-      'filter_url' => array(
-        'weight' => 0,
-        'status' => 1,
-      ),
-      // HTML filter.
-      'filter_html' => array(
-        'weight' => 1,
-        'status' => 1,
-        'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <table> <tr> <td> <thead> <tbody> <th> <u> <s> <h2> <h3> <h4> <h5>',
-          'filter_html_help' => 1,
-          'filter_html_nofollow' => 0,
-        ),
-      ),
-      // Media Filter.
-      'media_filter' => array(
-        'weight' => 2,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      // HTML corrector filter.
-      'filter_htmlcorrector' => array(
-        'weight' => 10,
-        'status' => 1,
-      ),
-    ),
-  );
-  $filtered_html_format = (object) $filtered_html_format;
-  filter_format_save($filtered_html_format);
+/**
+ * Setup base site configurations.
+ */
+function _bear_setup_base_configurations() {
+  // Set front page to "node".
+  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
+}
 
-  $full_html_format = array(
-    'format' => 'full_html',
-    'name' => 'Full HTML',
-    'weight' => -9,
-    'filters' => array(
-      // URL filter.
-      'filter_url' => array(
-        'weight' => 0,
-        'status' => 1,
-      ),
-      // Line break filter.
-      'filter_autop' => array(
-        'weight' => 1,
-        'status' => 1,
-      ),
-      // Media Filter.
-      'media_filter' => array(
-        'weight' => 2,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      // HTML corrector filter.
-      'filter_htmlcorrector' => array(
-        'weight' => 10,
-        'status' => 1,
-      ),
-    ),
-  );
-  $full_html_format = (object) $full_html_format;
-  filter_format_save($full_html_format);
-
-  $plain_text_format = array(
-    'format' => 'plain_text',
-    'name' => 'Plain text',
-    'weight' => -8,
-    'filters' => array(
-      'filter_html_escape' => array(
-        'weight' => 0,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'filter_url' => array(
-        'weight' => 1,
-        'status' => 1,
-        'settings' => array(
-          'filter_url_length' => 72,
-        ),
-      ),
-      'filter_autop' => array(
-        'weight' => 2,
-        'status' => 1,
-        'settings' => array(),
-      ),
-    ),
-  );
-  $plain_text_format = (object) $plain_text_format;
-  filter_format_save($plain_text_format);
-
-  // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
-  $admin_theme = 'seven';
-  $blocks = array(
-    array(
-      'module' => 'system',
-      'delta' => 'main',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'help',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'help',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'main',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'help',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'help',
-      'pages' => '',
-      'cache' => -1,
-    ),
-  );
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
-  foreach ($blocks as $block) {
-    $query->values($block);
-  }
-  $query->execute();
-
-  // Insert default pre-defined node types into the database. For a complete
-  // list of available node type attributes, refer to the node type API
-  // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
-  $types = array(
-    array(
-      'type' => 'page',
-      'name' => st('Basic page'),
-      'base' => 'node_content',
-      'description' => st("Use <em>basic pages</em> for your static content, such as an 'About us' page."),
-      'custom' => 1,
-      'modified' => 1,
-      'locked' => 0,
-    ),
-  );
-
-  foreach ($types as $type) {
-    $type = node_type_set_defaults($type);
-    node_type_save($type);
-    node_add_body_field($type);
-  }
-
-  // Default "Basic page" settings.
-  variable_set('node_options_page', array('status', 'revision'));
-  variable_set('node_preview_page', 0);
-  variable_set('node_submitted_page', FALSE);
-
-  // Default pathauto setting to match menu positions.
-  variable_set('pathauto_node_pattern', "[node:menu-link:parents:join-path]/[node:title]");
-
+/**
+ * Setup default users and roles.
+ */
+function _bear_setup_users_and_roles() {
   // Allow visitor account creation with administrative approval.
-  variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
+  $user_settings = \Drupal::configFactory()->getEditable('user.settings');
+  $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(TRUE);
 
   // Enable default permissions for system roles.
-  $filtered_html_permission = filter_permission_name($filtered_html_format);
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', $filtered_html_permission));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', $filtered_html_permission));
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('use text format basic_html'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('use text format basic_html'));
 
-  // Create a default role for site administrators, with all available permissions assigned.
-  $admin_role = new stdClass();
-  $admin_role->name = 'administrator';
-  $admin_role->weight = 3;
-  user_role_save($admin_role);
-  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
-  // Set this as the administrator role.
-  variable_set('user_admin_role', $admin_role->rid);
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
 
-  // Add an editor role.
-  $editor_role = new stdClass();
-  $editor_role->name = 'editor';
-  $editor_role->weight = 2;
-  user_role_save($editor_role);
-  $perms = array(
-    'access administration menu',
+  _bear_setup_role_editor();
+}
+
+/**
+ * Setup the editor role.
+ */
+function _bear_setup_role_editor() {
+  user_role_grant_permissions('editor', array(
     'access administration pages',
     'access coffee',
-    'access content',
     'access content overview',
-    'access user profiles',
-    'add media from remote sources',
-    'administer files',
-    'administer media browser',
+    'access in-place editing',
+    'access toolbar',
     'administer menu',
     'administer nodes',
     'administer url aliases',
@@ -223,46 +68,57 @@ function bear_install() {
     'bypass node access',
     'change own username',
     'create url aliases',
-    'delete any audio files',
-    'delete any document files',
-    'delete any image files',
-    'delete any video files',
-    'delete own audio files',
-    'delete own document files',
-    'delete own image files',
-    'delete own video files',
-    'delete revisions',
-    'download any audio files',
-    'download any document files',
-    'download any image files',
-    'download any video files',
-    'download own audio files',
-    'download own document files',
-    'download own image files',
-    'download own video files',
-    'edit any audio files',
-    'edit any document files',
-    'edit any image files',
-    'edit any video files',
-    'edit own audio files',
-    'edit own document files',
-    'edit own image files',
-    'edit own video files',
-    'import media',
-    'revert revisions',
-    'use text format filtered_html',
+    'delete all revisions',
+    'revert all revisions',
+    'use text format basic_html',
     'use text format full_html',
-    'view files',
-    'view own unpublished content',
-    'view revisions',
-    'view style guides',
-    'view the administration theme',
-  );
-  user_role_grant_permissions($editor_role->rid, $perms);
+    'view all revisions',
+    'view the administration theme'
+  ));
+}
 
-  // Enable seven and bear_skin themes and set defaults.
-  theme_enable(array('seven', 'bear_skin'));
-  variable_set('theme_default', 'bear_skin');
-  variable_set('admin_theme', 'seven');
-  variable_set('node_admin_theme', '1');
+/**
+ * Setup the site wide contact form, link, and related permissions.
+ */
+function _bear_setup_site_wide_contact() {
+  // Enable the Contact link in the footer menu.
+  /** @var \Drupal\Core\Menu\MenuLinkManagerInterface $menu_link_manager */
+  $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
+  $menu_link_manager->updateDefinition('contact.site_page', array('enabled' => TRUE));
+
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('access site-wide contact form'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access site-wide contact form'));
+}
+
+/**
+ * Setup basic shortcuts and related permissions.
+ */
+function _bear_setup_shortcuts() {
+  // Allow authenticated users to use shortcuts.
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access shortcuts'));
+
+  // Populate the default shortcut set.
+  $shortcut = entity_create('shortcut', array(
+    'shortcut_set' => 'default',
+    'title' => t('Add content'),
+    'weight' => -20,
+    'link' => array('uri' => 'internal:/node/add'),
+  ));
+  $shortcut->save();
+
+  $shortcut = entity_create('shortcut', array(
+    'shortcut_set' => 'default',
+    'title' => t('All content'),
+    'weight' => -19,
+    'link' => array('uri' => 'internal:/admin/content'),
+  ));
+  $shortcut->save();
+}
+
+/**
+ * Setup the themes.
+ */
+function _bear_setup_themes() {
+  // Enable the admin theme.
+  \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
 }
