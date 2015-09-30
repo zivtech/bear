@@ -38,8 +38,11 @@ projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
-projects[pathauto][download][url] = http://github.com/md-systems/pathauto.git
-projects[pathauto][download][revision] = 219085840ed08ea6e64abc28f63f379ca05f7079
+projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
+projects[pathauto][download][branch] = 8.x-1.x
+projects[pathauto][download][revision] = 37d11303bf7c1202bc94f92d1877027248e59e40
+; @see https://www.drupal.org/node/2168193#comment-10394389
+projects[pathauto][patch][] = https://www.drupal.org/files/issues/pathauto-d8_port-2168193-53.patch
 
 projects[token][download][type] = git
 projects[token][download][url] = http://git.drupal.org/project/token.git
