@@ -27,8 +27,8 @@ projects[] = entity_view_mode
 projects[] = entitycache
 projects[] = entityreference
 projects[] = environment_indicator
-projects[] = fences
 projects[] = features
+projects[] = fences
 projects[] = field_collection
 projects[] = field_group
 projects[file_entity][version] = "2.x-dev"
@@ -72,4 +72,6 @@ libraries[plupload][patch][] = "http://drupal.org/files/issues/plupload-1_5_8-rm
 ; Themes
 projects[zen][type] = "theme"
 projects[bear_skin][type] = "theme"
-
+projects[bear_skin][download][type] = git
+projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
+projects[bear_skin][download][branch] = 7.x-2.x
