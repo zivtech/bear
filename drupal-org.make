@@ -46,6 +46,7 @@ projects[] = menu_block
 projects[] = menu_expanded
 projects[] = module_filter
 projects[] = multiform
+projects[] = oembed
 projects[] = page_manager_templates
 projects[] = panels
 projects[panelizer][version] = "3.x-dev"
