@@ -1,6 +1,4 @@
 steps:
-  - name: Install zip
-    command: 'apt-get install -y zip'
   - name: Install drush-master for d8
     command: 'composer global require drush/drush:dev-master ; cd /usr/local/bin ; mv drush drush7 ; ln -s $HOME/.composer/vendor/bin/drush drush'
   - name: Create a fake site
