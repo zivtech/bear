@@ -41,8 +41,8 @@ projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
 projects[pathauto][download][branch] = 8.x-1.x
 projects[pathauto][download][revision] = 37d11303bf7c1202bc94f92d1877027248e59e40
-; @see https://www.drupal.org/node/2168193#comment-10394389
-projects[pathauto][patch][] = https://www.drupal.org/files/issues/pathauto-d8_port-2168193-53.patch
+; @see https://www.drupal.org/node/2168193#comment-10397689
+projects[pathauto][patch][] = https://www.drupal.org/files/issues/pathauto-d8_port-2168193-54.patch
 
 projects[token][download][type] = git
 projects[token][download][url] = http://git.drupal.org/project/token.git
