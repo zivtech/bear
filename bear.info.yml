@@ -6,14 +6,11 @@ core: 8.x
 dependencies:
   # Core extensions.
   - node
-  - history
   - block
   - breakpoint
   - ckeditor
-  - color
   - config
   - contextual
-  - contact
   - menu_link_content
   - datetime
   - block_content
@@ -28,12 +25,11 @@ dependencies:
   - page_cache
   - dynamic_page_cache
   - taxonomy
+  - repsonsive_image
   - dblog
-  - shortcut
   - toolbar
   - field_ui
   - file
-  - rdf
   - views
   - views_ui
   # Contrib extensions.
