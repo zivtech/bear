@@ -8,7 +8,6 @@
 namespace Drupal\bear\Tests;
 
 use Drupal\config\Tests\SchemaCheckTestTrait;
-use Drupal\contact\Entity\ContactForm;
 use Drupal\Core\Url;
 use Drupal\dynamic_page_cache\EventSubscriber\DynamicPageCacheSubscriber;
 use Drupal\filter\Entity\FilterFormat;
@@ -37,10 +36,6 @@ class BearTest extends WebTestBase {
    * Tests Bear installation profile.
    */
   function testBear() {
-    $this->drupalGet('');
-    $this->assertLink(t('Contact'));
-    $this->clickLink(t('Contact'));
-    $this->assertResponse(200);
 
     // Test anonymous user can access 'Main navigation' block.
     $this->adminUser = $this->drupalCreateUser(array(
@@ -114,10 +109,6 @@ class BearTest extends WebTestBase {
     \Drupal::service('module_installer')->uninstall(array('editor', 'ckeditor'));
     $this->rebuildContainer();
     \Drupal::service('module_installer')->install(array('editor'));
-    /** @var \Drupal\contact\ContactFormInterface $contact_form */
-    $contact_form = ContactForm::load('feedback');
-    $recipients = $contact_form->getRecipients();
-    $this->assertEqual(['simpletest@example.com'], $recipients);
 
     $role = Role::create([
       'id' => 'admin_theme',
@@ -157,12 +148,6 @@ class BearTest extends WebTestBase {
 
     // Verify certain routes' responses are cacheable by Dynamic Page Cache, to
     // ensure these responses are very fast for authenticated users.
-    $this->dumpHeaders = TRUE;
-    $this->drupalLogin($this->adminUser);
-    $url = Url::fromRoute('contact.site_page');
-    $this->drupalGet($url);
-    $this->assertEqual('UNCACHEABLE', $this->drupalGetHeader(DynamicPageCacheSubscriber::HEADER), 'Site-wide contact page cannot be cached by Dynamic Page Cache.');
-
     $url = Url::fromRoute('<front>');
     $this->drupalGet($url);
     $this->drupalGet($url);
