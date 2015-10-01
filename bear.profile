@@ -7,6 +7,13 @@
 use Drupal\Core\Form\FormStateInterface;
 
 /**
+ * Implements hook_form_FORM_ID_alter() for node_type_add_form().
+ */
+function bear_form_node_type_add_form_alter(&$form, FormStateInterface $form_state) {
+  $form['workflow']['options']['#default_value']['revision'] = 'revision';
+}
+
+/**
  * Implements hook_form_BASE_FORM_ID_alter() for node_type_form().
  *
  * Hide promote and stiky form elements.
