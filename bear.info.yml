@@ -25,7 +25,7 @@ dependencies:
   - page_cache
   - dynamic_page_cache
   - taxonomy
-  - repsonsive_image
+  - responsive_image
   - dblog
   - toolbar
   - field_ui
