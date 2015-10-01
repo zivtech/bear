@@ -33,14 +33,6 @@ dependencies:
   - views
   - views_ui
   # Contrib extensions.
-  - admin_toolbar
-  - admin_toolbar_tools
-  - coffee
-  - devel
-  - diff
-  - field_group
-  - pathauto
-  - token
 themes:
   - bartik
   - seven
