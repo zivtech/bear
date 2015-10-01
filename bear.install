@@ -18,8 +18,6 @@ use Drupal\user\Entity\Role;
 function bear_install() {
   _bear_setup_base_configurations();
   _bear_setup_users_and_roles();
-  _bear_setup_site_wide_contact();
-  _bear_setup_shortcuts();
   _bear_setup_themes();
 }
 
