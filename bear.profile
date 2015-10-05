@@ -49,7 +49,6 @@ function _bear_should_unload_semantic_ui() {
     }
   }
 
-
   return (current_path() !== 'admin/help/semantic_ui_api' && (boolean) version_compare($jquery_version, '1.8'));
 }
 
