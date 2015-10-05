@@ -25,6 +25,11 @@ function bear_necessities_filter_default_formats() {
           'filter_url_length' => 72,
         ),
       ),
+      'kill_nbsp' => array(
+        'weight' => 1,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_html' => array(
         'weight' => 1,
         'status' => 1,
@@ -37,11 +42,6 @@ function bear_necessities_filter_default_formats() {
       'assets_filter' => array(
         'weight' => 2,
         'status' => 1,
-        'settings' => array(),
-      ),
-      'kill_nbsp' => array(
-        'status' => 1,
-        'weight' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
@@ -67,6 +67,11 @@ function bear_necessities_filter_default_formats() {
           'filter_url_length' => 72,
         ),
       ),
+      'kill_nbsp' => array(
+        'weight' => 1,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_autop' => array(
         'weight' => 1,
         'status' => 1,
@@ -75,11 +80,6 @@ function bear_necessities_filter_default_formats() {
       'assets_filter' => array(
         'weight' => 2,
         'status' => 1,
-        'settings' => array(),
-      ),
-      'kill_nbsp' => array(
-        'status' => 1,
-        'weight' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(

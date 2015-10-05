@@ -25,7 +25,6 @@ dependencies[] = admin_views
 dependencies[] = asset
 dependencies[] = asset_document
 dependencies[] = asset_image
-dependencies[] = asset_video
 dependencies[] = asset_widget
 dependencies[] = bear_habitat
 dependencies[] = bear_necessities

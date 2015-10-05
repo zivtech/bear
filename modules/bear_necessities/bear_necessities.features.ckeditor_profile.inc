@@ -16,7 +16,7 @@ function bear_necessities_ckeditor_profile_defaults() {
         'toolbar' => '[
     [\'Bold\',\'Italic\',\'Link\',\'Anchor\'],
     [\'Format\',\'RemoveFormat\',\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'NumberedList\',\'BulletedList\',\'Table\'],
-    [\'Blockquote\',\'PasteFromWord\',\'linkit\',\'asset_document\',\'asset_image\',\'asset_video\',\'assetSearch\']
+    [\'Blockquote\',\'PasteFromWord\',\'linkit\',\'asset_document\',\'asset_image\',\'asset_embed\',\'assetSearch\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -29,7 +29,7 @@ function bear_necessities_ckeditor_profile_defaults() {
         'language_direction' => 'default',
         'allowed_content' => 't',
         'extraAllowedContent' => '',
-        'enter_mode' => 'p',
+        'enter_mode' => 'br',
         'shift_enter_mode' => 'br',
         'font_format' => 'p;div;pre;h2;h3;h4;h5;h6',
         'custom_formatting' => 't',
@@ -75,8 +75,8 @@ config.autoParagraph = false;',
                 'label' => 'Asset: Image',
                 'icon' => 'buttons/AddImage.png',
               ),
-              'asset_video' => array(
-                'label' => 'Asset: Video',
+              'asset_embed' => array(
+                'label' => 'Asset: Embed',
                 'icon' => 'buttons/AddVideo.png',
               ),
               'assetSearch' => array(
@@ -104,7 +104,7 @@ config.autoParagraph = false;',
             'buttons' => array(
               'linkit' => array(
                 'label' => 'Linkit',
-                'icon' => 'icons/linkit.png',
+                'icon' => 'linkit.png',
               ),
             ),
           ),
@@ -156,7 +156,7 @@ config.autoParagraph = false;',
     [\'TextColor\',\'BGColor\'],
     [\'Maximize\',\'ShowBlocks\'],
     [\'DrupalBreak\'],
-    [\'asset_document\',\'asset_image\',\'asset_video\']
+    [\'asset_document\',\'asset_image\',\'asset_embed\',\'assetSearch\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -213,8 +213,8 @@ config.autoParagraph = false;',
                 'label' => 'Asset: Image',
                 'icon' => 'buttons/AddImage.png',
               ),
-              'asset_video' => array(
-                'label' => 'Asset: Video',
+              'asset_embed' => array(
+                'label' => 'Asset: Embed',
                 'icon' => 'buttons/AddVideo.png',
               ),
               'assetSearch' => array(
