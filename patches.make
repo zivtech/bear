@@ -25,3 +25,9 @@ projects[features][patch][] = "http://www.drupal.org/files/issues/alter_override
 ; @see https://www.drupal.org/node/1036962#comment-9255301
 projects[views][patch][] = "http://www.drupal.org/files/issues/1036962-views-ajax-destination-65.patch"
 
+; @see https://www.drupal.org/node/1036962#comment-925530://www.drupal.org/node/2580405#comment-10412829
+projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2580405-2-Add_asset_template_override.patch
+
+; @see https://www.drupal.org/node/2568763#comment-10331417
+projects[semantic_ui_api][patch][] = "http://www.drupal.org/files/issues/2568763-2-semantic_ui_api-detect_path.patch"
+
