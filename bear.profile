@@ -42,9 +42,13 @@ function bear_css_alter(&$css) {
  */
 function _bear_should_unload_semantic_ui() {
   $jquery_version = variable_get('jquery_update_jquery_version', '1.10');
-  if (path_is_admin(current_path())) {
-    $jquery_version = variable_get('jquery_update_jquery_admin_version', '');
+
+  if (path_is_admin(current_path()) && $admin_version = variable_get('jquery_update_jquery_admin_version', '')) {
+    if (!empty($admin_version)) {
+      $jquery_version = $admin_version;
+    }
   }
+
 
   return (current_path() !== 'admin/help/semantic_ui_api' && (boolean) version_compare($jquery_version, '1.8'));
 }
