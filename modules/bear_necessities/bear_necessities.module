@@ -78,6 +78,18 @@ function bear_necessities_menu_block_blocks() {
 }
 
 /**
+ * Implements hook_library_alter().
+ *
+ * Add our custom css for the asset widget library so that we can add the embed
+ * icon.
+ */
+function bear_necessities_library_alter(&$libraries, $module) {
+  if ($module === 'asset_widget') {
+    $libraries['asset_widget']['css'][drupal_get_path('module', 'bear_necessities') . '/css/bear-asset-widget.css'] = array('weight' => 12, 'group' => CSS_THEME);
+  }
+}
+
+/**
  * Implements hook_filter_info().
  */
 function bear_necessities_filter_info() {
