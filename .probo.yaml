@@ -16,6 +16,6 @@ steps:
   - name: Fix permissions
     command: 'chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
   - name: Add hosts entry
-    command: 'echo "127.0.0.1 https://$BUILD_ID.probo.build" >> /etc/hosts'
+    command: 'echo "127.0.0.1 $BUILD_ID.probo.build" >> /etc/hosts'
   - name: Run behat tests
-    command: "cd /var/www/bear/webroot/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags '~@javascript'"
+    command: "cd /var/www/bear/webroot/profiles/bear/tests ; composer install ; export BEHAT_PARAMS=\"context[parameters][base_url]=http://$BUILD_ID.probo.build\" ; ./bin/behat --profile probo --tags '~@javascript'"
