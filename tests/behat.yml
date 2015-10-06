@@ -28,7 +28,7 @@ probo:
     Behat\MinkExtension\Extension:
       goutte: ~
       selenium2: ~
-      base_url: http://localhost
+      base_url: ~
     Drupal\DrupalExtension\Extension:
       blackbox: ~
       api_driver: 'drupal'
