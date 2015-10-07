@@ -1,4 +1,4 @@
 vendor
 bin
-local-config.yaml
+local.behat.yaml
 composer.phar
