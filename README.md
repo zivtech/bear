@@ -1,4 +1,5 @@
 ## What is Bear?
+
 Bear is a Drupal 8 Starter Kit, not a full Drupal 8 distribution. It is a bootstrapped starting point for Zivtech Drupal development projects, with helpful pre-configured modules and mission critical patches.
 
 Bear is what we wish Drupal core was out of the box. It contains enhancements and fixes to core. Everything that we use on 80-90% of the sites we build we want to have in Bear so that we have it out of the box when we start a new project.
