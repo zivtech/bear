@@ -37,6 +37,6 @@ probo:
       blackbox: ~
       api_driver: 'drupal'
       drush:
-        alias: 'local'
+        alias: 'bear.probo'
       drupal:
         drupal_root: '/var/www/bear/webroot'
