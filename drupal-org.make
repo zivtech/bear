@@ -41,20 +41,11 @@ projects[field_group][download][url] = http://git.drupal.org/project/field_group
 projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
 
-projects[layout_plugin][download][type] = git
-projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_plugin.git
-projects[layout_plugin][download][branch] = 8.x-1.x
-projects[layout_plugin][download][revision] = ecea017eaf546e942ef608f3e98b0067e350d5db
+projects[panels][version] = "8.x-1.0-alpha17"
 
-projects[page_manager][download][type] = git
-projects[page_manager][download][url] = http://git.drupal.org/project/page_manager.git
-projects[page_manager][download][branch] = 8.x-1.x
-projects[page_manager][download][revision] = 91f13f592f60d46177a0eeff56c1ae7c5bbd229e
+projects[page_manager][version] = "8.x-1.0-alpha17"
 
-projects[panels][download][type] = git
-projects[panels][download][url] = http://git.drupal.org/project/panels.git
-projects[panels][download][branch] = 8.x-3.x
-projects[panels][download][revision] = 61774af31692fe2d367ce9ccc1a1d6edaf17ddfe
+projects[panels][version] = "8.x-3.0-alpha14"
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
