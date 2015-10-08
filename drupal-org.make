@@ -46,7 +46,7 @@ projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_pl
 projects[layout_plugin][download][branch] = 8.x-1.x
 projects[layout_plugin][download][revision] = ecea017eaf546e942ef608f3e98b0067e350d5db
 
-projects[page_manager][version] = "8.x-1.0-alpha17"
+projects[page_manager][version] = 8.x-1.0-alpha17
 
 projects[panels][download][type] = git
 projects[panels][download][url] = http://git.drupal.org/project/panels.git
