@@ -14,6 +14,8 @@ projects[] = admin_views
 projects[] = advagg
 ; @see https://www.drupal.org/node/2480503#comment-10332267
 projects[asset][patch][] = https://www.drupal.org/files/issues/2480503-1-asset-add_more_icons-7.x-1.0-beta4.patch
+; @see https://www.drupal.org/node/2174613#comment-10425469
+projects[asset][patch][] = https://www.drupal.org/files/issues/asset-youtube-video-2174613-5.patch
 projects[] = bear_habitat
 projects[] = block_class
 projects[] = breadcrumbs_by_path
