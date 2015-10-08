@@ -46,7 +46,10 @@ projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_pl
 projects[layout_plugin][download][branch] = 8.x-1.x
 projects[layout_plugin][download][revision] = ecea017eaf546e942ef608f3e98b0067e350d5db
 
-projects[page_manager][version] = 8.x-1.0-alpha17
+projects[page_manager][download][type] = git
+projects[page_manager][download][url] = http://git.drupal.org/project/page_manager.git
+projects[page_manager][download][branch] = 8.x-1.x
+projects[page_manager][download][revision] = 91f13f592f60d46177a0eeff56c1ae7c5bbd229e
 
 projects[panels][download][type] = git
 projects[panels][download][url] = http://git.drupal.org/project/panels.git
