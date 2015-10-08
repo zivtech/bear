@@ -21,6 +21,11 @@ projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
 ; @see https://www.drupal.org/node/2486843#comment-10268935
 projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
 
+projects[ctools][download][type] = git
+projects[ctools][download][url] = http://git.drupal.org/project/ctools.git
+projects[ctools][download][branch] = 8.x-3.x
+projects[ctools][download][revision] = 45fbd1389384e57b8e68fc1fd944dd95a8a105a1
+
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
 projects[devel][download][branch] = 8.x-1.x
@@ -35,6 +40,21 @@ projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
 projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
+
+projects[layout_plugin][download][type] = git
+projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_plugin.git
+projects[layout_plugin][download][branch] = 8.x-1.x
+projects[layout_plugin][download][revision] = ecea017eaf546e942ef608f3e98b0067e350d5db
+
+projects[page_manager][download][type] = git
+projects[page_manager][download][url] = http://git.drupal.org/project/page_manager.git
+projects[page_manager][download][branch] = 8.x-1.x
+projects[page_manager][download][revision] = 91f13f592f60d46177a0eeff56c1ae7c5bbd229e
+
+projects[panels][download][type] = git
+projects[panels][download][url] = http://git.drupal.org/project/panels.git
+projects[panels][download][branch] = 8.x-3.x
+projects[panels][download][revision] = 61774af31692fe2d367ce9ccc1a1d6edaf17ddfe
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
