@@ -41,7 +41,7 @@ projects[field_group][download][url] = http://git.drupal.org/project/field_group
 projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
 
-projects[layout_plugin][version] = 8.x-1.0-alpha17
+projects[] = layout_plugin
 
 projects[page_manager][version] = 8.x-1.0-alpha17
 
