@@ -10,7 +10,7 @@ steps:
   - name: Add the bear profile  to the bear build
     command: 'rm -rf /var/www/bear/code/profiles/contrib/bear ; cp -r $SRC_DIR /var/www/bear/code/profiles/contrib/bear'
   - name: Fix permissions
-    command: 'mkdir /var/ww/bear/webroot/sites/default/files ; chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
+    command: 'mkdir -p /var/www/bear/webroot/sites/default/files ; chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
   - name: Rewrite settings.php file
     command: 'drush fetcher-task ensure_settings_file bear -y'
   - name: Install bear
