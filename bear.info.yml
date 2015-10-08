@@ -43,4 +43,5 @@ dependencies:
   - token
 themes:
   - bear_coat
+  - bartik
   - seven
