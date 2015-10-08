@@ -16,7 +16,7 @@ steps:
   - name: Fix permissions
     command: 'chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
   - name: Install curl
-  command: 'apt-get install cURL'
+    command: 'apt-get install cURL'
   - name: Curl for bear
     command: 'curl http://localhost'
   - name: How about here
