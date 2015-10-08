@@ -15,9 +15,11 @@ steps:
     command: 'drush --root=/var/www/bear/webroot si bear -y'
   - name: Fix permissions
     command: 'chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
-  - name: Restart apache
-    command: 'service apache2 restart'
-  - name: Curl user page
+  - name: Install curl
+  command: 'apt-get install cURL'
+  - name: Curl for bear
     command: 'curl http://localhost'
+  - name: How about here
+    command: 'curl https://localhost'
   - name: Run behat tests
     command: 'cd /var/www/bear/code/profiles/contrib/bear/tests ; composer install ; ./bin/behat --profile probo'
