@@ -9,12 +9,12 @@ steps:
     command: 'cd /var/www/bear ; rm -r code ; mv bearbuild code'
   - name: Add the bear profile  to the bear build
     command: 'rm -rf /var/www/bear/code/profiles/contrib/bear ; cp -r $SRC_DIR /var/www/bear/code/profiles/contrib/bear'
-  - name: Fix permissions
-    command: 'mkdir -p /var/www/bear/webroot/sites/default/files ; chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
   - name: Rewrite settings.php file
     command: 'drush fetcher-task ensure_settings_file bear -y'
   - name: Install bear
     command: 'drush --root=/var/www/bear/webroot si bear -y'
+  - name: Fix permissions
+    command: 'chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
   - name: Install curl
     command: 'apt-get install cURL'
   - name: Curl for bear
