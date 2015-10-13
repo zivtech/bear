@@ -5,6 +5,24 @@
  */
 
 /**
+ * Implements hook_default_asset_type().
+ */
+function bear_necessities_default_asset_type() {
+  $items = array();
+  $items['embed'] = entity_import('asset_type', '{
+    "type" : "embed",
+    "name" : "Embed",
+    "icon" : "AddVideo.png",
+    "description" : "Embed via URL from anything supported by http:\\/\\/embed.ly\\/providers",
+    "help" : "Paste a URL from any provider supported by http:\\/\\/embed.ly\\/providers",
+    "weight" : "0",
+    "locked" : "0",
+    "uuid" : ""
+  }');
+  return $items;
+}
+
+/**
  * Implements hook_ctools_plugin_api().
  */
 function bear_necessities_ctools_plugin_api($module = NULL, $api = NULL) {

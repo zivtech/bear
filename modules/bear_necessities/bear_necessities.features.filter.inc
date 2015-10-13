@@ -14,7 +14,7 @@ function bear_necessities_filter_default_formats() {
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
-    'cache' => 1,
+    'cache' => 0,
     'status' => 1,
     'weight' => -10,
     'filters' => array(
@@ -25,6 +25,11 @@ function bear_necessities_filter_default_formats() {
           'filter_url_length' => 72,
         ),
       ),
+      'kill_nbsp' => array(
+        'weight' => 1,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_html' => array(
         'weight' => 1,
         'status' => 1,
@@ -34,7 +39,7 @@ function bear_necessities_filter_default_formats() {
           'filter_html_nofollow' => 0,
         ),
       ),
-      'media_filter' => array(
+      'assets_filter' => array(
         'weight' => 2,
         'status' => 1,
         'settings' => array(),
@@ -51,7 +56,7 @@ function bear_necessities_filter_default_formats() {
   $formats['full_html'] = array(
     'format' => 'full_html',
     'name' => 'Full HTML',
-    'cache' => 1,
+    'cache' => 0,
     'status' => 1,
     'weight' => -9,
     'filters' => array(
@@ -62,12 +67,17 @@ function bear_necessities_filter_default_formats() {
           'filter_url_length' => 72,
         ),
       ),
+      'kill_nbsp' => array(
+        'weight' => 1,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_autop' => array(
         'weight' => 1,
         'status' => 1,
         'settings' => array(),
       ),
-      'media_filter' => array(
+      'assets_filter' => array(
         'weight' => 2,
         'status' => 1,
         'settings' => array(),
