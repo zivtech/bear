@@ -76,3 +76,52 @@ function bear_necessities_menu_block_blocks() {
     ),
   );
 }
+
+/**
+ * Implements hook_library_alter().
+ *
+ * Add our custom css for the asset widget library so that we can add the embed
+ * icon.
+ */
+function bear_necessities_library_alter(&$libraries, $module) {
+  if ($module === 'asset_widget') {
+    $libraries['asset_widget']['css'][drupal_get_path('module', 'bear_necessities') . '/css/bear-asset-widget.css'] = array('weight' => 12, 'group' => CSS_THEME);
+  }
+}
+
+/**
+ * Implements hook_filter_info().
+ */
+function bear_necessities_filter_info() {
+  $filters = array();
+
+  $filters['kill_nbsp'] = array(
+    'title' => t('Kill Non-Breaking Spaces'),
+    'description' => t('Remove non-breaking spaces.'),
+    'process callback' => '_bear_necessities_kill_nbsp',
+    'tips callback' => '_bear_necessities_kill_nbsp_tips',
+  );
+
+  return $filters;
+}
+
+/**
+ * Filter callbacks.
+ */
+function _bear_necessities_kill_nbsp($text, $filter) {
+  return preg_replace('/&nbsp;/', ' ', $text);
+}
+
+/**
+ * Filter tips.
+ */
+function _bear_necessities_kill_nbsp_tips($filter, $format, $long = FALSE) {
+  if (!$long) {
+    // This string will be shown in the content add/edit form.
+    return t('Don\'t use non-breaking spaces.  Ever.');
+  }
+  else {
+    // And this one on the "Filter Tips" page.
+    return t('Non-breaking spaces are evil and will be eradicated.');
+  }
+}

@@ -1,0 +1,7 @@
+.assets-module .assets-module-inner .assets-content .tab-links ul li a.embed-tab span.ico {
+  background: url('../images/sprite-a.png') no-repeat -75px -93px;
+}
+.assets-module .assets-module-inner .assets-content .tab-links ul li a.embed-tab:hover span.ico,
+.assets-module .assets-module-inner .assets-content .tab-links ul li a.embed-tab.active span.ico {
+  background: url('../images/sprite-a.png') no-repeat -122px -93px;
+}
