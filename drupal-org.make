@@ -21,6 +21,8 @@ projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
 ; @see https://www.drupal.org/node/2486843#comment-10268935
 projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
 
+projects[ctools][version] = "3.0-alpha17"
+
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
 projects[devel][download][branch] = 8.x-1.x
@@ -35,6 +37,12 @@ projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
 projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
+
+projects[layout_plugin][version] = "1.0-alpha17"
+
+projects[page_manager][version] = "1.0-alpha17"
+
+projects[panels][version] = "3.0-alpha17"
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
