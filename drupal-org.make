@@ -42,7 +42,7 @@ projects[layout_plugin][version] = "1.0-alpha17"
 
 projects[page_manager][version] = "1.0-alpha17"
 
-projects[panels][version] = "3.0-alpha14"
+projects[panels][version] = "3.0-alpha17"
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
