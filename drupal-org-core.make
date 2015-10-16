@@ -7,7 +7,7 @@ projects[drupal][type] = core
 projects[drupal][download][type] = git
 projects[drupal][download][url] = http://git.drupal.org/project/drupal.git
 projects[drupal][download][branch] = 8.0.x
-projects[drupal][download][revision] = b7390caeeec23886c4b8d91f8952c35c034cd41f
+projects[drupal][download][revision] = 9ed49f24dd8b20f367d399c203eaa6ab40105901
 
 ;Both of these patches are failing against the latest 8.x-dev. Need to re-roll.
 ; @see - https://www.drupal.org/node/2264739#comment-10363963
