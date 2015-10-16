@@ -8,7 +8,9 @@ projects[drupal][download][type] = git
 projects[drupal][download][url] = http://git.drupal.org/project/drupal.git
 projects[drupal][download][branch] = 8.0.x
 projects[drupal][download][revision] = b7390caeeec23886c4b8d91f8952c35c034cd41f
+
+;Both of these patches are failing against the latest 8.x-dev. Need to re-roll.
 ; @see - https://www.drupal.org/node/2264739#comment-10363963
-projects[drupal][patch][] = https://www.drupal.org/files/issues/2264739-2-allow_multiple_fields_no_tabledrag-8.0.x.patch
+;projects[drupal][patch][] = https://www.drupal.org/files/issues/2264739-2-allow_multiple_fields_no_tabledrag-8.0.x.patch
 ; @see - https://www.drupal.org/node/808730#comment-9749573
-projects[drupal][patch][] = http://www.drupal.org/files/issues/show_the_revisions-808730-24.patch
+;projects[drupal][patch][] = http://www.drupal.org/files/issues/show_the_revisions-808730-24.patch
