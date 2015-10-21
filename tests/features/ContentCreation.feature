@@ -4,7 +4,7 @@ Feature: Creating Basic Content
   I am able to log in
   And publish content on the site
 
-Scenario: Administrator is able to log in and create Basic Page content
+Scenario: As an Administrator I should be able to create Basic Page content
   Given I am logged in as a user with the "administrator" role
   When I visit "node/add/page"
    And I fill in "Title" with "My test content"
