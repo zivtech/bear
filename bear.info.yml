@@ -41,6 +41,7 @@ dependencies:
   - diff
   - field_group
   - layout_plugin
+  - media_embed
   - page_manager
   - panels
   - pathauto

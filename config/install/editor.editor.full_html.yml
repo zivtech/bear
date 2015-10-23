@@ -28,6 +28,7 @@ settings:
           name: Media
           items:
             - Blockquote
+            - Embed
             - DrupalImage
             - Table
             - HorizontalRule
@@ -58,3 +59,4 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor
+    - media_embed

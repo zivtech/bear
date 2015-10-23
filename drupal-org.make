@@ -44,6 +44,13 @@ projects[page_manager][version] = "1.0-alpha17"
 
 projects[panels][version] = "3.0-alpha17"
 
+; Must specify type since it is still a sandbox.
+projects[media_embed][type] = module
+projects[media_embed][download][type] = git
+projects[media_embed][download][url] = http://git.drupal.org/sandbox/grndlvl/2597734.git
+projects[media_embed][download][branch] = 8.x-1.x
+projects[media_embed][download][revision] = 820dc95aaaed07cc74cf2351e71acae83cc2681d
+
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
