@@ -1,0 +1,4 @@
+vendor
+bin
+local.behat.yaml
+composer.phar
