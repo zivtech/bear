@@ -36,9 +36,20 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - coffee
+<<<<<<< HEAD
   - devel
   - diff
   - field_group
+=======
+  - ctools
+  - devel
+  - diff
+  - field_group
+  - layout_plugin
+  - media_embed
+  - page_manager
+  - panels
+>>>>>>> origin/8.x
   - pathauto
   - token
 themes:

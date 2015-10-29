@@ -1,0 +1,19 @@
+steps:
+  - name: Install drush-master for d8
+    command: 'composer global require drush/drush:dev-master ; cd /usr/local/bin ; mv drush drush7 ; ln -s $HOME/.composer/vendor/bin/drush drush'
+  - name: Create a fake site
+    command: "drush fec bear 8 --json-config='{\"settings_php.snippets\": []}' --local-environment=probo"
+  - name: Run the make file
+    command: 'cd $SRC_DIR ; drush make build-a-bear.make /var/www/bear/bearbuild --force-complete'
+  - name: Replace default code with the bear build
+    command: 'cd /var/www/bear ; rm -r code ; mv bearbuild code'
+  - name: Add the bear profile  to the bear build
+    command: 'rm -rf /var/www/bear/code/profiles/contrib/bear ; cp -r $SRC_DIR /var/www/bear/code/profiles/contrib/bear'
+  - name: Rewrite settings.php file
+    command: 'drush fetcher-task ensure_settings_file bear -y'
+  - name: Install bear
+    command: 'drush --root=/var/www/bear/webroot si bear -y'
+  - name: Fix permissions
+    command: 'chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
+  - name: Run behat tests
+    command: 'cd /var/www/bear/code/profiles/contrib/bear/tests ; composer install ; ./bin/behat --profile probo'

@@ -40,16 +40,25 @@ projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3
 
 projects[layout_plugin][version] = "1.0-alpha17"
 
+; Dev currently lives on Github, so we rolled a patch for D.O.
+
 projects[page_manager][version] = "1.0-alpha17"
 
 projects[panels][version] = "3.0-alpha17"
 
-; Dev currently lives on Github, so we rolled a patch for D.O.
+; Must specify type since it is still a sandbox.
+projects[media_embed][type] = module
+projects[media_embed][download][type] = git
+projects[media_embed][download][url] = http://git.drupal.org/sandbox/grndlvl/2597734.git
+projects[media_embed][download][branch] = 8.x-1.x
+projects[media_embed][download][revision] = 820dc95aaaed07cc74cf2351e71acae83cc2681d
+
+; Currently lives on Github.
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
 projects[pathauto][download][branch] = 8.x-1.x
 projects[pathauto][download][revision] = 0ceda1f9b0fbb5251facfdf4e3f79faa0659b1aa
-; @see https://www.drupal.org/node/2168193#comment-10443417
+; @see https://www.drupal.org/node/2168193#comment-10474448
 projects[pathauto][patch][] = https://www.drupal.org/files/issues/pathauto-d8_port-2168193-56.patch
 
 projects[token][download][type] = git
