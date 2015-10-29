@@ -1,10 +1,6 @@
 steps:
-  - name: Install zip
-    command: 'apt-get install -y zip'
   - name: Create a fake site
     command: "drush fec bear --json-config='{\"settings_php.snippets\": []}'"
-  - name: Fix permissions
-    command: 'chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
   - name: Run the make file
     command: 'cd $SRC_DIR ; drush make build-bear.make /var/www/bear/bearbuild --force-complete'
   - name: Replace default code with the bear build
