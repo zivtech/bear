@@ -28,10 +28,7 @@ settings:
           name: Media
           items:
             - Blockquote
-<<<<<<< HEAD
-=======
             - Embed
->>>>>>> origin/8.x
             - DrupalImage
             - Table
             - HorizontalRule
@@ -62,7 +59,4 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor
-<<<<<<< HEAD
-=======
     - media_embed
->>>>>>> origin/8.x
