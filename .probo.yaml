@@ -1,17 +1,11 @@
 steps:
-  - name: Create a fake site
-    command: "drush fec bear --json-config='{\"settings_php.snippets\": []}'"
-  - name: Run the make file
-    command: 'cd $SRC_DIR ; drush make build-bear.make /var/www/bear/bearbuild --force-complete'
-  - name: Replace default code with the bear build
-    command: 'cd /var/www/bear ; rm -r code ; mv bearbuild code'
-  - name: Add the bear profile  to the bear build
-    command: 'rm -rf /var/www/bear/code/profiles/bear ; cp -r $SRC_DIR /var/www/bear/code/profiles/bear'
-  - name: Rewrite settings.php file
-    command: 'drush fetcher-task ensure_settings_file bear -y'
+  - name: Make Bear
+    plugin: Drupal
+    makeFile: build-bear.make
+    profileName: bear
+  - name: move latest bear code
+    command: 'rm -rf /var/www/html/profiles/bear ; cp -r $SRC_DIR /var/www/html/profiles/bear'
   - name: Install bear
-    command: 'drush --root=/var/www/bear/webroot si bear -y'
-  - name: Fix permissions
-    command: 'chown -R www-data:www-data /var/www/bear/webroot/sites/default/files'
+    command: 'drush --root=/var/www/html si bear'
   - name: Run behat tests
-    command: 'cd /var/www/bear/webroot/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags "~@javascript"'
+    command: 'cd /var/www/html/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags "~@javascript"'

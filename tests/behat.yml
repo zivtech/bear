@@ -35,4 +35,4 @@ probo:
       drush:
         alias: 'local'
       drupal:
-        drupal_root: '/var/www/bear/webroot'
+        drupal_root: '/var/www/html'
