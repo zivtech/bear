@@ -51,6 +51,7 @@ projects[media_embed][type] = module
 projects[media_embed][download][type] = git
 projects[media_embed][download][url] = http://git.drupal.org/sandbox/grndlvl/2597734.git
 projects[media_embed][download][branch] = 8.x-1.x
+projects[media_embed][download][revision] = dbcec9ffb9d9a4a5d5dc4c8d563361faf8087651
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
