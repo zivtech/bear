@@ -39,6 +39,7 @@ projects[] = fences
 projects[] = field_collection
 projects[] = field_group
 projects[] = habitat
+projects[] = inline_entity_form
 projects[] = jquery_update
 ; We are using jPlayer dev version so that it can correctly detect the jPlayer
 ; library without additional human intervention beyond downloading the package.
