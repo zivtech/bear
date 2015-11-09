@@ -5,6 +5,9 @@ steps:
     plugin: Drupal
     makeFile: build-a-bear.make
     profileName: bear
-    runInstall: true
+  - name: move latest bear code
+    command: 'rm -rf /var/www/html/profiles/contrib/bear ; cp -r $SRC_DIR /var/www/bear/code/profiles/contrib/bear'
+  - name: Install bear
+    command: 'drush --root=/var/www/html si bear'
   - name: Run behat tests
     command: 'cd /var/www/html/profiles/contrib/bear/tests ; composer install ; ./bin/behat --profile probo'
