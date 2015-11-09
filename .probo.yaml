@@ -6,7 +6,7 @@ steps:
     makeFile: build-a-bear.make
     profileName: bear
   - name: move latest bear code
-    command: 'rm -rf /var/www/html/profiles/contrib/bear ; cp -r $SRC_DIR /var/www/bear/code/profiles/contrib/bear'
+    command: 'rm -rf /var/www/html/profiles/contrib/bear ; cp -r $SRC_DIR /var/www/html/profiles/contrib/bear'
   - name: Install bear
     command: 'drush --root=/var/www/html si bear'
   - name: Run behat tests
