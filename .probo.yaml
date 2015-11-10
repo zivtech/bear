@@ -5,6 +5,6 @@ steps:
     plugin: Drupal
     makeFile: build-a-bear.make
     profileName: bear
-    siteInstall: true
+    runInstall: true
   - name: Run behat tests
     command: 'cd /var/www/html/profiles/bear/tests ; composer install ; ./bin/behat --profile probo'
