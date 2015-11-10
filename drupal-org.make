@@ -17,6 +17,8 @@ projects[asset][version] = 1.0-beta4
 projects[asset][patch][] = "https://www.drupal.org/files/issues/2480503-1-asset-add_more_icons-7.x-1.0-beta4.patch"
 ; @see https://www.drupal.org/node/2174613#comment-10509492
 projects[asset][patch][] = "https://www.drupal.org/files/issues/asset-youtube-video-2174613-6--beta4.patch"
+; @see https://www.drupal.org/node/2612602#comment-10550910
+projects[asset][patch][] = https://www.drupal.org/files/issues/2612602-3-asset-inline_entity_form_integration.patch
 projects[] = bear_habitat
 projects[] = block_class
 projects[] = breadcrumbs_by_path
@@ -39,6 +41,7 @@ projects[] = fences
 projects[] = field_collection
 projects[] = field_group
 projects[] = habitat
+projects[] = inline_entity_form
 projects[] = jquery_update
 ; We are using jPlayer dev version so that it can correctly detect the jPlayer
 ; library without additional human intervention beyond downloading the package.

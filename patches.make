@@ -34,5 +34,8 @@ projects[asset][patch][] = "https://www.drupal.org/files/issues/2480503-1-asset-
 ; @see https://www.drupal.org/node/2174613#comment-10509492
 projects[asset][patch][] = "https://www.drupal.org/files/issues/asset-youtube-video-2174613-6--beta4.patch"
 
+; @see https://www.drupal.org/node/2612602#comment-10550910
+projects[asset][patch][] = https://www.drupal.org/files/issues/2612602-3-asset-inline_entity_form_integration.patch
+
 ; @see https://www.drupal.org/node/2463187#comment-9779355
 projects[ckeditor][patch][] = https://www.drupal.org/files/issues/allow-custom-icon-paths-2463187-1.patch

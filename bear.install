@@ -220,7 +220,6 @@ function bear_install() {
     'access administration menu',
     'access administration pages',
     'access assets overview',
-    'access search widget',
     'access coffee',
     'access content',
     'access content overview',
