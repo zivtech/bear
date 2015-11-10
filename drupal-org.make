@@ -65,8 +65,7 @@ projects[] = strongarm
 projects[] = styleguide
 projects[] = token
 projects[] = xmlsitemap
-; @see https://www.drupal.org/node/1036962#comment-9255301
-projects[views][patch][] = "http://www.drupal.org/files/issues/1036962-views-ajax-destination-65.patch"
+projects[] = views
 projects[] = views_bulk_operations
 projects[] = views_slideshow
 

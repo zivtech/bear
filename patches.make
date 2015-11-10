@@ -22,9 +22,6 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/death-to-tabledrag.p
 ; @see https://www.drupal.org/node/766264#comment-8818877
 projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
 
-; @see https://www.drupal.org/node/1036962#comment-9255301
-projects[views][patch][] = "http://www.drupal.org/files/issues/1036962-views-ajax-destination-65.patch"
-
 ; @see https://www.drupal.org/node/1036962#comment-925530://www.drupal.org/node/2580405#comment-10412829
 projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2580405-2-Add_asset_template_override.patch
 
