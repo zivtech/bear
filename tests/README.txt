@@ -6,9 +6,6 @@ Run tests with bin/behat
 
 The tests must be run from the machine hosting the site.
 
-##Not certain if we need this:
-Before testing you must also make a local-config.yaml file following the format of the example.local-config.yaml file. This file must contain login information for an administrative user and Channel Manager of your spoke site. Without this file any tests that require logging in to the spoke site will fail. Be sure to add this file to your .gitignore so that it does not get added to your VCS!
-
 To run tests with Selenium (tests with '@javascript' tag):
   wget http://selenium.googlecode.com/files/selenium-server-standalone-2.44.0.jar
     [May need to visit the website to determine the latest Selenium version]
