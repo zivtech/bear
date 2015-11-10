@@ -59,4 +59,4 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor
-    - media_embed
+    - ckeditor_media_embed
