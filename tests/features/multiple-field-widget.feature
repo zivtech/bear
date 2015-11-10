@@ -7,7 +7,7 @@ Feature: Multiple Field Widget
 Scenario: As an Administrator I can add a multiple text field to page content type and it is orderable.
   Given I am logged in as a user with the "administrator" role
    When I visit "admin/structure/types/manage/page/fields"
-    And I fill in "Add new field" with "Test field"
+    And I fill in "New field label" with "Test field"
     And I select "Text" from "- Select a field type -"
     And I press "Save"
     And I press "Save field settings"
