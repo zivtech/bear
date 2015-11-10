@@ -1,13 +1,10 @@
 steps:
   - name: Install drush-master for d8
     command: 'composer global require drush/drush:dev-master ; cd /usr/local/bin ; mv drush drush7 ; ln -s $HOME/.composer/vendor/bin/drush drush'
-  - name: Make Bear
+  - name: Make and install Bear
     plugin: Drupal
     makeFile: build-a-bear.make
     profileName: bear
-  - name: move latest bear code
-    command: 'rm -rf /var/www/html/profiles/contrib/bear ; cp -r $SRC_DIR /var/www/html/profiles/contrib/bear'
-  - name: Install bear
-    command: 'drush --root=/var/www/html si bear'
+    siteInstall: true
   - name: Run behat tests
     command: 'cd /var/www/html/profiles/contrib/bear/tests ; composer install ; ./bin/behat --profile probo'
