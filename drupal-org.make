@@ -51,7 +51,7 @@ projects[ckeditor_media_embed][type] = module
 projects[ckeditor_media_embed][download][type] = git
 projects[ckeditor_media_embed][download][url] = http://git.drupal.org/sandbox/grndlvl/2597734.git
 projects[ckeditor_media_embed][download][branch] = 8.x-1.x
-projects[ckeditor_media_embed][download][revision] = dbcec9ffb9d9a4a5d5dc4c8d563361faf8087651
+projects[ckeditor_media_embed][download][revision] = fa7a0600c3ed9e37555c98246b8f2d14f9cb6b5a
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
