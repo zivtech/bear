@@ -40,8 +40,6 @@ projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3
 
 projects[layout_plugin][version] = "1.0-alpha17"
 
-; Dev currently lives on Github, so we rolled a patch for D.O.
-
 projects[page_manager][version] = "1.0-alpha17"
 
 projects[panels][version] = "3.0-alpha17"
