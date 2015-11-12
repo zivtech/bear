@@ -6,5 +6,3 @@ steps:
     runInstall: true
   - name: Run behat tests
     command: 'cd /var/www/html/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags "~@javascript"'
-  - name: Generate login link
-    command: 'drush --root="/var/www/html/webroot" uli'
