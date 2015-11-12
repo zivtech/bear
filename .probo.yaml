@@ -5,7 +5,6 @@ steps:
     profileName: bear
     runInstall: true
   - name: Install bear_skin dependencies
-    plugin: shell
     command: 'cd /var/www/html/sites/all/libraries ; wget https://github.com/Semantic-Org/Semantic-UI/archive/2.1.6.zip; unzip 2.1.6.zip ; mv 2.1.6 semantic_ui ; cp -Rf semantic_ui/dist/* semantic_ui/.'
   - name: Run behat tests
     command: 'cd /var/www/html/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags "~@javascript"'
