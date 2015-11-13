@@ -40,18 +40,16 @@ projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3
 
 projects[layout_plugin][version] = "1.0-alpha17"
 
-; Dev currently lives on Github, so we rolled a patch for D.O.
-
 projects[page_manager][version] = "1.0-alpha17"
 
 projects[panels][version] = "3.0-alpha17"
 
 ; Must specify type since it is still a sandbox.
-projects[media_embed][type] = module
-projects[media_embed][download][type] = git
-projects[media_embed][download][url] = http://git.drupal.org/sandbox/grndlvl/2597734.git
-projects[media_embed][download][branch] = 8.x-1.x
-projects[media_embed][download][revision] = 820dc95aaaed07cc74cf2351e71acae83cc2681d
+projects[ckeditor_media_embed][type] = module
+projects[ckeditor_media_embed][download][type] = git
+projects[ckeditor_media_embed][download][url] = http://git.drupal.org/sandbox/grndlvl/2597734.git
+projects[ckeditor_media_embed][download][branch] = 8.x-1.x
+projects[ckeditor_media_embed][download][revision] = 152a2dfb9d191c1830975a82d22122607ebc646b
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git
