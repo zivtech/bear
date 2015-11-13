@@ -1,8 +1,12 @@
 To set up test framework, run composer install in this directory.
 
-After the installer runs, add your site to your machine's hosts file so the tests will be able to interact with the site. 
+After the installer runs, add your site to your machine's hosts file so the tests will be able to interact with the site.
 
-Run tests with bin/behat 
+Edit behat.yml to set the base_url and webroot properly.
+
+If you do not have Selenium setup, you can only run tests with Goutte, which means tests will not use Javascript.
+To run only tests that don't require Javascript, use:
+    bin/behat --tags "~@javascript"
 
 The tests must be run from the machine hosting the site.
 
