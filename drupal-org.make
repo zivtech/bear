@@ -47,9 +47,9 @@ projects[panels][version] = "3.0-alpha17"
 ; Must specify type since it is still a sandbox.
 projects[ckeditor_media_embed][type] = module
 projects[ckeditor_media_embed][download][type] = git
-projects[ckeditor_media_embed][download][url] = http://git.drupal.org/sandbox/grndlvl/2597734.git
+projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ckeditor_media_embed.git
 projects[ckeditor_media_embed][download][branch] = 8.x-1.x
-projects[ckeditor_media_embed][download][revision] = 152a2dfb9d191c1830975a82d22122607ebc646b
+projects[ckeditor_media_embed][download][revision] = bde51cedf69752b2d0100e16a14aa10577e0d11f
 
 ; Currently lives on Github.
 projects[pathauto][download][type] = git

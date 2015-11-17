@@ -28,7 +28,7 @@ settings:
           name: Media
           items:
             - Blockquote
-            - Embed
+            - EmbedSemantic
             - DrupalImage
             - Table
             - HorizontalRule
