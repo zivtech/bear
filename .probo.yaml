@@ -1,9 +1,7 @@
 steps:
-  - name: Run core make
-    command: 'cd $SRC_DIR ; drush make drupal-org-core.make /var/www/html -y'
-  - name: Run make
-    command: 'cd $SRC_DIR ; drush make --no-core --contrib-destination=. drupal-org.make . -y'
-  - name: Sync code in place
-    command: 'cp -r $SRC_DIR /var/www/html/profiles/bear'
+  - name: Run the profile script
+    command: './$SRC_DIR/profile-build.sh'
   - name: Run install
     command: "drush site-install --root=/var/www/html bear --db-url='mysqli://root:strongpassword@localhost/bear'"
+  - name: Run behat tests
+    command: 'cd /var/www/html/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags "~@javascript"'
