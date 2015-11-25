@@ -3,7 +3,7 @@ steps:
     command: 'composer global require drush/drush:dev-master ; cd /usr/local/bin ; mv drush drush7 ; ln -s $HOME/.composer/vendor/bin/drush drush'
   - name: Make and install Bear
     plugin: Drupal
-    makeFile: build-a-bear.make
+    makeFile: probo.make
     profileName: bear
     runInstall: true
   - name: Run behat tests
