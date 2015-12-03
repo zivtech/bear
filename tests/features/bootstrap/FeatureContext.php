@@ -17,6 +17,7 @@ use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode;
 use Drupal\DrupalExtension\Context\DrupalContext;
 use Drupal\Component\Utility\Random;
+use Behat\Behat\Event\FeatureEvent;
 
 /**
  * Defines application features from the specific context.
@@ -355,6 +356,14 @@ class FeatureContext extends DrupalContext {
     if (strpos($text, $content) !== FALSE) {
       throw new \Exception(sprintf('The text "%s" was found in the "%s" WYSWIYG editor on the page %s', $text, $instanceId, $this->getSession()->getCurrentUrl()));
     }
+  }
+  
+  /**
+   * @AfterScenario @deleteTestField
+   */
+  public function deleteTestField() {
+    $this->Visit("admin/structure/types/manage/page/fields/field_test/delete");
+    $this->pressButton("edit-submit");
   }
 
 }
