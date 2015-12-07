@@ -14,7 +14,6 @@ Scenario: As an Administrator I can add a multiple text field to page content ty
     And I select "text_textfield" from "edit-fields-add-new-field-widget-type"
     And I press "Save"
     And I press "edit-submit"
-    And print last response
     And I select "Unlimited" from "edit-field-cardinality"
     And I press "Save settings"
     And I visit "node/add/page"
