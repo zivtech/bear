@@ -10,7 +10,7 @@ Scenario: As an Administrator I can add a multiple text field to page content ty
     And I fill in "edit-fields-add-new-field-label" with "Test field"
     And I fill in "edit-fields-add-new-field-field-name" with "test"
     And I select "Text" from "edit-fields-add-new-field-type"
-    And I select "Text field" from "edit-fields-add-new-field-widget-type"
+    And I select "text_textfield" from "edit-fields-add-new-field-widget-type"
     And I press "Save"
     And I press "edit-submit"
     And I select "Unlimited" from "edit-field-cardinality"
