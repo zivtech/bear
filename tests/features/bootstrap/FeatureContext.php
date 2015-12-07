@@ -363,7 +363,7 @@ class FeatureContext extends DrupalContext {
   */
   public function deleteTestField() {
     $this->visit("admin/structure/types/manage/page/fields/field_test/delete");
-    $this->showLastResponse();
+    $this->printLastResponse();
     $this->pressButton("Delete");
   }
 
