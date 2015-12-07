@@ -22,8 +22,11 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/death-to-tabledrag.p
 ; @see https://www.drupal.org/node/766264#comment-8818877
 projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
 
-; @see https://www.drupal.org/node/1036962#comment-925530://www.drupal.org/node/2580405#comment-10412829
+; @see http://www.drupal.org/node/2580405#comment-10412829
 projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2580405-2-Add_asset_template_override.patch
+
+; @see https://www.drupal.org/node/2630530#comment-10645488
+projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2630530-2-bear_skin-handle_class_attribute.patch
 
 ; @see https://www.drupal.org/node/2568763#comment-10331417
 projects[semantic_ui_api][patch][] = "http://www.drupal.org/files/issues/2568763-2-semantic_ui_api-detect_path.patch"
