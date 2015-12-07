@@ -131,7 +131,7 @@ class FeatureContext extends DrupalContext {
 
   /**
    * @Given /^I leave the iframe$/
-  /
+   */
   public function iLeaveTheIframe() {
     $this->getSession()->switchToIFrame();
     $this->getSession()->wait(3000, 'false');
