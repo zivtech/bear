@@ -62,8 +62,6 @@ projects[] = pathauto
 projects[] = picture
 projects[] = redirect
 projects[] = responsive_menus
-; @see https://www.drupal.org/node/2568763#comment-10331417
-projects[semantic_ui_api][patch][] = "http://www.drupal.org/files/issues/2568763-2-semantic_ui_api-detect_path.patch"
 projects[] = strongarm
 projects[] = styleguide
 projects[] = token
@@ -79,8 +77,6 @@ libraries[chosen][download][type] = "get"
 libraries[chosen][download][url] = "https://github.com/harvesthq/chosen/releases/download/1.4.2/chosen_v1.4.2.zip"
 libraries[sidr][download][type] = "get"
 libraries[sidr][download][url] = "https://github.com/artberri/sidr-package/archive/1.2.1.zip"
-libraries[jplayer][download][type] = "get"
-libraries[jplayer][download][url] = "https://github.com/happyworm/jPlayer/archive/2.9.2.tar.gz"
 
 ; Themes
 projects[bear_skin][type] = "theme"
