@@ -83,7 +83,6 @@ libraries[jplayer][download][type] = "get"
 libraries[jplayer][download][url] = "https://github.com/happyworm/jPlayer/archive/2.9.2.tar.gz"
 
 ; Themes
-projects[zen][type] = "theme"
 projects[bear_skin][type] = "theme"
 projects[bear_skin][download][type] = git
 projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
