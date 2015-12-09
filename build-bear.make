@@ -16,7 +16,3 @@ projects[bear][subdir] = ""
 projects[bear][download][type] = git
 projects[bear][download][url] = http://git.drupal.org/project/bear.git
 projects[bear][download][branch] = 7.x-1.x
-
-; Module/Libraries not in the Drupal.org whitelist.
-; @see https://www.drupal.org/node/2568763#comment-10331417
-projects[semantic_ui_api][patch][] = "http://www.drupal.org/files/issues/2568763-2-semantic_ui_api-detect_path.patch"
