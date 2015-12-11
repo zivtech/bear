@@ -59,6 +59,8 @@ projects[pathauto][download][revision] = 0ceda1f9b0fbb5251facfdf4e3f79faa0659b1a
 ; @see https://www.drupal.org/node/2168193#comment-10474448
 projects[pathauto][patch][] = https://www.drupal.org/files/issues/pathauto-d8_port-2168193-56.patch
 
+projects[simple_sitemap][version] = "1.2"
+
 projects[token][download][type] = git
 projects[token][download][url] = http://git.drupal.org/project/token.git
 projects[token][download][branch] = 8.x-1.x
