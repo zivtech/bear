@@ -33,7 +33,7 @@ function bear_necessities_install() {
   $block = array(
     'module' => 'menu_block',
     'delta' => 'bear_necessities-1',
-    'theme' => 'bear_skin',
+    'theme' => 'bear_coat',
     'region' => 'navigation',
     'status' => 1,
     'pages' => '',
