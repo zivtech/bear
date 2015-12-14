@@ -1,5 +1,7 @@
 #Bear Included Contrib Modules
 
+Bear includes helpful contributed modules for site builders and developers with default settings that help start building Drupal sites faster.
+
 - admin_menu
 - admin_views
 - advagg
