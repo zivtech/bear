@@ -1,6 +1,6 @@
 #Bear Installation
 
-There are more than one way to install the Bear installation profile.
+There are 2 ways we recommend to install the Bear installation profile.
 
 ##1. Install Bear with Drush Make. _(recommended for developers)_
 
