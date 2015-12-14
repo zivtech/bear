@@ -29,4 +29,4 @@ Look at Bear as a starter kit not as a profile that will get updates. Start with
 Bear Skin is the theme that comes with Bear. It is designed to be a great starting point for practically any site. It should look good out of the box and be easily customized. Bear Skin is a separate project that Bear includes. You do not have to use Bear Skin to use Bear.
 
 ## Why is it called Bear?
-No huge reason. It sounds like ‘bare’ and it gives you a bare site ready to make your own with nothing you should need to remove to get started. Also we have a picture of a big bear in our office courtesy of http://butcherpress.com/golden-paw
+No huge reason. It sounds like ‘bare’ and it gives you a bare site ready to make your own with nothing you should need to remove to get started. Also we have a picture of a big bear in our office courtesy of http://butcherpress.com/golden-paw.
