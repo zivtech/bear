@@ -1,4 +1,4 @@
-#Bear Included Modules
+#Bear Included Contrib Modules
 
 Bear includes helpful modules for site builders and developers with default settings that help start building Drupal sites faster.
 
