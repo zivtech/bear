@@ -27,7 +27,6 @@ dependencies[] = asset_document
 dependencies[] = asset_image
 dependencies[] = bear_habitat
 dependencies[] = bear_necessities
-dependencies[] = block_class
 dependencies[] = breadcrumbs_by_path
 dependencies[] = chosen
 dependencies[] = coffee
