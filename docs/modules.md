@@ -7,7 +7,6 @@ Bear includes helpful contributed modules for site builders and developers with 
 - advagg
 - asset
 - bear_habitat
-- block_class
 - breadcrumbs_by_path
 - breakpoints
 - chosen

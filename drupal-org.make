@@ -20,7 +20,6 @@ projects[asset][patch][] = "https://www.drupal.org/files/issues/asset-youtube-vi
 ; @see https://www.drupal.org/node/2612602#comment-10550910
 projects[asset][patch][] = https://www.drupal.org/files/issues/2612602-3-asset-inline_entity_form_integration.patch
 projects[] = bear_habitat
-projects[] = block_class
 projects[] = breadcrumbs_by_path
 projects[] = breakpoints
 projects[] = chosen
