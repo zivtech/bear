@@ -359,11 +359,23 @@ class FeatureContext extends DrupalContext {
   }
  
   /**
-  * @AfterScenario @deleteTestField
-  */
+   * @AfterScenario @deleteTestField
+   */
   public function deleteTestField() {
     $this->visit("admin/structure/types/manage/page/fields/field_test/delete");
     $this->pressButton("Delete");
+  }
+  
+  /**
+   * Checks that a specific radio button is checked, must use radio button's id.
+   *
+   * @Then /^the "([^"]*)" radio should be checked$/
+   */
+  public function theRadioShouldBeChecked($arg1) {
+    $elementByCss = $this->getSession()->getPage()->find('css', 'input[type="radio"]:checked#'.$arg1);
+    if (!$elementByCss) {
+        throw new Exception('Radio button with id ' . $arg1.' is not checked');
+    }
   }
 
 }
