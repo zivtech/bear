@@ -73,4 +73,4 @@ projects[bear_skin][type] = "theme"
 projects[bear_skin][download][type] = git
 projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
 projects[bear_skin][download][branch] = 8.x-1.x
-projects[bear_skin][download][revision] = 2542a2a1ed8dfbfed7f5258f5d02618ab85a7c81
+projects[bear_skin][download][revision] = af4754fb00e8a02d77305b111957e5715ee93de2
