@@ -18,11 +18,13 @@ use Behat\Gherkin\Node\PyStringNode,
 use Drupal\DrupalExtension\Context\DrupalContext;
 use Drupal\Component\Utility\Random;
 use Behat\Behat\Event\FeatureEvent;
+use Drupal\DrupalExtension\Context\RawDrupalContext;
+use Behat\Behat\Context\SnippetAcceptingContext;
 
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext extends DrupalContext {
+class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext {
 
  /**
    * An array of Behat Context objects.
