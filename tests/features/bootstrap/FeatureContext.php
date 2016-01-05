@@ -364,8 +364,9 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
    * @AfterScenario @deleteTestField
    */
   public function deleteTestField() {
-    $this->visit("admin/structure/types/manage/page/fields/field_test/delete");
-    $this->pressButton("Delete");
+    $driver = $this->getSession()->getDriver();
+    $driver->visit("admin/structure/types/manage/page/fields/field_test/delete");
+    $this->getSession()->getPage()->pressButton("Delete");
   }
   
   /**
