@@ -1,0 +1,18 @@
+id: bear_coat_powered
+theme: bear_coat
+weight: 0
+status: true
+langcode: en
+region: footer
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+dependencies:
+  module:
+    - system
+  theme:
+    - bear_coat
+visibility: {  }

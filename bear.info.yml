@@ -47,7 +47,6 @@ dependencies:
   - pathauto
   - token
 themes:
-  - bear_skin
   - bear_coat
   - bartik
   - seven
