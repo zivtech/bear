@@ -7,18 +7,18 @@ Feature: Creating Basic Content
 Scenario: Administrator is able to log in and create Basic Page content
   Given I am logged in as a user with the "administrator" role
   When I visit "node/add/page"
-   And I fill in "Title" with "bottle"
+   And I fill in "Title" with "foo"
    And I fill in "Body" with "This is test content."
    And I press "Save"
    And I visit "admin/content"
-   And I should see "bottle"
-   And I click "bottle"
+   And I should see "foo"
+   And I click "foo"
   Then I should see "test content."
 
 Scenario: As an Administrator I should be able to add a Menu Item
   Given I am logged in as a user with the "administrator" role
-  When I visit "node/add/page"  
-   And I fill in "Title" with "bottle"
+  When I visit "node/add/page"
+   And I fill in "Title" with "foo"
    And I fill in "Body" with "This is test content."
    And I check the box "Provide a menu link"
    And I fill in "Menu link title" with "About Us"
@@ -28,4 +28,3 @@ Scenario: As an Administrator I should be able to add a Menu Item
    And I should see "About Us"
    And I follow "About Us"
   Then I should see "test content."
-
