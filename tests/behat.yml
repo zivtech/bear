@@ -1,35 +1,39 @@
 default:
-  #suites:
-  #  default:
-  #    contexts:
-  #      - FeatureContext
-  #      - Drupal\DrupalExtension\Context\DrupalContext
-  #      - Drupal\DrupalExtension\Context\MinkContext
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
   extensions:
-    Behat\MinkExtension\Extension:
+    Behat\MinkExtension:
       goutte: ~
       selenium2: ~
-      base_url: http://bear_updates.local
-    Drupal\DrupalExtension\Extension:
+      base_url: http://beartests.local
+    Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal'
       drush:
         alias: 'local'
       drupal:
-        drupal_root: '/var/www/bear_updates/webroot'
+        drupal_root: '/var/www/beartests/webroot'
 probo:
-  #suites:
-  #  default:
-  #    contexts:
-  #      - FeatureContext
-  #      - Drupal\DrupalExtension\Context\DrupalContext
-  #      - Drupal\DrupalExtension\Context\MinkContext
+  suites:
+     default:
+       contexts:
+         - FeatureContext
+         - Drupal\DrupalExtension\Context\DrupalContext
+         - Drupal\DrupalExtension\Context\MinkContext
+         - Drupal\DrupalExtension\Context\MessageContext
+         - Drupal\DrupalExtension\Context\DrushContext
   extensions:
-    Behat\MinkExtension\Extension:
+    Behat\MinkExtension:
       goutte: ~
       selenium2: ~
       base_url: http://localhost
-    Drupal\DrupalExtension\Extension:
+    Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal'
       drush:
