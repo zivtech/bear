@@ -52,7 +52,6 @@ projects[linkit][version] = "2.x-dev"
 projects[] = menu_block
 projects[] = menu_expanded
 projects[] = module_filter
-projects[] = multiform
 projects[oembed][version] = "1.x-dev"
 projects[] = page_manager_templates
 projects[] = panels
