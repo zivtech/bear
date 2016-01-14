@@ -111,58 +111,6 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
   }
 
   /**
-   * @Given /^I switch to the iframe "([^"]*)"$/
-   *
-   * Drupal Media Module 7.x-1.3
-   */
-  public function switchToIFrame($name) {
-    if ($name) {
-      $this->getMainContext()->getSession()->switchToIFrame($name);
-    } else {
-      $this->getMainContect()->getSession()->switchToIFrame();
-    }
-  }
-
-  /**
-   * @Given /^I enter the media upload window$/
-   * @When I enter the iframe
-   */
-  public function iEnterTheIframe($arg1 = 'mediaBrowser') {
-    $this->getSession()->switchToIFrame($arg1);
-  }
-
-  /**
-   * @Given /^I leave the iframe$/
-   */
-  public function iLeaveTheIframe() {
-    $this->getSession()->switchToIFrame();
-    $this->getSession()->wait(3000, 'false');
-  }
-
-  /**
-   * @When I choose an image
-   * @When I choose a video
-   */
-  public function iChooseAnImage() {
-    $this->getSession()
-      ->getPage()
-      ->find("css", "#media-browser-library-list li img")
-      ->click();
-    $this->getSession()->wait(3000, 'false');
-  }
-
-  /**
-   * @When I choose an image from WYSIWYG media 
-   * @When I choose a video from WYSIWYG media 
-   */
-  public function iChooseAnImageFromWYSIWYGMedia() {
-    $this->getSession()->getDriver()
-      ->find("xpath", "//ul[@id='media-browser-library-list']/li/img")
-      ->click();
-  }
-
-
-  /**
    * @Given /^I click the fake "([^"]*)" button$/
    */
   public function iClickTheFakeButton($text) {
