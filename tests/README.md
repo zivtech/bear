@@ -1,32 +1,28 @@
-## Requirements
+To Run Behat Tests in your VM:
+------------------------------
+Follow these steps first to set up behat on your VM.
 
-The requirements are similar to that of the Behat Drupal extention. See [their
-requirements page](https://behat-drupal-extension.readthedocs.org/en/3.1/requirements.html)
-for more details and how to download Selenium.
+1. To set up test framework, in this directory run: composer install
 
-* PHP 5.3.4 or higher
-* Java
-* cURL
-* Selenium
-* A running Bear website already installed.
+2. After the installer runs, add your site to your machine's hosts file so the tests will be able to interact with the site.
 
-## Getting started
+3. Edit behat.yml to set the base_url and webroot properly.
 
-To run the Behat tests you must be on the host machine for the site. If it is
-hosted on a VM or Docker instance then the tests must be ran on the VM or Docker instance.
+4. If you do not have Selenium setup, you can only run tests with Goutte, which means tests will not use Javascript. To run only tests that don't require Javascript, use: bin/behat --tags "~@javascript"
 
-1. Run selenium ```java -jar selenium-server-standalone-2.44.0.jar &```
-2. Navigate to the *tests* directory for the Bear profile.
-3. Install necessary extensions by running ```composer install```
-4. Run the tests with the Bear defaults by running ```bin/behat``` or with your
-own configuration by running ```bin/behat --config local.behat.yml```.
+The tests must be run from the machine hosting the site.
 
-By default behat is configured to make a few assumptions about the configuration:
 
-* docroot - default: ```http://bear_updates.local```
-* url - default: ```/var/www/bear_updates/webroot```
-* drush alias - default: ```local```
+To Run Javascript Tests:
+------------------------
+To run tests with Selenium (tests with '@javascript' tag).
 
-If you wish to change these defaults make a copy of the ```behat.yml``` file named
-```local.behat.yml``` and make the desired changes. Be sure to use the following
-command to run with your local configuration ```bin/behat --config local.behat.yml```.
+1. Go to http://docs.seleniumhq.org/download/ and download the latest Selenium Standalone Server (currently ver. 2.48.2)
+
+2. To install the X virtual framebuffer, run: sudo apt-get install xvfb
+
+3. To install latest version of Firefox, run: sudo apt-get install firefox
+
+4. Run the Selenium .jar file:  xvfb-run java -jar selenium-server-standalone-2.48.2.jar
+
+You will need to keep this window open when running javascript tests, so run the behat tests in a new tab. Make sure to stop running the file and close the tab when you are done.
