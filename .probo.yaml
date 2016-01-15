@@ -1,8 +1,7 @@
 steps:
-  - name: Make and install Bear
-    plugin: Drupal
-    makeFile: build-bear.make
-    profileName: bear
-    runInstall: true
+  - name: Run the profile script
+    command: './$SRC_DIR/profile-build.sh'
+  - name: Run install
+    command: "drush site-install --root=/var/www/html bear --db-url='mysqli://root:strongpassword@localhost/bear'"
   - name: Run behat tests
     command: 'cd /var/www/html/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags "~@javascript"'
