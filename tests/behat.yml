@@ -11,14 +11,14 @@ default:
     Behat\MinkExtension:
       goutte: ~
       selenium2: ~
-      base_url: http://bear_updates.local
+      base_url: http://beartests8.local
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal'
       drush:
         alias: 'local'
       drupal:
-        drupal_root: '/var/www/bear_updates/webroot'
+        drupal_root: '/var/www/beartests8/webroot'
 probo:
   suites:
     default:
@@ -37,6 +37,6 @@ probo:
       blackbox: ~
       api_driver: 'drupal'
       drush:
-        alias: 'bear.probo'
+        alias: 'local'
       drupal:
         drupal_root: '/var/www/html'
