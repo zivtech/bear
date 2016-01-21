@@ -14,8 +14,8 @@ function bear_necessities_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Bold\',\'Italic\',\'Link\',\'Anchor\'],
-    [\'Format\',\'RemoveFormat\',\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'NumberedList\',\'BulletedList\',\'Table\'],
+    [\'Bold\',\'Italic\'],
+    [\'Format\',\'Scayt\',\'RemoveFormat\',\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'NumberedList\',\'BulletedList\',\'Table\'],
     [\'Blockquote\',\'PasteFromWord\',\'linkit\',\'asset_document\',\'asset_image\',\'asset_embed\',\'assetSearch\']
 ]',
         'expand' => 't',
@@ -31,7 +31,7 @@ function bear_necessities_ckeditor_profile_defaults() {
         'extraAllowedContent' => '',
         'enter_mode' => 'br',
         'shift_enter_mode' => 'br',
-        'font_format' => 'p;div;pre;h2;h3;h4;h5;h6',
+        'font_format' => 'p;h2;h3;h4;h5',
         'custom_formatting' => 't',
         'formatting' => array(
           'custom_formatting_options' => array(
@@ -60,7 +60,8 @@ function bear_necessities_ckeditor_profile_defaults() {
         'theme_config_js' => 'f',
         'js_conf' => 'config.fillEmptyBlocks = false;
 config.tabSpaces = 0;
-config.autoParagraph = false;',
+config.autoParagraph = false;
+config.scayt_autoStartup = true;',
         'loadPlugins' => array(
           'asset' => array(
             'name' => 'asset',
@@ -142,21 +143,16 @@ config.autoParagraph = false;',
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Source\'],
-    [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\',\'Scayt\'],
-    [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\'],
-    [\'Image\',\'Flash\',\'Table\',\'HorizontalRule\',\'Smiley\',\'SpecialChar\',\'Iframe\'],
-    \'/\',
     [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\',\'-\',\'RemoveFormat\'],
-    [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\',\'CreateDiv\'],
-    [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\',\'BidiLtr\',\'BidiRtl\',\'-\',\'Language\'],
-    [\'Link\',\'Unlink\',\'Anchor\'],
+    [\'Format\'],
+    [\'NumberedList\',\'BulletedList\',\'Blockquote\',\'Table\'],
+    [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\'],
     \'/\',
-    [\'Format\',\'Font\',\'FontSize\'],
-    [\'TextColor\',\'BGColor\'],
-    [\'Maximize\',\'ShowBlocks\'],
-    [\'DrupalBreak\'],
-    [\'asset_document\',\'asset_image\',\'asset_embed\',\'assetSearch\']
+    [\'PasteText\',\'PasteFromWord\',\'-\',\'Scayt\'],
+    [\'Undo\',\'Redo\',\'-\',\'SelectAll\'],
+    [\'Maximize\'],
+    [\'asset_document\',\'asset_image\',\'asset_embed\',\'assetSearch\'],
+    [\'Source\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -198,7 +194,8 @@ config.autoParagraph = false;',
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
-        'js_conf' => '',
+        'js_conf' => 'config.allowedContent = true;
+config.scayt_autoStartup = true;',
         'loadPlugins' => array(
           'asset' => array(
             'name' => 'asset',
