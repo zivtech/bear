@@ -4,7 +4,7 @@ Follow these steps first to set up behat on your VM.
 
 1. To set up test framework, in this directory run: composer install
 
-2. After the installer runs, add your site to your machine's hosts file so the tests will be able to interact with the site.
+2. If you are runnning this on a virtual machine, add your local site to your vm's hosts file so the tests will be able to interact with the site. Verify that your machine can resolve the domain by pinging it.
 
 3. Edit behat.yml to set the base_url and webroot properly.
 
