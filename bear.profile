@@ -11,7 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function bear_form_node_type_add_form_alter(&$form, FormStateInterface $form_state) {
   $form['workflow']['options']['#default_value']['revision'] = 'revision';
-  if (isset($form['submission']['preview_mode']) {
+  if (isset($form['submission']['preview_mode'])) {
     $form['submission']['preview_mode']['#default_value'] = DRUPAL_DISABLED;
   }
   if (isset($form['display']['display_submitted'])) {
