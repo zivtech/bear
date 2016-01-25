@@ -9,7 +9,7 @@ steps:
     profileName: bear
     runInstall: true
     clearCaches: false # drush cc all is not available for d8. Use cache-rebuild.
-  - name: Clear caches
+  - name: Rebuild caches
     command: 'drush cr'
   - name: Run behat tests
     command: 'cd /var/www/html/profiles/contrib/bear/tests ; composer install ; ./bin/behat --profile probo'
