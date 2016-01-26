@@ -14,4 +14,4 @@ includes[] = drupal-org.make
 projects[bear][type] = profile
 projects[bear][download][type] = git
 projects[bear][download][url] = http://github.com/zivtech/bear.git
-projects[bear][download][branch] = content-type-creation-settings
+projects[bear][download][branch] = 8.x
