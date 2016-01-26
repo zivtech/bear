@@ -22,7 +22,7 @@ function bear_form_node_type_add_form_alter(&$form, FormStateInterface $form_sta
 /**
  * Implements hook_form_BASE_FORM_ID_alter() for node_type_form().
  *
- * Hide promote and stiky form elements.
+ * Hide promote and sticky form elements.
  */
 function bear_form_node_type_form_alter(&$form, FormStateInterface $form_state) {
   if (isset($form['workflow']['options']['#options']['promote'])) {
@@ -36,7 +36,10 @@ function bear_form_node_type_form_alter(&$form, FormStateInterface $form_state) 
 /**
  * Implements hook_form_BASE_FORM_ID_alter() for node_form().
  *
- * Hide promote and stiky form elements.
+ * Hide promote and sticky form elements.
+ *
+ * Hide revision information from users who do not have permission to
+ * view content revisions.
  */
 function bear_form_node_form_alter(&$form, FormStateInterface $form_state) {
   if (isset($form['promote'])) {
@@ -44,5 +47,15 @@ function bear_form_node_form_alter(&$form, FormStateInterface $form_state) {
   }
   if (isset($form['sticky'])) {
     $form['sticky']['#access'] = FALSE;
+  }
+
+  $user = \Drupal::currentUser();
+  if (\Drupal::moduleHandler()->moduleExists('workbench_moderation') && isset($form['moderation_state'])) {
+    return;
+  }
+  if (!$user->hasPermission('view revisions')) {
+    if (isset($form['revision_information'])) {
+      $form['revision_information']['#access'] = FALSE;
+    }
   }
 }
