@@ -49,11 +49,7 @@ function bear_form_node_form_alter(&$form, FormStateInterface $form_state) {
     $form['sticky']['#access'] = FALSE;
   }
 
-  $user = \Drupal::currentUser();
-  if (\Drupal::moduleHandler()->moduleExists('workbench_moderation') && isset($form['moderation_state'])) {
-    return;
-  }
-  if (!$user->hasPermission('view revisions')) {
+  if (!\Drupal::currentUser()->hasPermission('view revisions')) {
     if (isset($form['revision_information'])) {
       $form['revision_information']['#access'] = FALSE;
     }
