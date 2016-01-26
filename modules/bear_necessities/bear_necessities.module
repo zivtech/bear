@@ -17,6 +17,10 @@ function bear_necessities_form_node_type_form_alter(&$form, &$form_state, $form_
     // Set publishing options.
     $form['workflow']['node_options']['#default_value'] = array('status', 'revision');
 
+    // Unset 'promote to frontpage' and 'make sticky' options.
+    unset($form['workflow']['node_options']['#options']['promote']);
+    unset($form['workflow']['node_options']['#options']['sticky']);
+
     // Unset display author information.
     $form['display']['node_submitted']['#default_value'] = FALSE;
 
