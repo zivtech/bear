@@ -12,4 +12,4 @@ steps:
   - name: Rebuild caches
     command: 'drush cr'
   - name: Run behat tests
-    command: 'cd /var/www/html/profiles/contrib/bear/tests ; composer install ; ./bin/behat --profile probo'
+    command: 'cd /var/www/html/profiles/bear/tests ; composer install ; ./bin/behat --profile probo'
