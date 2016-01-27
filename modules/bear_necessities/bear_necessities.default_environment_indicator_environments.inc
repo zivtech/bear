@@ -70,5 +70,20 @@ function bear_necessities_default_environment_indicator_environment() {
   );
   $export['staging_environment'] = $environment;
 
+  $environment = new stdClass();
+  $environment->disabled = FALSE; /* Edit this to true to make a default environment disabled initially */
+  $environment->api_version = 1;
+  $environment->machine = 'probo_environment';
+  $environment->name = 'Probo environment';
+  $environment->regexurl = '.*probo.*';
+  $environment->settings = array(
+    'color' => '#6B044C',
+    'text_color' => '#ffffff',
+    'weight' => '95',
+    'position' => 'top',
+    'fixed' => 1,
+  );
+  $export['probo_environment'] = $environment;
+
   return $export;
 }
