@@ -49,7 +49,7 @@ function bear_form_node_form_alter(&$form, FormStateInterface $form_state) {
     $form['sticky']['#access'] = FALSE;
   }
 
-  if (!\Drupal::currentUser()->hasPermission('view revisions')) {
+  if (!\Drupal::currentUser()->hasPermission('view all revisions')) {
     if (isset($form['revision_information'])) {
       $form['revision_information']['#access'] = FALSE;
     }
