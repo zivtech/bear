@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script is to be used with Probo CI (http://probo.ci/) and the development process of the Bear install profile.
+# It is meant to enable building Bear from a git branch
+
 PROFILE_NAME='bear'
 MAKE_FILE=''
 SRC_DIR='/src'
