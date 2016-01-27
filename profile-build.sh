@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PROFILE_NAME='bear'
-MAKE_FILE='build-bear.make'
+MAKE_FILE=''
 SRC_DIR='/src'
 DESTINATION='/var/www/html'
 
