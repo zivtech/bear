@@ -2,7 +2,7 @@ steps:
   - name: Run the profile script
     command: './$SRC_DIR/profile-build.sh'
   - name: Run install
-    command: "drush site-install --root=/var/www/html bear --db-url='mysqli://root:strongpassword@localhost/bear'"
+    command: "drush site-install --root=/var/www/html bear-7.x-2.x --db-url='mysqli://root:strongpassword@localhost/bear'"
   - name: Set file directory permissions
     command: 'chown -R www-data:www-data /var/www/html/sites/default/files'
   - name: Run behat tests
