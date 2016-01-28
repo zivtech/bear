@@ -1,6 +1,6 @@
 steps:
   - name: Run the profile script
-    command: './$SRC_DIR/profile-build.sh'
+    command: './$SRC_DIR/.probo-profile-build.sh'
   - name: Run install
     command: "drush site-install --root=/var/www/html bear --db-url='mysqli://root:strongpassword@localhost/bear'"
   - name: Set file directory permissions
