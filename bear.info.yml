@@ -35,6 +35,7 @@ dependencies:
   # Contrib extensions.
   - admin_toolbar
   - admin_toolbar_tools
+  - big_pipe
   - ckeditor_media_embed
   - coffee
   - ctools
