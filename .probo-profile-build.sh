@@ -22,6 +22,9 @@ function checkMakeFile() {
   return
 }
 
+# Remove the destination directory since Drush cares about that now.
+rm -r $DESTINATION
+
 if [ "$SRC_DIR/$MAKE_FILE" != '' ] && [ -f "$SRC_DIR/$MAKE_FILE" ]; then
   checkMakeFile "$SRC_DIR/$MAKE_FILE"
 
