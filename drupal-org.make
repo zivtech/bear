@@ -14,6 +14,11 @@ projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_too
 projects[admin_toolbar][download][branch] = 8.x-1.x
 projects[admin_toolbar][download][revision] = ce0a2f844820473a1b0968abe1d6fb7c92611430
 
+projects[big_pipe][download][type] = git
+projects[big_pipe][download][url] = https://git.drupal.org/project/big_pipe.git
+projects[big_pipe][download][branch] = 8.x-1.x
+projects[big_pipe][download][revision] = b00dc84c727f242a1fb21a9b9df7de3b9f3589f0
+
 projects[coffee][download][type] = git
 projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
 projects[coffee][download][branch] = 8.x-1.x
