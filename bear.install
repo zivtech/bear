@@ -27,6 +27,7 @@ function bear_install() {
 function _bear_setup_base_configurations() {
   // Set front page to "node".
   \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
+  // Install devel submodules.
   \Drupal::service('module_installer')->install(['kint']);
   \Drupal::service('module_installer')->install(['webprofiler']);
 }
