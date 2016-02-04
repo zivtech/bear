@@ -59,6 +59,7 @@ dependencies[] = oembed
 dependencies[] = oembedembedly
 dependencies[] = page_manager_templates
 dependencies[] = panels
+dependencies[] = paragraphs
 dependencies[] = pathauto
 dependencies[] = picture
 dependencies[] = token
