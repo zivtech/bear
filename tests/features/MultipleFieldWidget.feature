@@ -45,4 +45,5 @@ Scenario: As an Administrator I can add a multiple text field to page content ty
     And I uncheck "Orderable"
     And I press "Save settings"
     And I visit "node/add/page"
+    And print last response
    Then I should not see "Order" in the "#field-test-values" element
