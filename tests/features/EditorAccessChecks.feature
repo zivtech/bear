@@ -1,5 +1,5 @@
 @api
-Feature: Editor Admin Menu Access Checks
+Feature: Editor Page Access Checks
   As a user with the Editor role
   I should be able to view and create content
   And I should be be able to add new users
