@@ -26,7 +26,7 @@ projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
 ; @see https://www.drupal.org/node/2486843#comment-10268935
 projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
 
-projects[ctools][version] = "3.0-alpha17"
+projects[ctools][version] = "3.0-alpha22"
 
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
@@ -43,11 +43,11 @@ projects[field_group][download][url] = http://git.drupal.org/project/field_group
 projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
 
-projects[layout_plugin][version] = "1.0-alpha19"
+projects[layout_plugin][version] = "1.0-alpha22"
 
-projects[page_manager][version] = "1.0-alpha19"
+projects[page_manager][version] = "1.0-alpha22"
 
-projects[panels][version] = "3.0-alpha19"
+projects[panels][version] = "3.0-beta2"
 
 ; Must specify type since it is still a sandbox.
 projects[ckeditor_media_embed][type] = module
@@ -66,10 +66,7 @@ projects[pathauto][patch][] = https://www.drupal.org/files/issues/pathauto-d8_po
 
 projects[simple_sitemap][version] = "1.2"
 
-projects[token][download][type] = git
-projects[token][download][url] = http://git.drupal.org/project/token.git
-projects[token][download][branch] = 8.x-1.x
-projects[token][download][revision] = b17c78fa7f5c8bc332b3006311e959a1058a1dac
+projects[token][version] = "1.0-aplha2"
 
 ; Libraries.
 
