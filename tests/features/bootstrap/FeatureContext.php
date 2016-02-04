@@ -82,4 +82,13 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
     }
   }
 
+  /**
+   * Waits for 1 second.
+   *
+   * @Given /^I wait$/
+   */
+  public function iWait() {
+    $this->getSession()->wait(1000);
+  }
+
 }
