@@ -85,10 +85,10 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
   /**
    * Waits for 1 second.
    *
-   * @Given /^I wait$/
+   * @Given /^I wait (\d+) seconds$/
    */
-  public function iWait() {
-    sleep(1);
+  public function iWait($time) {
+    sleep($time);
   }
 
 }
