@@ -17,6 +17,7 @@ use Drupal\user\Entity\Role;
  */
 function bear_install() {
   _bear_setup_base_configurations();
+  _bear_enable_modules();
   _bear_setup_users_and_roles();
   _bear_setup_themes();
 }
