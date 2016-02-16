@@ -17,6 +17,7 @@ use Drupal\user\Entity\Role;
  */
 function bear_install() {
   _bear_setup_base_configurations();
+  _bear_enable_modules();
   _bear_setup_users_and_roles();
   _bear_setup_themes();
 }
@@ -27,6 +28,15 @@ function bear_install() {
 function _bear_setup_base_configurations() {
   // Set front page to "node".
   \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
+}
+
+/**
+ * Enable modules by default.
+ */
+function _bear_enable_modules() {
+  // Install devel submodules.
+  \Drupal::service('module_installer')->install(['kint']);
+  \Drupal::service('module_installer')->install(['webprofiler']);
 }
 
 /**
