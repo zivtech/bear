@@ -21,6 +21,7 @@ Scenario: As an Administrator I should be able to add a Menu Item
    And I fill in "Menu link title" with "About Us"
    And I select "<Main navigation>" from "Parent item"
    And I press "Save"
+   And I wait 1 seconds
    And I visit "/"
    And I should see "About Us"
    And I follow "About Us"
