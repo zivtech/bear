@@ -26,7 +26,7 @@ projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
 ; @see https://www.drupal.org/node/2486843#comment-10268935
 projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
 
-projects[ctools][version] = "3.0-alpha17"
+projects[ctools][version] = "3.0-alpha23"
 
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
@@ -62,10 +62,7 @@ projects[pathauto][download][branch] = 8.x-1.x
 
 projects[simple_sitemap][version] = "1.2"
 
-projects[token][download][type] = git
-projects[token][download][url] = http://git.drupal.org/project/token.git
-projects[token][download][branch] = 8.x-1.x
-projects[token][download][revision] = b17c78fa7f5c8bc332b3006311e959a1058a1dac
+projects[token][version] = "1.0-alpha2"
 
 ; Libraries.
 
