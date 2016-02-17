@@ -52,7 +52,7 @@ projects[layout_plugin][version] = "1.0-alpha22"
 
 projects[page_manager][version] = "1.0-alpha23"
 
-projects[panels][version] = "8.x-3.0-beta4"
+projects[panels][version] = "3.0-beta4"
 
 ; Must specify type since it is still a sandbox.
 projects[ckeditor_media_embed][type] = module
