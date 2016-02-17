@@ -49,8 +49,8 @@ projects[layout_plugin][version] = "1.0-alpha22"
 
 projects[page_manager][version] = "1.0-alpha23"
 
-
 projects[panels][version] = "3.0-beta4"
+
 projects[paragraphs][version] = "1.x-dev"
 
 ; Must specify type since it is still a sandbox.
