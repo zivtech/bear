@@ -30,11 +30,6 @@ projects[entity_reference_revisions][version] = "1.0"
 
 projects[field_group][version] = "1.0-rc4"
 
-projects[environment_indicator][download][type] = git
-projects[environment_indicator][download][url] = http://git.drupal.org/project/environment_indicator.git
-projects[environment_indicator][download][branch] = 8.x-3.x
-projects[environment_indicator][download][revision] = 8c6f611676c32e12397826f04fd6a08e7a619742
-
 projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
 projects[field_group][download][branch] = 8.x-1.x
