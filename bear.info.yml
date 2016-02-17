@@ -11,6 +11,7 @@ dependencies:
   - ckeditor
   - config
   - contextual
+  - environment_indicator
   - menu_link_content
   - datetime
   - block_content
