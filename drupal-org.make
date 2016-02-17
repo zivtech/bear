@@ -56,7 +56,11 @@ projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ck
 projects[ckeditor_media_embed][download][branch] = 8.x-1.x
 projects[ckeditor_media_embed][download][revision] = bde51cedf69752b2d0100e16a14aa10577e0d11f
 
-projects[pathauto][version] = "1.0-alpha1"
+projects[pathauto][download][type] = git
+projects[pathauto][download][url] = http://git.drupal.org/project/pauthauto.git
+projects[pathauto][download][branch] = 8.x-1.x
+projects[pathauto][download][revision] = f293a51ae2cc282f1d84548382564e66f81863c1
+
 
 projects[simple_sitemap][version] = "1.2"
 
