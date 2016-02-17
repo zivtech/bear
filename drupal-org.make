@@ -56,13 +56,9 @@ projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ck
 projects[ckeditor_media_embed][download][branch] = 8.x-1.x
 projects[ckeditor_media_embed][download][revision] = bde51cedf69752b2d0100e16a14aa10577e0d11f
 
-; Currently lives on Github.
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
 projects[pathauto][download][branch] = 8.x-1.x
-projects[pathauto][download][revision] = 0ceda1f9b0fbb5251facfdf4e3f79faa0659b1aa
-; @see https://www.drupal.org/node/2168193#comment-10474448
-projects[pathauto][patch][] = https://www.drupal.org/files/issues/pathauto-d8_port-2168193-56.patch
 
 projects[simple_sitemap][version] = "1.2"
 
