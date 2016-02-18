@@ -38,6 +38,8 @@ projects[diff][download][url] = http://git.drupal.org/project/diff.git
 projects[diff][download][branch] = 8.x-1.x
 projects[diff][download][revision] =7f8f95b750f5da2b12f80a83cb4f739d421478e3
 
+projects[entity_reference_revisions][version] = "1.x-dev"
+
 projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
 projects[field_group][download][branch] = 8.x-1.x
@@ -48,6 +50,8 @@ projects[layout_plugin][version] = "1.0-alpha22"
 projects[page_manager][version] = "1.0-alpha23"
 
 projects[panels][version] = "3.0-beta4"
+
+projects[paragraphs][version] = "1.x-dev"
 
 ; Must specify type since it is still a sandbox.
 projects[ckeditor_media_embed][type] = module

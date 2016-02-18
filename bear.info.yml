@@ -41,10 +41,12 @@ dependencies:
   - ctools
   - devel
   - diff
+  - entity_reference_revisions
   - field_group
   - layout_plugin
   - page_manager
   - panels
+  - paragraphs
   - pathauto
   - token
 themes:
