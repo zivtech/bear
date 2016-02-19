@@ -1,0 +1,15 @@
+id: bear_coat_local_tasks
+theme: bear_coat
+weight: -40
+status: true
+langcode: en
+region: content
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+dependencies:
+  theme:
+    - bear_coat
+visibility: {  }
