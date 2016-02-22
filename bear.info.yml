@@ -51,5 +51,6 @@ dependencies:
   - token
 themes:
   - bear_coat
+  - bear_skin
   - bartik
   - seven
