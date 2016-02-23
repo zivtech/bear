@@ -57,7 +57,6 @@ projects[] = page_manager_templates
 projects[] = panels
 projects[panelizer][version] = "3.x-dev"
 projects[paragraphs][version] = "1.0-rc4"
-projects[paragraphs_pack][version] = "1.x-dev"
 projects[] = pathauto
 projects[] = picture
 projects[] = redirect
