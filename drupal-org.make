@@ -36,9 +36,12 @@ projects[devel][download][revision] = bb45a4e5e1c0f8f83ec05b52b3d7329a1ca77dec
 projects[diff][download][type] = git
 projects[diff][download][url] = http://git.drupal.org/project/diff.git
 projects[diff][download][branch] = 8.x-1.x
-projects[diff][download][revision] =7f8f95b750f5da2b12f80a83cb4f739d421478e3
+projects[diff][download][revision] = 7f8f95b750f5da2b12f80a83cb4f739d421478e3
 
-projects[entity_reference_revisions][version] = "1.x-dev"
+projects[entity_reference_revisions][download][type] = git
+projects[entity_reference_revisions][download][url] = http://git.drupal.org/project/entity_reference_revisions.git
+projects[entity_reference_revisions][download][branch] = 8.x-1.x
+projects[entity_reference_revisions][download][revision] = ef9e2c1e0290c7d3521eb375f981fb07c3959341
 
 projects[field_group][download][type] = git
 projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
@@ -51,9 +54,11 @@ projects[page_manager][version] = "1.0-alpha23"
 
 projects[panels][version] = "3.0-beta4"
 
-projects[paragraphs][version] = "1.x-dev"
+projects[paragraphs][download][type] = git
+projects[paragraphs][download][url] = http://git.drupal.org/project/paragraphs.git
+projects[paragraphs][download][branch] = 8.x-1.x
+projects[paragraphs][download][revision] = 916b9bb33dfa7d7c32f55272752324da2affe6f0
 
-; Must specify type since it is still a sandbox.
 projects[ckeditor_media_embed][type] = module
 projects[ckeditor_media_embed][download][type] = git
 projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ckeditor_media_embed.git
@@ -63,6 +68,7 @@ projects[ckeditor_media_embed][download][revision] = bde51cedf69752b2d0100e16a14
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
 projects[pathauto][download][branch] = 8.x-1.x
+projects[pathauto][download][revision] = f6d2b6ad34fb7b49f4a750fbdf80bf5fa7d49610
 
 projects[simple_sitemap][version] = "1.2"
 
