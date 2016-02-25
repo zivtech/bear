@@ -35,11 +35,11 @@ Bear includes helpful contributed modules for site builders and developers with 
 - menu_block
 - menu_expanded
 - module_filter
-- multiform
 - oembed
 - page_manager_templates
 - panels
 - panelizer
+- paragraphs
 - pathauto
 - picture
 - redirect
