@@ -61,24 +61,28 @@ function bear_necessities_ckeditor_profile_defaults() {
         'js_conf' => 'config.fillEmptyBlocks = false;
 config.tabSpaces = 0;
 config.autoParagraph = false;
-config.scayt_autoStartup = true;',
+config.scayt_autoStartup = true;
+config.disableReadonlyStyling = true;',
         'loadPlugins' => array(
           'asset' => array(
             'name' => 'asset',
             'desc' => 'Media assets',
-            'path' => '%base_path%' . drupal_get_path('module', 'asset') . '/ckeditor/',
+            'path' => '%base_path%profiles/bear/modules/contrib/asset/ckeditor/',
             'buttons' => array(
               'asset_document' => array(
                 'label' => 'Asset: Document',
-                'icon' => 'buttons/AddDocument.png',
+                'icon' => 'AddDocument.png',
+                'icon_path' => '/profiles/bear/modules/contrib/asset/ckeditor/buttons/',
               ),
               'asset_image' => array(
                 'label' => 'Asset: Image',
-                'icon' => 'buttons/AddImage.png',
+                'icon' => 'AddImage.png',
+                'icon_path' => '/profiles/bear/modules/contrib/asset/ckeditor/buttons/',
               ),
               'asset_embed' => array(
                 'label' => 'Asset: Embed',
-                'icon' => 'buttons/AddVideo.png',
+                'icon' => 'AddVideo.png',
+                'icon_path' => '/profiles/bear/modules/contrib/asset/ckeditor/buttons/',
               ),
               'assetSearch' => array(
                 'label' => 'Assets library',
@@ -101,7 +105,7 @@ config.scayt_autoStartup = true;',
           'linkit' => array(
             'name' => 'linkit',
             'desc' => 'Support for Linkit module',
-            'path' => '%base_path%' . drupal_get_path('module', 'linkit') . '/editors/ckeditor/',
+            'path' => '%base_path%profiles/bear/modules/contrib/linkit/editors/ckeditor/',
             'buttons' => array(
               'linkit' => array(
                 'label' => 'Linkit',
@@ -200,7 +204,7 @@ config.scayt_autoStartup = true;',
           'asset' => array(
             'name' => 'asset',
             'desc' => 'Media assets',
-            'path' => '%base_path%' . drupal_get_path('module', 'asset') . '/ckeditor/',
+            'path' => '%base_path%profiles/bear/modules/contrib/asset/ckeditor/',
             'buttons' => array(
               'asset_document' => array(
                 'label' => 'Asset: Document',
