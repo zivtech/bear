@@ -39,7 +39,6 @@ dependencies:
   - ckeditor_media_embed
   - coffee
   - ctools
-  - devel
   - diff
   - entity_reference_revisions
   - field_group
