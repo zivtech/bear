@@ -29,7 +29,7 @@ function bear_necessities_ckeditor_profile_defaults() {
         'language_direction' => 'default',
         'allowed_content' => 't',
         'extraAllowedContent' => '',
-        'enter_mode' => 'br',
+        'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
         'font_format' => 'p;h2;h3;h4;h5',
         'custom_formatting' => 't',
