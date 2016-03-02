@@ -61,7 +61,8 @@ function bear_necessities_ckeditor_profile_defaults() {
         'js_conf' => 'config.fillEmptyBlocks = false;
 config.tabSpaces = 0;
 config.autoParagraph = false;
-config.scayt_autoStartup = true;',
+config.scayt_autoStartup = true;
+config.disableReadonlyStyling = true;',
         'loadPlugins' => array(
           'asset' => array(
             'name' => 'asset',
@@ -70,15 +71,18 @@ config.scayt_autoStartup = true;',
             'buttons' => array(
               'asset_document' => array(
                 'label' => 'Asset: Document',
-                'icon' => 'buttons/AddDocument.png',
+                'icon' => 'AddDocument.png',
+                'icon_path' => '/profiles/bear/modules/contrib/asset/ckeditor/buttons/',
               ),
               'asset_image' => array(
                 'label' => 'Asset: Image',
-                'icon' => 'buttons/AddImage.png',
+                'icon' => 'AddImage.png',
+                'icon_path' => '/profiles/bear/modules/contrib/asset/ckeditor/buttons/',
               ),
               'asset_embed' => array(
                 'label' => 'Asset: Embed',
-                'icon' => 'buttons/AddVideo.png',
+                'icon' => 'AddVideo.png',
+                'icon_path' => '/profiles/bear/modules/contrib/asset/ckeditor/buttons/',
               ),
               'assetSearch' => array(
                 'label' => 'Assets library',
