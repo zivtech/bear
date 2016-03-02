@@ -35,8 +35,7 @@ function _bear_setup_base_configurations() {
  */
 function _bear_enable_modules() {
   // Install devel submodules.
-  \Drupal::service('module_installer')->install(['kint']);
-  \Drupal::service('module_installer')->install(['webprofiler']);
+  \Drupal::service('module_installer')->install(['devel', 'kint'], TRUE);
 }
 
 /**
