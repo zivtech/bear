@@ -1,4 +1,4 @@
-#Bear Included 3rd Party Libraries
+# Bear Included 3rd Party Libraries
 
 Bear 7 includes some 3rd Party Libraries out of the box.
 
