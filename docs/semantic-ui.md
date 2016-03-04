@@ -1,8 +1,8 @@
 # Semantic UI Integration
-Bear integrates with [Semantic](http://semantic-ui.com/), a UI framework designed for theming. Semantic allows developers to build beautiful websites fast, with concise HTML, intuitive javascript, and simplified debugging. Semantic is responsively designed allowing your website to scale on multiple devices.
+Bear Skin can be integrated with [Semantic](http://semantic-ui.com/), a UI framework designed for theming. Semantic allows developers to build beautiful websites fast, with concise HTML, intuitive javascript, and simplified debugging. Semantic is responsively designed allowing your website to scale on multiple devices.
 
 ## Installing Semantic UI
-The Bear Skin theme is setup to use Semantic UI for many UI/UX elements. In order to enable, you must have [Libraries](https://www.drupal.org/project/libraries) installed as well as [jQuery Update](https://www.drupal.org/project/jquery_update/) enabled and set to use 1.7 in the configuration (/admin/config/development/jquery_update/).
+The Bear Skin theme is set up to use Semantic UI for many UI/UX elements. In order to enable, you must have [Libraries](https://www.drupal.org/project/libraries) installed as well as [jQuery Update](https://www.drupal.org/project/jquery_update/) enabled and set to use 1.7 in the configuration (/admin/config/development/jquery_update/).
 
 You also must have the [Semantic UI module](https://www.drupal.org/project/semantic_ui_api) and library installed. Run `drush pm-enable semantic_ui_api` to install both.
 
@@ -10,7 +10,7 @@ If you are installing the Semantic UI library manually, the path should be look 
 
 ![Semantic UI Library Path](http://i65.tinypic.com/15yhrr.jpg "Semantic UI Library Path")
 
-After you have done the above, go the the Bear Coat settings (/admin/appearance/settings/bear_coat), check the box next to "Include Semantic UI" and save.
+After you have installed the library and modules, go the the Bear Coat settings page (/admin/appearance/settings/bear_coat), check the box next to "Include Semantic UI" and save.
 
 ## Semantic UI Features Code Examples
 To view the front-end output of this code, please visit the [Semantic UI](http://bear.zivtech.com/feature/semantic-ui) feature page on the Bear info site.
