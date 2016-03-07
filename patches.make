@@ -46,3 +46,6 @@ projects[asset][patch][] = https://www.drupal.org/files/issues/2612602-3-asset-i
 
 ; @see https://www.drupal.org/node/2463187#comment-9779355
 projects[ckeditor][patch][] = https://www.drupal.org/files/issues/allow-custom-icon-paths-2463187-1.patch
+
+; @see https://www.drupal.org/node/1786442#comment-6798822
+projects[save_draft][patch][] = https://www.drupal.org/files/save_draft-required_fields-1786442-14.patch
