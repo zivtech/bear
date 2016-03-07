@@ -61,6 +61,7 @@ projects[] = pathauto
 projects[] = picture
 projects[] = redirect
 projects[] = responsive_menus
+projects[] = save_draft
 projects[] = strongarm
 projects[] = styleguide
 projects[] = token
