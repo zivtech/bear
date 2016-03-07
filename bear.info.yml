@@ -42,6 +42,7 @@ dependencies:
   - diff
   - entity_reference_revisions
   - field_group
+  - field_help_helper
   - layout_plugin
   - page_manager
   - panels

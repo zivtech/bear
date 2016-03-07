@@ -76,6 +76,7 @@ function _bear_setup_role_editor() {
     'change own username',
     'create url aliases',
     'delete all revisions',
+    'edit field help text',
     'revert all revisions',
     'use text format basic_html',
     'use text format full_html',
