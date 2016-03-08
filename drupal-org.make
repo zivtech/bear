@@ -59,7 +59,7 @@ projects[field_help_helper][type] = module
 projects[field_help_helper][download][type] = git
 projects[field_help_helper][download][url] = git://drupalcode.org/sandbox/grndlvl/2682855.git
 projects[field_help_helper][download][branch] = 8.x-1.x
-projects[field_help_helper][download][revision] = b7a073a7968efcc7ba3d5c365d3862849b534274
+projects[field_help_helper][download][revision] = c819f2f8f3edd9e7fb7f2e6eca0e9a77a2fc338e
 
 projects[layout_plugin][version] = "1.0-alpha22"
 
