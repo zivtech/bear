@@ -65,6 +65,7 @@ projects[required_on_publish][download][type] = git
 projects[required_on_publish][download][url] = git://git.drupal.org/sandbox/abhishek_pareek/2549931.git
 projects[required_on_publish][download][branch] = 7.x-1.x
 projects[] = responsive_menus
+projects[] = save_draft
 projects[] = strongarm
 projects[] = styleguide
 projects[] = token
