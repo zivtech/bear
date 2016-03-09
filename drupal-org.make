@@ -61,7 +61,8 @@ projects[] = pathauto
 projects[] = picture
 projects[] = redirect
 projects[] = responsive_menus
-projects[] = save_draft
+; @see https://www.drupal.org/node/1786442#comment-6798822
+projects[save_draft][patch][] = https://www.drupal.org/files/save_draft-required_fields-1786442-14.patch
 projects[] = strongarm
 projects[] = styleguide
 projects[] = token
