@@ -66,6 +66,7 @@ dependencies[] = token
 dependencies[] = redirect
 dependencies[] = required_on_publish
 dependencies[] = responsive_menus
+dependencies[] = save_draft
 dependencies[] = strongarm
 dependencies[] = styleguide
 dependencies[] = views
