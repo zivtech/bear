@@ -62,7 +62,6 @@ projects[] = picture
 projects[] = redirect
 projects[required_for_pub][download][type] = "git"
 projects[required_for_pub][download][url] = "git://github.com/chapter-three/require-to-publish.git"
-projects[required_for_pub][download][revision] = "11c5555265d6eef8822078add5e479e0215d821d"
 projects[] = responsive_menus
 projects[] = strongarm
 projects[] = styleguide
