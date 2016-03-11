@@ -70,6 +70,8 @@ projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
 projects[pathauto][download][branch] = 8.x-1.x
 projects[pathauto][download][revision] = f6d2b6ad34fb7b49f4a750fbdf80bf5fa7d49610
 
+projects[search_api][version] = "1.0-alpha12"
+
 projects[simple_sitemap][version] = "1.2"
 
 projects[token][version] = "1.0-alpha2"
