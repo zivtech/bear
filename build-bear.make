@@ -9,6 +9,9 @@ core = 7.x
 ; Drupal core.
 includes[] = drupal-org-core.make
 
+; Drupal contrib.
+includes[] = drupal-org.make
+
 ; Bear profile.
 projects[bear][type] = profile
 projects[bear][version] = 2.0
