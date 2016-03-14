@@ -6,13 +6,9 @@
 api = 2
 core = 7.x
 
-; Include the additional makes files we have created for core and contrib.
+; Drupal core.
 includes[] = drupal-org-core.make
-includes[] = drupal-org.make
 
-; Add Bear to the full distribution build.
+; Bear profile.
 projects[bear][type] = profile
-projects[bear][subdir] = ""
-projects[bear][download][type] = git
-projects[bear][download][url] = http://git.drupal.org/project/bear.git
-projects[bear][download][branch] = 7.x-1.x
+projects[bear][version] = 2.0
