@@ -19,6 +19,12 @@ projects[big_pipe][download][url] = https://git.drupal.org/project/big_pipe.git
 projects[big_pipe][download][branch] = 8.x-1.x
 projects[big_pipe][download][revision] = b00dc84c727f242a1fb21a9b9df7de3b9f3589f0
 
+projects[ckeditor_media_embed][type] = module
+projects[ckeditor_media_embed][download][type] = git
+projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ckeditor_media_embed.git
+projects[ckeditor_media_embed][download][branch] = 8.x-1.x
+projects[ckeditor_media_embed][download][revision] = bde51cedf69752b2d0100e16a14aa10577e0d11f
+
 projects[coffee][download][type] = git
 projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
 projects[coffee][download][branch] = 8.x-1.x
@@ -48,6 +54,13 @@ projects[field_group][download][url] = http://git.drupal.org/project/field_group
 projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
 
+; Must specify type since it is still a sandbox.
+projects[field_help_helper][type] = module
+projects[field_help_helper][download][type] = git
+projects[field_help_helper][download][url] = git://drupalcode.org/sandbox/grndlvl/2682855.git
+projects[field_help_helper][download][branch] = 8.x-1.x
+projects[field_help_helper][download][revision] = dacab7d447b0a109c7d72eb5e64fa03eb168d44d
+
 projects[layout_plugin][version] = "1.0-alpha22"
 
 projects[page_manager][version] = "1.0-alpha23"
@@ -58,12 +71,6 @@ projects[paragraphs][download][type] = git
 projects[paragraphs][download][url] = http://git.drupal.org/project/paragraphs.git
 projects[paragraphs][download][branch] = 8.x-1.x
 projects[paragraphs][download][revision] = 916b9bb33dfa7d7c32f55272752324da2affe6f0
-
-projects[ckeditor_media_embed][type] = module
-projects[ckeditor_media_embed][download][type] = git
-projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ckeditor_media_embed.git
-projects[ckeditor_media_embed][download][branch] = 8.x-1.x
-projects[ckeditor_media_embed][download][revision] = bde51cedf69752b2d0100e16a14aa10577e0d11f
 
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
