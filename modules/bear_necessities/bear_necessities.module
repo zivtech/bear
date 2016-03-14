@@ -110,6 +110,26 @@ function bear_necessities_filter_info() {
 }
 
 /**
+ * Implements hook_css_alter().
+ */
+function bear_necessities_css_alter(&$css) {
+  global $theme;
+  if($theme == 'seven') {
+    unset($css[libraries_get_path('semantic_ui') . '/semantic.css']);
+  }
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+function bear_necessities_js_alter(&$js) {
+  global $theme;
+  if($theme == 'seven') {
+    unset($js[libraries_get_path('semantic_ui') . '/semantic.js']);
+  }
+}
+
+/**
  * Filter callbacks.
  */
 function _bear_necessities_kill_nbsp($text, $filter) {
