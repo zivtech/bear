@@ -250,6 +250,7 @@ function bear_install() {
     'view revisions',
     'view style guides',
     'view the administration theme',
+    'edit field help text',
   );
   user_role_grant_permissions($editor_role->rid, $perms);
 

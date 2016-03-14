@@ -39,6 +39,14 @@ projects[] = features
 projects[] = fences
 projects[] = field_collection
 projects[] = field_group
+
+; Must specify type since it is still a sandbox.
+projects[field_help_helper][type] = module
+projects[field_help_helper][download][type] = git
+projects[field_help_helper][download][url] = git://drupalcode.org/sandbox/grndlvl/2682855.git
+projects[field_help_helper][download][branch] = 7.x-1.x
+projects[field_help_helper][download][revision] = 45507e0cd354565643f4abd294ca440fa61a0b15
+
 projects[] = habitat
 projects[] = inline_entity_form
 projects[] = jquery_update
