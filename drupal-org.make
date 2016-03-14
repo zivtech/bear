@@ -90,7 +90,7 @@ projects[bear_skin][type] = "theme"
 projects[bear_skin][download][type] = git
 projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
 projects[bear_skin][download][branch] = 7.x-3.x
-projects[bear_skin][download][revision] = 4fe6005
+projects[bear_skin][download][revision] = 217de75
 
 ; @see http://www.drupal.org/node/2580405#comment-10412829
 projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2580405-2-Add_asset_template_override.patch
