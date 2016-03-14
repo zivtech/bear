@@ -49,7 +49,6 @@ dependencies:
   - pathauto
   - search_api
   - search_api_db
-  - search_api_db_defaults
   - token
 themes:
   - bear_coat
