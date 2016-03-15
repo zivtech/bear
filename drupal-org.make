@@ -62,7 +62,7 @@ projects[panels][version] = "3.0-beta4"
 projects[paragraphs][download][type] = git
 projects[paragraphs][download][url] = http://git.drupal.org/project/paragraphs.git
 projects[paragraphs][download][branch] = 8.x-1.x
-projects[paragraphs][download][revision] = 916b9bb33dfa7d7c32f55272752324da2affe6f0
+projects[paragraphs][download][revision] = 4adb7aa041c112a672ee38c30fe8db2334c5d166
 
 projects[ckeditor_media_embed][type] = module
 projects[ckeditor_media_embed][download][type] = git
