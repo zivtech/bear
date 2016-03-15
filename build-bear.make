@@ -9,9 +9,8 @@ core = 7.x
 ; Drupal core.
 includes[] = drupal-org-core.make
 
-; Drupal contrib.
-includes[] = drupal-org.make
-
-; Bear profile.
-projects[bear][type] = profile
-projects[bear][version] = 2.0
+; Download the Bear install profile and recursively build all its dependencies.
+projects[bear][type] = "profile"
+projects[bear][download][type] = "git"
+projects[bear][download][url] = "http://git.drupal.org/project/bear.git"
+projects[bear][download][branch] = "7.x-2.x"
