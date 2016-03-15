@@ -43,6 +43,7 @@ dependencies:
   - entity_reference_revisions
   - field_group
   - layout_plugin
+  - menu_link_config
   - page_manager
   - panels
   - paragraphs
