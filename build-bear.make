@@ -6,8 +6,9 @@
 api = 2
 core = 7.x
 
-; Drupal core.
+; Include the additional makes files we have created for core and contrib.
 includes[] = drupal-org-core.make
+includes[] = drupal-org.make
 
 ; Download the Bear install profile and recursively build all its dependencies.
 projects[bear][type] = "profile"
