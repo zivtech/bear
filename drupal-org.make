@@ -54,12 +54,7 @@ projects[field_group][download][url] = http://git.drupal.org/project/field_group
 projects[field_group][download][branch] = 8.x-1.x
 projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
 
-; Must specify type since it is still a sandbox.
-projects[field_help_helper][type] = module
-projects[field_help_helper][download][type] = git
-projects[field_help_helper][download][url] = git://drupalcode.org/sandbox/grndlvl/2682855.git
-projects[field_help_helper][download][branch] = 8.x-1.x
-projects[field_help_helper][download][revision] = dacab7d447b0a109c7d72eb5e64fa03eb168d44d
+projects[field_help_helper][version] = 1.0
 
 projects[layout_plugin][version] = "1.0-alpha22"
 
