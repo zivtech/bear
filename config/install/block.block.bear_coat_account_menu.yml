@@ -3,7 +3,7 @@ theme: bear_coat
 weight: 0
 status: false
 langcode: en
-region: sidebar_first
+region: '-1'
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'

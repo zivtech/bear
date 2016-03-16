@@ -12,6 +12,7 @@ includes[] = drupal-org.make
 
 ; Add Bear to the full distribution build.
 projects[bear][type] = profile
+projects[bear][subdir] = ""
 projects[bear][download][type] = git
 projects[bear][download][url] = http://github.com/zivtech/bear.git
 projects[bear][download][branch] = 8.x
