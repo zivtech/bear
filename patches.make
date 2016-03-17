@@ -27,7 +27,7 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/death-to-tabledrag.p
  
 ; Prevent alter hooks from making Features appear as overridden. 
 ; @see https://www.drupal.org/node/766264#comment-9688919
-projects[bear_skin][patch][] = "https://www.drupal.org/files/issues/features-alter_overrides-766264-56.patch"
+projects[features][patch][] = "https://www.drupal.org/files/issues/features-alter_overrides-766264-56.patch"
 
 ; @see https://www.drupal.org/node/2630530#comment-10645488
 projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2630530-2-bear_skin-handle_class_attribute.patch
