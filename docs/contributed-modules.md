@@ -1,4 +1,4 @@
-#Bear Included Contrib Modules
+#Bear Included Contributed Modules
 
 Bear includes helpful modules for site builders and developers with default settings that help start building Drupal sites faster.
 
@@ -16,3 +16,4 @@ Bear includes helpful modules for site builders and developers with default sett
 - simple_sitemap
 - token
 - menu_link_config
+- field_help_helper
