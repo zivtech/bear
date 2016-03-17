@@ -15,3 +15,4 @@ Bear includes helpful modules for site builders and developers with default sett
 - pathauto
 - simple_sitemap
 - token
+- menu_link_config
