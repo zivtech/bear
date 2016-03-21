@@ -25,6 +25,7 @@ Bear includes helpful contributed modules for site builders and developers with 
 - fences
 - field_collection
 - field_group
+- field_help_helper
 - habitat
 - inline_entity_form
 - jquery_update
