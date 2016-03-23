@@ -10,8 +10,8 @@ projects[drupal][patch][] = "http://drupal.org/files/drupal-1934086-path_load_or
 projects[drupal][patch][] = "http://drupal.org/files/core-1875824-3-d7.patch"
 
 ; Prevent AJAX errors on autocompletes.
-; @see https://www.drupal.org/node/1232416#comment-8262487
-projects[drupal][patch][] = "http://drupal.org/files/issues/fix_for_autocomplete_terminated_error-1232416-156.patch"
+; @see https://www.drupal.org/node/1232416#comment-10240839
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/autocomplete-1232416-205-7x.patch"
 
 ; Fix a PHP notice relating to file uploads.
 ; @see https://www.drupal.org/node/1903010#comment-8415695
@@ -26,11 +26,8 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/death-to-tabledrag.p
  projects[drupal][patch][] = "https://www.drupal.org/files/issues/schema-relative-1783278-17-D7-do-not-test.patch"
  
 ; Prevent alter hooks from making Features appear as overridden. 
-; @see https://www.drupal.org/node/766264#comment-8818877
-projects[features][patch][] = "http://www.drupal.org/files/issues/alter_overrides-766264-45.patch"
-
-; @see http://www.drupal.org/node/2580405#comment-10412829
-projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2580405-2-Add_asset_template_override.patch
+; @see https://www.drupal.org/node/766264#comment-9688919
+projects[features][patch][] = "https://www.drupal.org/files/issues/features-alter_overrides-766264-56.patch"
 
 ; @see https://www.drupal.org/node/2630530#comment-10645488
 projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2630530-2-bear_skin-handle_class_attribute.patch
