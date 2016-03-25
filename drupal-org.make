@@ -56,6 +56,8 @@ projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3
 
 projects[field_help_helper][version] = 1.0
 
+projects[group][version] = 1.0-alpha2
+
 projects[layout_plugin][version] = "1.0-alpha22"
 
 projects[menu_link_config][download][type] = git
