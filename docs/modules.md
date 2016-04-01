@@ -3,17 +3,17 @@
 Bear includes helpful modules for site builders and developers with default settings that help start building Drupal sites faster.
 
 - admin_toolbar
+- ckeditor_media_embed
 - coffee
 - ctools
 - devel
 - diff
 - field_group
+- field_help_helper
 - layout_plugin
+- menu_link_config
 - page_manager
 - panels
-- ckeditor_media_embed
 - pathauto
 - simple_sitemap
 - token
-- menu_link_config
-- field_help_helper

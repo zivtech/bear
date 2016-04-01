@@ -4,10 +4,12 @@ Bear Skin can be integrated with [Semantic](http://semantic-ui.com/), a UI frame
 ## Installing Semantic UI
 This theme is setup to use Semantic UI for many UI/UX elements.
 
-In order to enable, download the plugin at https://github.com/Semantic-Org/Semantic-UI and place the uncompressed directory in the bear_coat root directory and rename it to "semantic_ui".
+In order to enable, download the plugin at https://github.com/Semantic-Org/Semantic-UI, place the uncompressed directory in the bear_coat root directory and rename it to "semantic_ui".
 The path should be `bear_coat/semantic_ui/`. You can also cd into bear_coat and run `git clone https://github.com/Semantic-Org/Semantic-UI.git semantic_ui`.
 
 After you have installed the library and modules, go the the Bear Coat settings page (/admin/appearance/settings/bear_coat), check the box next to "Include Semantic UI" and save configuration.
+
+**You will need to clear your caches after enabling or disabling these options.**
 
 ## Semantic UI Features Code Examples
 To view the front-end output of this code, please visit the [Semantic UI](http://bear.zivtech.com/feature/semantic-ui) feature page on the Bear info site.
