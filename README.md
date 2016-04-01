@@ -19,7 +19,7 @@ To view your site in a web browser:
 
 ### Installation Notes:
 
-It is recommended that if building bear using Drush from Drupal.org directly that the modules directories be moved to a /modules path location in the webroot. This directory will need to be created prior to moving the modules. The Drupal.org packaging script puts these directories in /profiles/bear/modules, which can cause issues if trying to update contributed modules later on. It is best to move these prior to installation, or you may need to rebuild your Drupal registry if moved after the initial installation process has completed. If you build Bear using the make file method above, you will not have this issue.
+It is recommended that if building bear using Drush from Drupal.org directly that the modules directories be moved to a /modules path location in the webroot. This directory will need to be created prior to moving the modules. The Drupal.org packaging script puts these directories in /profiles/bear/modules, which can cause issues if trying to update contributed modules later on. It is best to move these prior to installation, or you may need to rebuild your Drupal registry if they were moved after the initial installation process has completed. If you build Bear using the make file method above, you will not have this issue.
 
 ## Core/Module Updates and Patch Maintenance:
 
