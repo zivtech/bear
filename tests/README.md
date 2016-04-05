@@ -13,7 +13,6 @@ Follow these steps first to set up behat on your VM.
 The tests must be run from the machine hosting the site.
 
 
-
 To Run Javascript Tests:
 ------------------------
 To run tests with Selenium (tests with '@javascript' tag).
