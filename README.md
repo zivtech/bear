@@ -1,3 +1,5 @@
+MAKING A TRIVIAL README UPDATE
+
 The Bear Starter Kit was created via the Drush generate-profile command.
 
 Bear 7.x-2.x incorporates some new integrations for assets and embedded media. It also sets the bear_cat theme as the default theme.
