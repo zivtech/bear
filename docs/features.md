@@ -6,4 +6,5 @@
 - Site building and developer tools like [Views](https://www.drupal.org/project/views), [Panels](https://www.drupal.org/project/panels), [Features](https://www.drupal.org/project/features), and [Devel](https://www.drupal.org/project/views) out of the box.
 - Automated Behat Tests utilizing the [Behat Drupal Extension](https://www.drupal.org/project/drupalextension).
 - Environment management using the [Habitat](https://www.drupal.org/project/habitat) and [Bear Habitat](https://www.drupal.org/project/bear_habitat) modules.
-- See the full list of [Contrib Modules](/en/latest/modules/) included with Bear.
+- Editable field help text in the admin UI with the [Field help helper](https://www.drupal.org/project/field_help_helper) module.
+- See the full list of [Modules](/en/latest/modules/) included with Bear.
