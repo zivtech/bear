@@ -1,6 +1,6 @@
 #About Bear
 
-[Bear](https://www.drupal.org/project/bear) is a [Drupal](https://www.drupal.org/) 7 and 8 Starter Kit Installation Profile. Bear is technically not a full Drupal distribution, and should not be considered as such. Bear was originally created as a bootstrapped starting point for [Zivtech](https://www.zivtech.com/) Drupal development projects, with helpful pre-configured modules, mission critical patches, and a base theme called [Bear Skin](https://www.drupal.org/project/bear_skin). 
+[Bear](http://bear.zivtech.com) is a [Drupal 7 and 8 Starter Kit Installation Profile](https://www.drupal.org/project/bear). Bear is technically not a full Drupal distribution, and should not be considered as such. Bear was originally created as a bootstrapped starting point for [Zivtech](https://www.zivtech.com/) Drupal development projects, with helpful pre-configured modules, mission critical patches, and a base theme called [Bear Skin](https://www.drupal.org/project/bear_skin).
 
 There should be no need for you to ever update the Bear project itself once it has been installed. Individual contributed modules, libraries, and the Bear Skin theme can be updated as you normally would any other contributed projects after installation is complete. You should also feel free to update or disable any included features as needed.
 
