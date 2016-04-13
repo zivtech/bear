@@ -49,6 +49,8 @@ dependencies:
   - panels
   - paragraphs
   - pathauto
+  - search_api
+  - search_api_db
   - token
 themes:
   - bear_coat
