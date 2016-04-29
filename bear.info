@@ -66,6 +66,7 @@ dependencies[] = picture
 dependencies[] = token
 dependencies[] = redirect
 dependencies[] = responsive_menus
+dependencies[] = semantic_ui_api
 dependencies[] = strongarm
 dependencies[] = styleguide
 dependencies[] = views
