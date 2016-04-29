@@ -83,6 +83,8 @@ projects[entity_browser][version] = "1.x-dev"
 projects[inline_entity_form][version] = "1.x-dev"
 projects[entity_embed][version] = "1.x-dev"
 projects[content_browser][version] = "1.x-dev"
+projects[embed][version] = "1.x-dev"
+
 
 
 
