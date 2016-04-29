@@ -83,4 +83,3 @@ libraries[sidr][download][url] = "https://github.com/artberri/sidr-package/archi
 projects[bear_skin][type] = "theme"
 projects[bear_skin][download][type] = git
 projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
-projects[bear_skin][download][branch] = 7.x-3.x
