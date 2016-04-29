@@ -80,4 +80,6 @@ libraries[sidr][download][type] = "get"
 libraries[sidr][download][url] = "https://github.com/artberri/sidr-package/archive/1.2.1.zip"
 
 ; Themes
-projects[bear_skin][version] = "3.x-dev"
+projects[bear_skin][type] = "theme"
+projects[bear_skin][download][type] = git
+projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
