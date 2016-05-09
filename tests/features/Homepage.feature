@@ -1,6 +1,6 @@
 @api
 
-Scenario: Anaonymouse user
+Scenario: anonymous user
 
 Given I am anonymous user
 /when I visit "/"
