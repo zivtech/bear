@@ -83,6 +83,8 @@ projects[simple_sitemap][version] = "1.2"
 
 projects[token][version] = "1.0-alpha2"
 
+projects[entityqueryapi][version] = "1.x"
+
 ; Libraries.
 
 ; Themes.
