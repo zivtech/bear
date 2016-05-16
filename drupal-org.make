@@ -37,7 +37,7 @@ projects[ctools][version] = "3.0-alpha23"
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
 projects[devel][download][branch] = 8.x-1.x
-projects[devel][download][revision] = bb45a4e5e1c0f8f83ec05b52b3d7329a1ca77dec
+projects[devel][download][revision] = 34538908ad46551c4251556b678d36baa3c12083
 
 projects[diff][download][type] = git
 projects[diff][download][url] = http://git.drupal.org/project/diff.git
