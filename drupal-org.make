@@ -23,12 +23,7 @@ projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ck
 projects[ckeditor_media_embed][download][branch] = 8.x-1.x
 projects[ckeditor_media_embed][download][revision] = 131e53bea67ae73fec3f6a0fb8dd99bade80d663
 
-projects[coffee][download][type] = git
-projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
-projects[coffee][download][branch] = 8.x-1.x
-projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
-; @see https://www.drupal.org/node/2486843#comment-10268935
-projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
+projects[coffee][version] = "1.0-beta1"
 
 projects[ctools][version] = "3.0-alpha23"
 
