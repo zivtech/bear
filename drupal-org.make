@@ -39,10 +39,7 @@ projects[devel][download][url] = http://git.drupal.org/project/devel.git
 projects[devel][download][branch] = 8.x-1.x
 projects[devel][download][revision] = bb45a4e5e1c0f8f83ec05b52b3d7329a1ca77dec
 
-projects[diff][download][type] = git
-projects[diff][download][url] = http://git.drupal.org/project/diff.git
-projects[diff][download][branch] = 8.x-1.x
-projects[diff][download][revision] = 7f8f95b750f5da2b12f80a83cb4f739d421478e3
+projects[] = diff
 
 projects[entity_reference_revisions][download][type] = git
 projects[entity_reference_revisions][download][url] = http://git.drupal.org/project/entity_reference_revisions.git
