@@ -10,7 +10,10 @@ defaults[projects][subdir] = contrib
 ; This will ensure Bear always builds with the same versions of it's dependencies in a given release.
 
 ; Modules.
-projects[] = admin_toolbar
+projects[admin_toolbar][download][type] = git
+projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_toolbar.git
+projects[admin_toolbar][download][branch] = 8.x-1.x
+projects[admin_toolbar][download][revision] = 3993f41a4a1821c58d3b6572f48f32a6ac4c2a8e
 
 projects[big_pipe][download][type] = git
 projects[big_pipe][download][url] = https://git.drupal.org/project/big_pipe.git
