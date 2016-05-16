@@ -39,7 +39,11 @@ projects[devel][download][url] = http://git.drupal.org/project/devel.git
 projects[devel][download][branch] = 8.x-1.x
 projects[devel][download][revision] = bb45a4e5e1c0f8f83ec05b52b3d7329a1ca77dec
 
-projects[] = diff
+projects[diff][download][type] = git
+projects[diff][download][url] = http://git.drupal.org/project/diff.git
+projects[diff][download][branch] = 8.x-1.x
+projects[diff][download][revision] = 2216ce763fecb03d441231e1b2b3fdddeb761b53
+projects[coffee][patch][] = https://www.drupal.org/files/issues/remove_entity_dependency-2711609-3.patch
 
 projects[entity_reference_revisions][download][type] = git
 projects[entity_reference_revisions][download][url] = http://git.drupal.org/project/entity_reference_revisions.git
