@@ -24,7 +24,7 @@ projects[ckeditor_media_embed][type] = module
 projects[ckeditor_media_embed][download][type] = git
 projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ckeditor_media_embed.git
 projects[ckeditor_media_embed][download][branch] = 8.x-1.x
-projects[ckeditor_media_embed][download][revision] = bde51cedf69752b2d0100e16a14aa10577e0d11f
+projects[ckeditor_media_embed][download][revision] = 131e53bea67ae73fec3f6a0fb8dd99bade80d663
 
 projects[coffee][download][type] = git
 projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
