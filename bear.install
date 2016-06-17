@@ -255,8 +255,8 @@ function bear_install() {
   user_role_grant_permissions($editor_role->rid, $perms);
 
   // Enable seven and bear_skin themes and set defaults.
-  theme_enable(array('seven', 'bear_coat'));
-  variable_set('theme_default', 'bear_coat');
+  theme_enable(array('seven', 'bear_skin'));
+  variable_set('theme_default', 'bear_skin');
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
 }
