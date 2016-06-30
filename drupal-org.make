@@ -10,48 +10,21 @@ defaults[projects][subdir] = contrib
 ; This will ensure Bear always builds with the same versions of it's dependencies in a given release.
 
 ; Modules.
-projects[admin_toolbar][download][type] = git
-projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_toolbar.git
-projects[admin_toolbar][download][branch] = 8.x-1.x
-projects[admin_toolbar][download][revision] = 3993f41a4a1821c58d3b6572f48f32a6ac4c2a8e
+projects[] = admin_toolbar
 
-projects[] = big_pipe
+projects[] = ckeditor_media_embed
 
-projects[ckeditor_media_embed][type] = module
-projects[ckeditor_media_embed][download][type] = git
-projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ckeditor_media_embed.git
-projects[ckeditor_media_embed][download][branch] = 8.x-1.x
-projects[ckeditor_media_embed][download][revision] = 131e53bea67ae73fec3f6a0fb8dd99bade80d663
+projects[] = coffee
 
-projects[coffee][download][type] = git
-projects[coffee][download][url] = http://git.drupal.org/project/coffee.git
-projects[coffee][download][branch] = 8.x-1.x
-projects[coffee][download][revision] = 6689904140fbdf578031ac977e912a1ce253cb71
-; @see https://www.drupal.org/node/2486843#comment-10268935
-projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
+projects[ctools][version] = "3.0-alpha26"
 
-projects[ctools][version] = "3.0-alpha23"
+projects[] = devel
 
-projects[devel][download][type] = git
-projects[devel][download][url] = http://git.drupal.org/project/devel.git
-projects[devel][download][branch] = 8.x-1.x
-projects[devel][download][revision] = 34538908ad46551c4251556b678d36baa3c12083
+projects[] = diff
 
-projects[diff][download][type] = git
-projects[diff][download][url] = http://git.drupal.org/project/diff.git
-projects[diff][download][branch] = 8.x-1.x
-projects[diff][download][revision] = 2216ce763fecb03d441231e1b2b3fdddeb761b53
-projects[diff][patch][] = https://www.drupal.org/files/issues/remove_entity_dependency-2711609-3.patch
+projects[] = entity_reference_revisions
 
-projects[entity_reference_revisions][download][type] = git
-projects[entity_reference_revisions][download][url] = http://git.drupal.org/project/entity_reference_revisions.git
-projects[entity_reference_revisions][download][branch] = 8.x-1.x
-projects[entity_reference_revisions][download][revision] = 1074d9003539713a24315e5e99e1f3dac58025f3
-
-projects[field_group][download][type] = git
-projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
-projects[field_group][download][branch] = 8.x-1.x
-projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
+projects[] = field_group
 
 projects[field_help_helper][version] = 1.0
 
@@ -71,22 +44,15 @@ projects[panels][version] = "3.0-beta4"
 projects[paragraphs][download][type] = git
 projects[paragraphs][download][url] = http://git.drupal.org/project/paragraphs.git
 projects[paragraphs][download][branch] = 8.x-1.x
-projects[paragraphs][download][revision] = 4adb7aa041c112a672ee38c30fe8db2334c5d166
+projects[paragraphs][download][revision] = 3b78973fda22865d97295c387f61f798494a615a
 
-projects[pathauto][download][type] = git
-projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
-projects[pathauto][download][branch] = 8.x-1.x
-projects[pathauto][download][revision] = c4952e15e2906ff2040bc01f5e8f37d23950269e
+projects[] = pathauto
 
-projects[simple_sitemap][version] = "1.2"
+projects[] = simple_sitemap
 
-projects[token][version] = "1.0-alpha2"
+projects[] = token
 
 ; Libraries.
 
 ; Themes.
-projects[bear_skin][type] = "theme"
-projects[bear_skin][download][type] = git
-projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
-projects[bear_skin][download][branch] = 8.x-1.x
-projects[bear_skin][download][revision] = af4754fb00e8a02d77305b111957e5715ee93de2
+projects[bear_skin][version] = "1.x-dev"
