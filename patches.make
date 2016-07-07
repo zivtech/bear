@@ -30,7 +30,7 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/death-to-tabledrag.p
  
 ; Prevent alter hooks from making Features appear as overridden. 
 ; @see https://www.drupal.org/node/766264#comment-9688919
-projects[features][patch][] = "https://www.drupal.org/files/issues/features-alter_overrides-766264-56.patch"
+projects[features][patch][] = "https://www.drupal.org/files/issues/features-alter_overrides-766264-63.patch"
 
 ; @see https://www.drupal.org/node/2630530#comment-10645488
 projects[bear_skin][patch][] = https://www.drupal.org/files/issues/2630530-2-bear_skin-handle_class_attribute.patch
@@ -45,4 +45,4 @@ projects[asset][patch][] = "https://www.drupal.org/files/issues/asset-youtube-vi
 projects[asset][patch][] = https://www.drupal.org/files/issues/2612602-3-asset-inline_entity_form_integration.patch
 
 ; @see https://www.drupal.org/node/2463187#comment-9779355
-projects[ckeditor][patch][] = https://www.drupal.org/files/issues/allow-custom-icon-paths-2463187-1.patch
+; projects[ckeditor][patch][] = https://www.drupal.org/files/issues/allow-custom-icon-paths-2463187-2.patch

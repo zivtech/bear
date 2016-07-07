@@ -7,7 +7,6 @@ api = 2
 core = 7.x
 
 ; Include the additional makes files we have created for core and contrib.
-includes[] = drupal-org-core.make
 includes[] = drupal-org.make
 
 ; Add Bear to the full distribution build.
