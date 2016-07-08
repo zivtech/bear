@@ -3,9 +3,6 @@
 
 ; Patches are listed in alphabetical order by project name.
 
-; @see https://www.drupal.org/node/2486843#comment-10268935
-projects[coffee][patch][] = http://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch
-
 ; @see https://www.drupal.org/node/2711609#comment-11114225
 projects[diff][patch][] = https://www.drupal.org/files/issues/remove_entity_dependency-2711609-3.patch
 
