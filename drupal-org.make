@@ -15,8 +15,6 @@ projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_too
 projects[admin_toolbar][download][branch] = 8.x-1.x
 projects[admin_toolbar][download][revision] = 3993f41a4a1821c58d3b6572f48f32a6ac4c2a8e
 
-projects[] = big_pipe
-
 projects[ckeditor_media_embed][type] = module
 projects[ckeditor_media_embed][download][type] = git
 projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ckeditor_media_embed.git
