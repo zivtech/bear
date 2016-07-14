@@ -64,7 +64,7 @@ projects[panels][version] = "3.0-beta4"
 projects[paragraphs][download][type] = git
 projects[paragraphs][download][url] = http://git.drupal.org/project/paragraphs.git
 projects[paragraphs][download][branch] = 8.x-1.x
-projects[paragraphs][download][revision] = 4adb7aa041c112a672ee38c30fe8db2334c5d166
+projects[paragraphs][download][revision] = 3b78973fda22865d97295c387f61f798494a615a
 
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
