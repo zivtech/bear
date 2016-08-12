@@ -16,7 +16,7 @@ projects[ckeditor_media_embed][version] = "1.0"
 
 projects[coffee][version] = "1.0-beta1"
 
-projects[ctools][version] = "3.0-alpha23"
+projects[ctools][version] = "3.0-alpha26"
 
 projects[devel][download][type] = git
 projects[devel][download][url] = http://git.drupal.org/project/devel.git
