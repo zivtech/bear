@@ -1,0 +1,13 @@
+<?php
+
+function git_deploy_requirements($phase) {
+  $requirements = array();
+  if ($phase == 'runtime') {
+    $requirements['git'] = array(
+      'title' => t('git binary'),
+      'value' => t('The git binary is present and executable'),
+      'severity' => function_exists('exec') && exec('git') ? REQUIREMENT_OK : REQUIREMENT_ERROR,
+    );
+  }
+  return $requirements;
+}
