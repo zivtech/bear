@@ -52,7 +52,4 @@ projects[token][version] = "1.0-beta1"
 ; Libraries.
 
 ; Themes.
-projects[bear_skin][type] = "theme"
-projects[bear_skin][download][type] = git
-projects[bear_skin][download][url] = http://git.drupal.org/project/bear_skin.git
-projects[bear_skin][download][branch] = 8.x-1.x
+projects[bear_skin][version] = "1.7"
