@@ -22,10 +22,7 @@ projects[devel][version] = "1.0-alpha1"
 
 projects[diff][version] = "1.0-alpha3"
 
-projects[entity_reference_revisions][download][type] = git
-projects[entity_reference_revisions][download][url] = http://git.drupal.org/project/entity_reference_revisions.git
-projects[entity_reference_revisions][download][branch] = 8.x-1.x
-projects[entity_reference_revisions][download][revision] = 1074d9003539713a24315e5e99e1f3dac58025f3
+projects[entity_reference_revisions][version] = "1.0"
 
 projects[field_group][version] = "1.0-rc4"
 
