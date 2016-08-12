@@ -15,11 +15,7 @@ projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_too
 projects[admin_toolbar][download][branch] = 8.x-1.x
 projects[admin_toolbar][download][revision] = 3993f41a4a1821c58d3b6572f48f32a6ac4c2a8e
 
-projects[ckeditor_media_embed][type] = module
-projects[ckeditor_media_embed][download][type] = git
-projects[ckeditor_media_embed][download][url] = http://git.drupal.org/project/ckeditor_media_embed.git
-projects[ckeditor_media_embed][download][branch] = 8.x-1.x
-projects[ckeditor_media_embed][download][revision] = 131e53bea67ae73fec3f6a0fb8dd99bade80d663
+projects[ckeditor_media_embed][version] = "1.0"
 
 projects[coffee][version] = "1.0-beta1"
 
