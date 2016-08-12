@@ -33,10 +33,7 @@ projects[entity_reference_revisions][download][url] = http://git.drupal.org/proj
 projects[entity_reference_revisions][download][branch] = 8.x-1.x
 projects[entity_reference_revisions][download][revision] = 1074d9003539713a24315e5e99e1f3dac58025f3
 
-projects[field_group][download][type] = git
-projects[field_group][download][url] = http://git.drupal.org/project/field_group.git
-projects[field_group][download][branch] = 8.x-1.x
-projects[field_group][download][revision] = 0d1884eb33e597cfe77daad9c35757b079b3ef3d
+projects[field_group][version] = "1.0-rc4"
 
 projects[field_help_helper][version] = 1.0
 
