@@ -10,10 +10,7 @@ defaults[projects][subdir] = contrib
 ; This will ensure Bear always builds with the same versions of it's dependencies in a given release.
 
 ; Modules.
-projects[admin_toolbar][download][type] = git
-projects[admin_toolbar][download][url] = http://git.drupal.org/project/admin_toolbar.git
-projects[admin_toolbar][download][branch] = 8.x-1.x
-projects[admin_toolbar][download][revision] = 3993f41a4a1821c58d3b6572f48f32a6ac4c2a8e
+projects[admin_toolbar][version] = "1.16"
 
 projects[ckeditor_media_embed][version] = "1.0"
 
@@ -35,7 +32,7 @@ projects[entity_reference_revisions][download][revision] = 1074d9003539713a24315
 
 projects[field_group][version] = "1.0-rc4"
 
-projects[field_help_helper][version] = 1.0
+projects[field_help_helper][version] = "1.0"
 
 projects[layout_plugin][version] = "1.0-alpha22"
 
