@@ -46,10 +46,7 @@ projects[panels][version] = "3.0-beta4"
 
 projects[paragraphs][version] = "1.0"
 
-projects[pathauto][download][type] = git
-projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
-projects[pathauto][download][branch] = 8.x-1.x
-projects[pathauto][download][revision] = c4952e15e2906ff2040bc01f5e8f37d23950269e
+projects[pathauto][version] = "1.0-alpha3"
 
 projects[simple_sitemap][version] = "1.2"
 
