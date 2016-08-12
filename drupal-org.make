@@ -18,10 +18,7 @@ projects[coffee][version] = "1.0-beta1"
 
 projects[ctools][version] = "3.0-alpha26"
 
-projects[devel][download][type] = git
-projects[devel][download][url] = http://git.drupal.org/project/devel.git
-projects[devel][download][branch] = 8.x-1.x
-projects[devel][download][revision] = 34538908ad46551c4251556b678d36baa3c12083
+projects[devel][version] = "1.0-alpha1"
 
 projects[diff][version] = "1.0-alpha3"
 
@@ -47,10 +44,7 @@ projects[page_manager][version] = "1.0-alpha23"
 
 projects[panels][version] = "3.0-beta4"
 
-projects[paragraphs][download][type] = git
-projects[paragraphs][download][url] = http://git.drupal.org/project/paragraphs.git
-projects[paragraphs][download][branch] = 8.x-1.x
-projects[paragraphs][download][revision] = 4adb7aa041c112a672ee38c30fe8db2334c5d166
+projects[paragraphs][version] = "1.0"
 
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
