@@ -2,7 +2,7 @@
 ; Our project contains patches for both Drupal core and contrib modules/themes.
 
 ; Patches are listed in alphabetical order by project name.
-
+api=2
 ; @see https://www.drupal.org/node/2711609#comment-11114225
 projects[diff][patch][] = https://www.drupal.org/files/issues/remove_entity_dependency-2711609-3.patch
 
