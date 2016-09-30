@@ -49,6 +49,8 @@ projects[simple_sitemap][version] = "1.2"
 
 projects[token][version] = "1.0-beta1"
 
+projects[components][version] = "1.0"
+
 ; Libraries.
 
 ; Themes.

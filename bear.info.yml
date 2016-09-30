@@ -50,6 +50,7 @@ dependencies:
   - paragraphs
   - pathauto
   - token
+  - components
 themes:
   - bear_coat
   - bear_skin
