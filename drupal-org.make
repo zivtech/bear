@@ -20,7 +20,7 @@ projects[ctools][version] = "3.0-alpha27"
 
 projects[devel][version] = "1.0-alpha1"
 
-projects[diff][version] = "1.0-alpha3"
+projects[diff][version] = "1.0-beta2"
 
 projects[entity_reference_revisions][version] = "1.0"
 
