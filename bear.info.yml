@@ -45,8 +45,6 @@ dependencies:
   - field_help_helper
   - layout_plugin
   - menu_link_config
-  - page_manager
-  - panels
   - paragraphs
   - pathauto
   - token
