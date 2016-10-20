@@ -50,6 +50,7 @@ dependencies:
   - paragraphs
   - pathauto
   - redirect
+  - simple_sitemap
   - token
   - components
 themes:
