@@ -43,7 +43,7 @@ projects[panels][version] = "3.0-beta4"
 
 projects[paragraphs][version] = "1.0"
 
-projects[pathauto][version] = "1.0-alpha3"
+projects[pathauto][version] = "1.0-beta1"
 
 projects[simple_sitemap][version] = "1.2"
 
