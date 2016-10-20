@@ -28,7 +28,7 @@ projects[field_group][version] = "1.0-rc4"
 
 projects[field_help_helper][version] = "1.0"
 
-projects[layout_plugin][version] = "1.0-alpha22"
+projects[layout_plugin][version] = "1.0-alpha23"
 
 projects[menu_link_config][download][type] = git
 projects[menu_link_config][download][url] = http://git.drupal.org/project/menu_link_config.git
