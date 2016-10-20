@@ -41,6 +41,7 @@ dependencies:
   - ctools
   - diff
   - ds
+  - easy_breadcrumb
   - entity_reference_revisions
   - field_group
   - field_help_helper
