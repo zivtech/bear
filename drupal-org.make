@@ -10,7 +10,7 @@ defaults[projects][subdir] = contrib
 ; This will ensure Bear always builds with the same versions of it's dependencies in a given release.
 
 ; Modules.
-projects[admin_toolbar][version] = "1.16"
+projects[admin_toolbar][version] = "1.17"
 
 projects[ckeditor_media_embed][version] = "1.0"
 
