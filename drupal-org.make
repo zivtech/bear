@@ -21,8 +21,6 @@ projects[ctools][version] = "3.0-alpha27"
 projects[devel][version] = "1.0-alpha1"
 
 projects[diff][version] = "1.0-beta2"
-; @see https://www.drupal.org/node/2711609#comment-11114225
-projects[diff][patch][] = https://www.drupal.org/files/issues/remove_entity_dependency-2711609-3.patch
 
 projects[entity_reference_revisions][version] = "1.0"
 
@@ -46,8 +44,6 @@ projects[panels][version] = "3.0-beta4"
 projects[paragraphs][version] = "1.0"
 
 projects[pathauto][version] = "1.0-beta1"
-; @see https://www.drupal.org/node/2168193#comment-10474448
-projects[pathauto][patch][] = https://www.drupal.org/files/issues/pathauto-d8_port-2168193-56.patch
 
 projects[simple_sitemap][version] = "1.2"
 
