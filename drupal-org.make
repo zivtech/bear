@@ -43,6 +43,16 @@ projects[paragraphs][version] = "1.0"
 
 projects[pathauto][version] = "1.0-beta1"
 
+projects[entity_browser][version] = "1.x-dev"
+projects[inline_entity_form][version] = "1.x-dev"
+projects[entity_embed][version] = "1.x-dev"
+projects[content_browser][version] = "1.x-dev"
+projects[embed][version] = "1.x-dev"
+
+
+
+
+
 projects[simple_sitemap][version] = "1.2"
 
 projects[token][version] = "1.0-beta2"
