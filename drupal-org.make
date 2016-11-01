@@ -22,6 +22,8 @@ projects[devel][version] = "1.0-alpha1"
 
 projects[diff][version] = "1.0-beta2"
 
+projects[ds][version] = "2.6"
+
 projects[entity_reference_revisions][version] = "1.0"
 
 projects[field_group][version] = "1.0-rc4"

@@ -40,6 +40,7 @@ dependencies:
   - coffee
   - ctools
   - diff
+  - ds
   - entity_reference_revisions
   - field_group
   - field_help_helper
