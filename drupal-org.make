@@ -37,10 +37,6 @@ projects[menu_link_config][download][revision] = e424f20fbf531a24d93acdf91f34821
 ; @see https://www.drupal.org/node/2687913#comment-10972551
 projects[menu_link_config][patch][] = https://www.drupal.org/files/issues/2687913-1-config_menu_link-front-default-value.patch
 
-projects[page_manager][version] = "1.0-alpha23"
-
-projects[panels][version] = "3.0-beta4"
-
 projects[paragraphs][version] = "1.0"
 
 projects[pathauto][version] = "1.0-beta1"

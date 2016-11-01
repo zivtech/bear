@@ -12,8 +12,6 @@ Bear includes helpful modules for site builders and developers with default sett
 - field_help_helper
 - layout_plugin
 - menu_link_config
-- page_manager
-- panels
 - pathauto
 - simple_sitemap
 - token
