@@ -47,7 +47,7 @@ projects[pathauto][version] = "1.0-beta1"
 
 projects[redirect][version] = "1.0-alpha1"
 
-projects[simple_sitemap][version] = "1.2"
+projects[simple_sitemap][version] = "2.6"
 
 projects[token][version] = "1.0-beta2"
 
