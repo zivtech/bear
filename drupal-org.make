@@ -56,4 +56,4 @@ projects[components][version] = "1.0"
 ; Libraries.
 
 ; Themes.
-projects[bear_skin][version] = "1.7"
+projects[bear_skin][version] = "2.x-dev"
