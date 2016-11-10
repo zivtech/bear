@@ -1,5 +1,5 @@
-id: bear_coat_local_tasks
-theme: bear_coat
+id: bear_skin_local_tasks
+theme: bear_skin
 weight: -40
 status: true
 langcode: en
@@ -11,5 +11,5 @@ settings:
   label_display: '0'
 dependencies:
   theme:
-    - bear_coat
+    - bear_skin
 visibility: {  }

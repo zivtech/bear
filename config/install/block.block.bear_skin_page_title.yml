@@ -1,10 +1,10 @@
-id: bear_coat_page_title
-theme: bear_coat
+id: bear_skin_page_title
+theme: bear_skin
 langcode: en
 status: true
 dependencies:
   theme:
-    - bear_coat
+    - bear_skin
 region: content
 weight: -30
 provider: null

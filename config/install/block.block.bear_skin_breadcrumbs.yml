@@ -1,5 +1,5 @@
-id: bear_coat_breadcrumbs
-theme: bear_coat
+id: bear_skin_breadcrumbs
+theme: bear_skin
 weight: 0
 status: true
 langcode: en
@@ -14,5 +14,5 @@ dependencies:
   module:
     - system
   theme:
-    - bear_coat
+    - bear_skin
 visibility: {  }

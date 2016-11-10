@@ -1,5 +1,5 @@
-id: bear_coat_account_menu
-theme: bear_coat
+id: bear_skin_account_menu
+theme: bear_skin
 weight: 0
 status: false
 langcode: en
@@ -18,5 +18,5 @@ dependencies:
   module:
     - system
   theme:
-    - bear_coat
+    - bear_skin
 visibility: { }
