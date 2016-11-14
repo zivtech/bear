@@ -14,7 +14,7 @@ projects[admin_toolbar][version] = "1.17"
 
 projects[ckeditor_media_embed][version] = "1.0"
 
-projects[coffee][version] = "1.0-beta1"
+projects[coffee][version] = "1.0-beta2"
 
 projects[ctools][version] = "3.0-alpha27"
 
@@ -47,13 +47,15 @@ projects[pathauto][version] = "1.0-beta1"
 
 projects[redirect][version] = "1.0-alpha1"
 
-projects[simple_sitemap][version] = "2.6"
+projects[simple_sitemap][version] = "2.7"
 
 projects[token][version] = "1.0-beta2"
 
 projects[components][version] = "1.0"
 
 ; Libraries.
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "https://github.com/ckeditor/ckeditor-dev/archive/release/4.5.x.zip"
 
 ; Themes.
 projects[bear_skin][version] = "2.x-dev"
