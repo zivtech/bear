@@ -1,0 +1,10 @@
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+langcode: en
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format basic_html'
+  - 'search content'
+  - 'use advanced search'
