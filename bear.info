@@ -49,6 +49,7 @@ dependencies[] = fences
 dependencies[] = field_group
 dependencies[] = field_help_helper
 dependencies[] = habitat
+dependencies[] = imageapi_optimize
 dependencies[] = jquery_update
 dependencies[] = libraries
 dependencies[] = link
