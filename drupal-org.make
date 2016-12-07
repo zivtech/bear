@@ -26,6 +26,8 @@ projects[ds][version] = 2.6
 
 projects[easy_breadcrumb][version] = 1.5
 
+projects[editor_advanced_link][version] = 1.3
+
 projects[entity_reference_revisions][version] = 1.0
 
 projects[environment_indicator][version] = 3.0-beta1

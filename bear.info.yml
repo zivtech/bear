@@ -44,6 +44,7 @@ dependencies:
   - diff
   - ds
   - easy_breadcrumb
+  - editor_advanced_link
   - entity_reference_revisions
   - field_group
   - field_help_helper
