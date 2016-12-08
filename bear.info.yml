@@ -39,6 +39,7 @@ dependencies:
   - big_pipe
   - ckeditor_media_embed
   - coffee
+  - components
   - ctools
   - diff
   - ds
@@ -49,12 +50,14 @@ dependencies:
   - layout_plugin
   - menu_link_config
   - paragraphs
+  - password_policy
   - pathauto
   - redirect
+  - seckit
   - simple_sitemap
   - token
-  - components
+  - username_enumeration_prevention
 themes:
-  - bear_skin
   - bartik
+  - bear_skin
   - seven
