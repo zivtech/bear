@@ -59,8 +59,6 @@ projects[simple_sitemap][version] = "2.7"
 
 projects[token][version] = "1.0-beta2"
 
-projects[username_enumeration_prevention][version] = "1.0-beta1"
-
 ; Libraries.
 libraries[ckeditor][download][type] = file
 libraries[ckeditor][download][url] = "https://github.com/ckeditor/ckeditor-dev/archive/release/4.5.x.zip"
