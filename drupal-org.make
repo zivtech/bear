@@ -71,6 +71,10 @@ projects[] = xmlsitemap
 projects[] = views
 projects[] = views_bulk_operations
 projects[] = views_slideshow
+projects[entityreference_browser][type] = "module"
+projects[entityreference_browser][download][type] = "git"
+projects[entityreference_browser][download][url] = https://git.drupal.org/sandbox/davidseth/1489176.git 
+projects[entityreference_browser][download][branch] = "7.x-1.x"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
