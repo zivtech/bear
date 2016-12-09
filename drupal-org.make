@@ -38,6 +38,8 @@ projects[layout_plugin][version] = "1.0-alpha23"
 
 projects[login_security][version] = "1.2"
 
+projects[menu_block][version] = 1.4
+
 projects[menu_link_config][download][type] = git
 projects[menu_link_config][download][url] = http://git.drupal.org/project/menu_link_config.git
 projects[menu_link_config][download][branch] = 8.x-1.x
