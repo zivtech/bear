@@ -65,6 +65,7 @@ dependencies[] = pathauto
 dependencies[] = picture
 dependencies[] = token
 dependencies[] = redirect
+dependencies[] = required_for_pub
 dependencies[] = responsive_menus
 dependencies[] = strongarm
 dependencies[] = styleguide
