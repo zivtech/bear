@@ -32,6 +32,8 @@ projects[field_group][version] = "1.0-rc4"
 
 projects[field_help_helper][version] = "1.0"
 
+projects[google_analytics][version] = "2.1"
+
 projects[layout_plugin][version] = "1.0-alpha23"
 
 projects[menu_link_config][download][type] = git
@@ -48,6 +50,8 @@ projects[pathauto][version] = "1.0-beta1"
 projects[redirect][version] = "1.0-alpha1"
 
 projects[simple_sitemap][version] = "2.7"
+
+projects[stage_file_proxy][version] = "1.0-alpha1"
 
 projects[token][version] = "1.0-beta2"
 
