@@ -51,6 +51,9 @@ dependencies:
   - menu_link_config
   - paragraphs
   - password_policy
+  - password_policy_characters
+  - password_policy_history
+  - password_policy_length
   - pathauto
   - redirect
   - simple_sitemap
