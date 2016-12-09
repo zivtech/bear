@@ -42,6 +42,7 @@ projects[] = field_group
 projects[] = field_help_helper
 projects[] = google_analytics
 projects[] = habitat
+projects[] = imageapi_optimize
 projects[] = inline_entity_form
 projects[] = jquery_update
 ; We are using jPlayer dev version so that it can correctly detect the jPlayer
