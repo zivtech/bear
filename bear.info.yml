@@ -48,6 +48,7 @@ dependencies:
   - field_group
   - field_help_helper
   - layout_plugin
+  - login_security
   - menu_link_config
   - paragraphs
   - password_policy
