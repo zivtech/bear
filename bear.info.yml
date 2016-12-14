@@ -6,6 +6,7 @@ core: 8.x
 dependencies:
   # Core extensions.
   - node
+  - big_pipe
   - block
   - breakpoint
   - ckeditor
@@ -37,9 +38,9 @@ dependencies:
   # Contrib extensions.
   - admin_toolbar
   - admin_toolbar_tools
-  - big_pipe
   - ckeditor_media_embed
   - coffee
+  - components
   - ctools
   - diff
   - ds
@@ -48,14 +49,18 @@ dependencies:
   - field_group
   - field_help_helper
   - layout_plugin
+  - menu_block
   - menu_link_config
   - paragraphs
+  - password_policy
+  - password_policy_characters
+  - password_policy_history
+  - password_policy_length
   - pathauto
   - redirect
   - simple_sitemap
   - token
-  - components
 themes:
-  - bear_skin
   - bartik
+  - bear_skin
   - seven

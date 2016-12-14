@@ -16,6 +16,8 @@ projects[ckeditor_media_embed][version] = "1.0"
 
 projects[coffee][version] = "1.0-beta2"
 
+projects[components][version] = "1.0"
+
 projects[ctools][version] = "3.0-alpha27"
 
 projects[devel][version] = "1.0-alpha1"
@@ -38,6 +40,10 @@ projects[google_analytics][version] = "2.1"
 
 projects[layout_plugin][version] = "1.0-alpha23"
 
+projects[login_security][version] = "1.2"
+
+projects[menu_block][version] = 1.4
+
 projects[menu_link_config][download][type] = git
 projects[menu_link_config][download][url] = http://git.drupal.org/project/menu_link_config.git
 projects[menu_link_config][download][branch] = 8.x-1.x
@@ -47,17 +53,19 @@ projects[menu_link_config][patch][] = https://www.drupal.org/files/issues/268791
 
 projects[paragraphs][version] = "1.0"
 
+projects[password_policy][version] = "3.0-alpha2"
+
 projects[pathauto][version] = "1.0-beta1"
 
 projects[redirect][version] = "1.0-alpha1"
+
+projects[seckit][version] = "1.0-alpha2"
 
 projects[simple_sitemap][version] = "2.7"
 
 projects[stage_file_proxy][version] = "1.0-alpha1"
 
 projects[token][version] = "1.0-beta2"
-
-projects[components][version] = "1.0"
 
 ; Libraries.
 libraries[ckeditor][download][type] = file
