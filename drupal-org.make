@@ -38,13 +38,6 @@ projects[google_analytics][version] = "2.1"
 
 projects[layout_plugin][version] = "1.0-alpha23"
 
-projects[menu_link_config][download][type] = git
-projects[menu_link_config][download][url] = http://git.drupal.org/project/menu_link_config.git
-projects[menu_link_config][download][branch] = 8.x-1.x
-projects[menu_link_config][download][revision] = e424f20fbf531a24d93acdf91f34821598fb4c51
-; @see https://www.drupal.org/node/2687913#comment-10972551
-projects[menu_link_config][patch][] = https://www.drupal.org/files/issues/2687913-1-config_menu_link-front-default-value.patch
-
 projects[paragraphs][version] = "1.0"
 
 projects[pathauto][version] = "1.0-beta1"

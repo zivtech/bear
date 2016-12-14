@@ -48,7 +48,6 @@ dependencies:
   - field_group
   - field_help_helper
   - layout_plugin
-  - menu_link_config
   - paragraphs
   - pathauto
   - redirect
