@@ -1,8 +1,8 @@
 name: Bear
 type: profile
 description: 'A profile to give developers the tools needed for just about any site.'
-version: 8.x-dev
 core: 8.x
+
 dependencies:
   # Core extensions.
   - node
