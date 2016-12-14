@@ -1,6 +1,6 @@
 id: editor
 label: Editor
-weight: 2
+weight: 9
 langcode: en
 is_admin: false
 permissions:
