@@ -28,6 +28,8 @@ projects[easy_breadcrumb][version] = "1.5"
 
 projects[entity_reference_revisions][version] = "1.0"
 
+projects[environment_indicator][version] = "3.0-beta1"
+
 projects[field_group][version] = "1.0-rc4"
 
 projects[field_help_helper][version] = "1.0"
