@@ -1,3 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+    - ckeditor_media_embed
 format: full_html
 editor: ckeditor
 settings:
@@ -9,11 +17,21 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
             - Strike
             - Superscript
             - Subscript
-            - -
+            - '-'
             - RemoveFormat
+        -
+          name: Alignment
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - Outdent
+            - Indent
         -
           name: Linking
           items:
@@ -50,13 +68,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
-status: true
-langcode: en
-dependencies:
-  config:
-    - filter.format.full_html
-  module:
-    - ckeditor
-    - ckeditor_media_embed
+    width: null
+    height: null

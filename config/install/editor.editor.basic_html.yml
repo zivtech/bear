@@ -1,3 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
 format: basic_html
 editor: ckeditor
 settings:
@@ -9,6 +16,15 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
+            - RemoveFormat
+        -
+          name: Alignment
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
         -
           name: Linking
           items:
@@ -22,6 +38,7 @@ settings:
         -
           name: Media
           items:
+            - EmbedSemantic
             - Blockquote
             - DrupalImage
         -
@@ -41,12 +58,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
-status: true
-langcode: en
-dependencies:
-  config:
-    - filter.format.basic_html
-  module:
-    - ckeditor
+    width: null
+    height: null
