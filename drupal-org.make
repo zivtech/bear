@@ -59,4 +59,4 @@ libraries[ckeditor][download][type] = file
 libraries[ckeditor][download][url] = https://github.com/ckeditor/ckeditor-dev/archive/release/4.5.x.zip
 
 ; Themes.
-projects[bear_skin][version] = 2.x-dev
+projects[bear_skin][version] = 2.2
