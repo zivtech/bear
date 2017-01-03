@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ckeditor_media_embed
     - editor
 name: 'Basic HTML'
 format: basic_html
@@ -13,7 +14,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang title class id target rel> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <table> <tr> <td> <thead> <tbody> <th> <u> <s> <h2> <h3> <h4> <h5> <img src alt> <caption> <tfoot>'
+      allowed_html: '<a href hreflang title class id target rel> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <table> <tr> <td> <thead> <tbody> <th> <u> <s> <h2> <h3> <h4> <h5> <img src alt height width data-entity-type data-entity-uuid data-align data-caption> <caption> <tfoot> <oembed>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_align:
@@ -53,3 +54,9 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  filter_ckeditor_media_embed:
+    id: filter_ckeditor_media_embed
+    provider: ckeditor_media_embed
+    status: true
+    weight: 0
+    settings: {  }
