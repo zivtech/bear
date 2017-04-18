@@ -54,6 +54,8 @@ projects[token][version] = 1.0-beta2
 
 projects[components][version] = 1.0
 
+projects[entityqueryapi][version] = "1.x"
+
 ; Libraries.
 libraries[ckeditor][download][type] = file
 libraries[ckeditor][download][url] = https://github.com/ckeditor/ckeditor-dev/archive/release/4.5.x.zip
