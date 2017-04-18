@@ -30,3 +30,5 @@ Bear Skin is the theme that comes with Bear. It is designed to be a great starti
 
 ## Why is it called Bear?
 No huge reason. It sounds like ‘bare’ and it gives you a bare site ready to make your own with nothing you should need to remove to get started. Also we have a picture of a big bear in our office courtesy of http://butcherpress.com/golden-paw.
+
+Test
