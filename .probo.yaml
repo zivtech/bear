@@ -13,3 +13,4 @@ steps:
     command: 'drush cr'
   - name: Run behat tests
     command: 'cd /var/www/html/profiles/bear/tests ; composer install ; ./bin/behat --profile probo'
+
