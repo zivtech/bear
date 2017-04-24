@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_area__text_area
+    - paragraphs.paragraphs_type.text_area
+  module:
+    - text
+id: paragraph.text_area.field_text_area__text_area
+field_name: field_text_area__text_area
+entity_type: paragraph
+bundle: text_area
+label: 'Text Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

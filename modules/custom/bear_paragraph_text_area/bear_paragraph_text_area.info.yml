@@ -1,0 +1,9 @@
+name: Bear Paragraph Text Area
+description: Provides a Text Area paragraph type.
+package: Bear
+
+type: module
+core: 8.x
+
+dependencies:
+  - paragraphs:paragraphs
