@@ -4,10 +4,11 @@ Bear Skin ships with a Gulp setup to preprocess our sass/css code. See https://w
 ## Getting Started
 To start building CSS, you first have to install all the gulp dependencies.
 
-1. Install [node.js](https://nodejs.org/en/).
+1. Install [node.js](https://nodejs.org/en/). You will want at least version 4.5.0 (run `npm -v` to determine your version). To upgrade, run `sudo npm install -g npm`.
 2. After changing to the project directory in your terminal, run `npm install`. If you run into errors:
   - Make sure your local paths are right: `npm config set prefix /usr/local`
   - Reinstall gulp: `sudo npm install gulp -g`
+  - On OS X, one of the node modules requires XCode. Install that from the App Store.
 3. After the process finishes, you'll be able to run all the gulp tasks listed below.
 
 Make sure to enable the `bear_skin` sub theme to have access to panel templates, or duplicate the `panel-layouts` folder in the `bear_coat` root folder.
