@@ -1,0 +1,9 @@
+name: Bear Paragraph Text and Image
+description: Provides a Text and Image paragraph type.
+package: Bear
+
+type: module
+core: 8.x
+
+dependencies:
+  - paragraphs:paragraphs
