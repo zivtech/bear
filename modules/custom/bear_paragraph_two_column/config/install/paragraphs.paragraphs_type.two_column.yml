@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: two_column
+label: 'Two Column'
+behavior_plugins: {  }

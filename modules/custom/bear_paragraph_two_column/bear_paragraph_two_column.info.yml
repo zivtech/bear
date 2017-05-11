@@ -1,0 +1,9 @@
+name: Bear Paragraph Two Column
+description: Provides a two column paragraph type.
+package: Bear
+
+type: module
+core: 8.x
+
+dependencies:
+  - paragraphs:paragraphs
