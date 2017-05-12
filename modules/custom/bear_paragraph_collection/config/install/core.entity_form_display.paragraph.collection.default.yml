@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.collection.field_collection__format
+    - field.field.paragraph.collection.field_collection__grid_columns
+    - field.field.paragraph.collection.field_collection__item
+    - paragraphs.paragraphs_type.collection
+  module:
+    - paragraphs
+id: paragraph.collection.default
+targetEntityType: paragraph
+bundle: collection
+mode: default
+content:
+  field_collection__format:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_collection__grid_columns:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_collection__item:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: 'Collection Item'
+      title_plural: 'Collection Items'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

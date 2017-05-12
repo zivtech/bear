@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_collection__grid_columns
+    - paragraphs.paragraphs_type.collection
+id: paragraph.collection.field_collection__grid_columns
+field_name: field_collection__grid_columns
+entity_type: paragraph
+bundle: collection
+label: 'Grid Columns'
+description: 'If you have selected the Grid format, select how many columns the grid will have.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 4
+default_value_callback: ''
+settings:
+  min: 2
+  max: 8
+  prefix: ''
+  suffix: ''
+field_type: integer

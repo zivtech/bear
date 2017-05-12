@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.collection.field_collection__format
+    - field.field.paragraph.collection.field_collection__grid_columns
+    - field.field.paragraph.collection.field_collection__item
+    - paragraphs.paragraphs_type.collection
+  module:
+    - entity_reference_revisions
+id: paragraph.collection.default
+targetEntityType: paragraph
+bundle: collection
+mode: default
+content:
+  field_collection__item:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_collection__format: true
+  field_collection__grid_columns: true

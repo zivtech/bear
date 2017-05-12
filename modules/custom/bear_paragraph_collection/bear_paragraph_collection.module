@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Customizations related to the Collection paragraph bundle.
+ */
+
+ /**
+  * Implements hook_preprocess_HOOK().
+  */
+function bear_paragraph_collection_preprocess_paragraph__collection(&$variables) {
+  $fields = $variables['paragraph']->getFields();
+
+  // Get data to use for class names.
+  // Assigning values to the $variables array ensures they are accessible in the
+  // template if need be.
+  $format = $fields['field_collection__format']->getValue();
+  $variables['format'] = $format[0]['value'];
+
+  $columns = $fields['field_collection__grid_columns']->getValue();
+  $variables['columns'] = $columns[0]['value'];
+
+  // Set appropriate class name dependent on selected format.
+  $variables['attributes']['class'][] = 'paragraph--type--collection--' . $variables['format'];
+
+  // Generate classes for the number of grid columns the user has selected.
+  if ($variables['format'] === 'grid') {
+    $variables['attributes']['class'][] = 'columns-' . $variables['columns'];
+  }
+}
