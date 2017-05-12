@@ -1,18 +1,19 @@
 <?php
 
-/*
- * @file Customizations related to the Text and Image paragraph bundle.
+/**
+ * @file
+ * Customizations related to the Text and Image paragraph bundle.
  */
 
 /**
  * Implements hook_theme().
  */
 function bear_paragraph_text_and_image_theme($existing, $type, $theme, $path) {
-  return array(
-    'paragraph__text_and_image' => array(
+  return [
+    'paragraph__text_and_image' => [
       'base hook' => 'paragraph',
-    ),
-  );
+    ],
+  ];
 }
 
 /**
