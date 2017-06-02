@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_and_image.field_text_and_image__image
+    - field.field.paragraph.text_and_image.field_text_and_image__position
+    - field.field.paragraph.text_and_image.field_text_and_image__text_area
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.text_and_image
+  module:
+    - image
+    - text
+id: paragraph.text_and_image.default
+targetEntityType: paragraph
+bundle: text_and_image
+mode: default
+content:
+  field_text_and_image__image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text_and_image__position:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_text_and_image__text_area:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

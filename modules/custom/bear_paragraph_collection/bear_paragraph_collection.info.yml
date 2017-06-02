@@ -1,0 +1,9 @@
+name: Bear Paragraph Collection
+description: Provides a Collection paragraph type.
+package: Bear
+
+type: module
+core: 8.x
+
+dependencies:
+  - paragraphs:paragraphs

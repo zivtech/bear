@@ -1,0 +1,11 @@
+node-form:
+  version: 1.x
+  css:
+    theme:
+      css/node-form.css: {}
+  js:
+    js/script.js:
+      minified: false
+  dependencies:
+    - paragraphs/drupal.paragraphs.admin
+    - core/jquery

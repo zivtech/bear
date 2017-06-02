@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Customizations related to the Banner paragraph bundle.
+ */
+
+ /**
+  * Implements hook_theme().
+  */
+function bear_paragraph_banner_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__banner' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}

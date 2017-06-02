@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column.field_two_column__left_column
+    - field.field.paragraph.two_column.field_two_column__right_column
+    - paragraphs.paragraphs_type.two_column
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column.default
+targetEntityType: paragraph
+bundle: two_column
+mode: default
+content:
+  field_two_column__left_column:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_two_column__right_column:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

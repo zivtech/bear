@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_and_image__position
+    - paragraphs.paragraphs_type.text_and_image
+  module:
+    - options
+id: paragraph.text_and_image.field_text_and_image__position
+field_name: field_text_and_image__position
+entity_type: paragraph
+bundle: text_and_image
+label: 'Image Position'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

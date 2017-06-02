@@ -1,0 +1,16 @@
+.field--name-field-two-column {
+  display: flex;
+}
+
+.field--name-field-two-column__left-column,
+.field--name-field-two-column__left-right {
+  width: 50%;
+}
+
+.field--name-field-two-column__left-column {
+  margin-right: 1%;
+}
+
+.field--name-field-two-column__left-right {
+  margin-left: 1%;
+}

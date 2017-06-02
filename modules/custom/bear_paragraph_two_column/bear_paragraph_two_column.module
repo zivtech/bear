@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Customizations related to the Two Column paragraph bundle.
+ */
+
+/**
+ * Implements hook_page_attachments().
+ */
+function bear_paragraph_two_column_page_attachments(array &$attachments) {
+  $is_admin = \Drupal::service('router.admin_context')->isAdminRoute();
+
+  if ($is_admin) {
+    $attachments['#attached']['library'][] = 'bear_paragraph_two_column/node-form';
+  }
+}

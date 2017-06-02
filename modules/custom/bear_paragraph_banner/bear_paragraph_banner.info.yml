@@ -1,0 +1,9 @@
+name: Bear Paragraph Banner
+description: Provides a Banner paragraph type.
+package: Bear
+
+type: module
+core: 8.x
+
+dependencies:
+  - paragraphs:paragraphs

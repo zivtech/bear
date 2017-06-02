@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Customizations related to the Text and Image paragraph bundle.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function bear_paragraph_text_and_image_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__text_and_image' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function bear_paragraph_text_and_image_preprocess_paragraph__text_and_image(&$variables) {
+  $fields = $variables['paragraph']->getFields();
+  $image_position = $fields['field_text_and_image__position']->getValue();
+  $image_position = $image_position[0]['value'];
+  $variables['image_position'] = $image_position;
+}
