@@ -58,3 +58,11 @@ function bear_form_node_form_alter(&$form, FormStateInterface $form_state) {
     }
   }
 }
+
+/**
+ * Implements hook_form_alter().
+ * Prevents html5 form validation.
+ */
+function bear_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['#attributes']['novalidate'] = 'novalidate';
+}
