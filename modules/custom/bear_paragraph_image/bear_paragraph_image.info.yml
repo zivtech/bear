@@ -1,5 +1,5 @@
 name: Bear Paragraph Image
-description: Provides an Image paragraph type.
+description: Provides an Image paragraph bundle with a single image field.
 package: Bear
 
 type: module

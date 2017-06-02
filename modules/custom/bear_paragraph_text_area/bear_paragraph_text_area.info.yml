@@ -1,5 +1,5 @@
 name: Bear Paragraph Text Area
-description: Provides a Text Area paragraph type.
+description: Provides a Text Area paragraph type with a single text area field.
 package: Bear
 
 type: module
