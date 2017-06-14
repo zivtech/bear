@@ -1,14 +1,4 @@
 <?php
-<<<<<<< HEAD
-/**
- * @file
- * Install, update and uninstall functions for the bear installation profile.
- */
-
-use Drupal\user\Entity\User;
-use Drupal\user\RoleInterface;
-use Drupal\user\Entity\Role;
-=======
 
 /**
  * @file
@@ -19,97 +9,15 @@ use Drupal\Core\Entity\Entity\EntityViewDisplay;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
->>>>>>> origin/8.x-2.x
 
 /**
  * Implements hook_install().
  *
-<<<<<<< HEAD
- * Perform actions to set up the site for this profile.
-=======
  * Perform actions to set up the site for Bear Profile.
->>>>>>> origin/8.x-2.x
  *
  * @see system_install()
  */
 function bear_install() {
-<<<<<<< HEAD
-  _bear_setup_base_configurations();
-  _bear_enable_modules();
-  _bear_setup_users_and_roles();
-  _bear_setup_themes();
-}
-
-/**
- * Setup base site configurations.
- */
-function _bear_setup_base_configurations() {
-  // Set front page to "node".
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
-}
-
-/**
- * Enable modules by default.
- */
-function _bear_enable_modules() {
-  // Install devel submodules.
-  \Drupal::service('module_installer')->install(['devel', 'kint'], TRUE);
-}
-
-/**
- * Setup default users and roles.
- */
-function _bear_setup_users_and_roles() {
-  // Allow visitor account creation with administrative approval.
-  $user_settings = \Drupal::configFactory()->getEditable('user.settings');
-  $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(TRUE);
-
-  // Enable default permissions for system roles.
-  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('use text format basic_html'));
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('use text format basic_html'));
-
-  // Assign user 1 the "administrator" role.
-  $user = User::load(1);
-  $user->roles[] = 'administrator';
-  $user->save();
-
-  _bear_setup_role_editor();
-}
-
-/**
- * Setup the editor role.
- */
-function _bear_setup_role_editor() {
-  user_role_grant_permissions('editor', array(
-    'access administration pages',
-    'access coffee',
-    'access content overview',
-    'access in-place editing',
-    'access toolbar',
-    'administer menu',
-    'administer nodes',
-    'administer url aliases',
-    'administer users',
-    'bypass node access',
-    'change own username',
-    'create url aliases',
-    'delete all revisions',
-    'edit field help text',
-    'revert all revisions',
-    'use text format basic_html',
-    'use text format full_html',
-    'view all revisions',
-    'view the administration theme'
-  ));
-}
-
-/**
- * Setup the themes.
- */
-function _bear_setup_themes() {
-  // Enable the admin theme.
-  \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
-=======
   // Assign user 1 the "administrator" role.
   $user = User::load(1);
   $user->roles[] = 'administrator';
@@ -537,5 +445,4 @@ function _bear_setup_themes() {
       'page_1' => $display['page_1'],
     ])
     ->save(TRUE);
->>>>>>> origin/8.x-2.x
 }
