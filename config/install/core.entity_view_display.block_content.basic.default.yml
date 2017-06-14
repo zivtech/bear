@@ -12,10 +12,10 @@ bundle: basic
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
     weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }
-third_party_settings: {  }

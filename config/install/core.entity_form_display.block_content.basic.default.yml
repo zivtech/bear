@@ -11,6 +11,15 @@ targetEntityType: block_content
 bundle: basic
 mode: default
 content:
+  body:
+    type: text_textarea_with_summary
+    weight: 0
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   info:
     type: string_textfield
     weight: -5
@@ -18,13 +27,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  body:
-    type: text_textarea_with_summary
-    weight: -4
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
+    region: content
 hidden: {  }
-third_party_settings: {  }
