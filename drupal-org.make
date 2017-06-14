@@ -35,7 +35,7 @@ projects[components][version] = 1.0
 
 ; Libraries.
 libraries[ckeditor][download][type] = file
-libraries[ckeditor][download][url] = https://github.com/ckeditor/ckeditor-dev/archive/release/4.5.x.zip
+libraries[ckeditor][download][url] = https://github.com/ckeditor/ckeditor-dev/archive/4.5.11.zip
 
 ; Themes.
 projects[bear_skin][version] = 2.2
