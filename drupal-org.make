@@ -33,9 +33,5 @@ projects[stage_file_proxy][version] = 1.0-alpha1
 projects[token][version] = 1.0-beta2
 projects[components][version] = 1.0
 
-; Libraries.
-libraries[ckeditor][download][type] = file
-libraries[ckeditor][download][url] = https://github.com/ckeditor/ckeditor-dev/archive/4.5.11.zip
-
 ; Themes.
 projects[bear_skin][version] = 2.2
