@@ -1,0 +1,107 @@
+{
+    "name": "zivtech/bear",
+    "description": "A profile to give developers the tools needed for just about any Drupal site.",
+    "type": "drupal-profile",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8",
+        "drush/drush": "8.1.11",
+        "drupal/drupal-extension": "^3.2",
+        "drupal/coder": "~8.2.0",
+        "phing/phing": "^2.14",
+        "drupal/devel": "^1.0",
+        "squizlabs/php_codesniffer": "2.*",
+        "drupal/console": "^1.0",
+        "composer/composer": "^1.4",
+        "grasmash/yaml-cli": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "@composer drupal-scaffold"
+        ],
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    },
+    "extra": {
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "docroot/profiles/bear/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ]
+        },
+        "patches": {
+            "drupal/core": {
+                "Cannot use relationship for rendered entity on Views":
+                "https://www.drupal.org/files/issues/2457999-113.patch",
+                "2652138 - ImageFormatter does not support SVGs":
+                "https://www.drupal.org/files/issues/2652138-41.patch",
+                "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order":
+                "https://www.drupal.org/files/issues/1356276-303.patch",
+                "2880374 - Experimental modules should not have warnings after being installed":
+                "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
+                "2880445 - Config sync should not throw a warning when not being writable":
+                "https://www.drupal.org/files/issues/2880445-remove-config-write-warning-2.patch",
+                "2869592 - Disabled update module shouldn't produce a status report warning":
+                "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch"
+            },
+            "drush/drush": {
+                "2697 - Don't add profile dependencies to required_by array of modules":
+                "https://patch-diff.githubusercontent.com/raw/drush-ops/drush/pull/2697.patch"
+            }
+        }
+    },
+    "require": {
+        "cweagans/composer-patches": "^1.5.0",
+        "composer/installers": "^1.2",
+        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "drupal/core": "~8.3.1",
+        "drupal/admin_toolbar": "^1.18",
+        "drupal/ckeditor_media_embed": "^1.0",
+        "drupal/coffee": "^1.0@beta",
+        "drupal/components": "^1.0",
+        "drupal/ctools": "^3.0",
+        "drupal/diff": "^1.0",
+        "drupal/ds": "^3.0",
+        "drupal/easy_breadcrumb": "^1.6",
+        "drupal/editor_advanced_link": "^1.4",
+        "drupal/embed": "^1.0",
+        "drupal/entity_browser": "1.0.0",
+        "drupal/entity_reference_revisions": "^1.2",
+        "drupal/features": "^3.0",
+        "drupal/field_group": "^1.0@RC",
+        "drupal/inline_entity_form": "^1.0",
+        "drupal/layout_plugin": "^1.0@alpha",
+        "drupal/link_attributes": "^1.0",
+        "drupal/menu_block": "^1.4",
+        "drupal/metatag": "^1.0",
+        "drupal/paragraphs": "^1.1",
+        "drupal/pathauto": "^1.0",
+        "drupal/redirect": "^1.0@alpha",
+        "drupal/scheduled_updates": "1.0.0-alpha6",
+        "drupal/search_api": "^1.0",
+        "drupal/stage_file_proxy": "^1.0@alpha",
+        "drupal/token": "^1.0",
+        "drupal/views_infinite_scroll": "^1.1",
+        "drupal/video_embed_field": "^1.0",
+        "drupal/webform": "^5.0@beta"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
+        }
+    }
+}
