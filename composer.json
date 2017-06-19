@@ -13,7 +13,6 @@
         "drupal/drupal-extension": "^3.2",
         "drupal/coder": "~8.2.0",
         "phing/phing": "^2.14",
-        "drupal/devel": "^1.0",
         "squizlabs/php_codesniffer": "2.*",
         "drupal/console": "^1.0",
         "composer/composer": "^1.4",
@@ -75,7 +74,7 @@
         "drupal/components": "^1.0",
         "drupal/ctools": "^3.0",
         "drupal/diff": "^1.0",
-        "drupal/ds": "^3.0",
+        "drupal/ds": "^3.1",
         "drupal/easy_breadcrumb": "^1.6",
         "drupal/editor_advanced_link": "^1.4",
         "drupal/embed": "^1.0",
@@ -97,7 +96,12 @@
         "drupal/token": "^1.0",
         "drupal/views_infinite_scroll": "^1.1",
         "drupal/video_embed_field": "^1.0",
-        "drupal/webform": "^5.0@beta"
+        "drupal/webform": "^5.0@beta",
+        "drupal/devel": "^1.0@RC",
+        "drupal/environment_indicator": "^3.0",
+        "drupal/field_help_helper": "^1.0",
+        "drupal/simple_sitemap": "^2.9",
+        "drupal/bear_skin": "^2.3"
     },
     "autoload": {
         "psr-4": {
