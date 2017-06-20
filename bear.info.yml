@@ -2,7 +2,7 @@ name: Bear
 core: 8.x
 type: profile
 description: 'A distribution to give developers the tools needed for just about any site.'
-version: '8.x-2.0-alpha4'
+version: '8.x-2.0-alpha5'
 distribution:
   name: Bear
   dependencies:
