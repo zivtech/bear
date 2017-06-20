@@ -9,8 +9,10 @@ distribution:
     # Core extensions.
     - node
     - block
+    - block_content
     - breakpoint
     - ckeditor
+    - color
     - config
     - contextual
     - environment_indicator
@@ -22,6 +24,7 @@ distribution:
     - entity_reference
     - help
     - image
+    - menu_link_content
     - menu_ui
     - options
     - path

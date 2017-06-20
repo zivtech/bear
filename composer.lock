@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d80b124c94b4de15d91073ecf8690861",
+    "content-hash": "6ca61dd8bd8d17c5fca1c46d8e9788ce",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -845,7 +845,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/bear_skin-8.x-2.3.zip",
-                "reference": null,
+                "reference": "8.x-2.3",
                 "shasum": "bbf75b06d8f34a61d396b8a72b38ee7b89444c4f"
             },
             "require": {
@@ -2341,6 +2341,61 @@
             "homepage": "https://www.drupal.org/project/menu_block",
             "support": {
                 "source": "http://cgit.drupalcode.org/menu_block"
+            }
+        },
+        {
+            "name": "drupal/menu_link_config",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/menu_link_config",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_link_config-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": "700a0dcd4dc96d6600bd49c10df687ed4f49340f"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1495623484"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "claudiu_cristea",
+                    "homepage": "https://www.drupal.org/user/2623935"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "tstoeckler",
+                    "homepage": "https://www.drupal.org/user/107158"
+                }
+            ],
+            "description": "muh",
+            "homepage": "https://www.drupal.org/project/menu_link_config",
+            "support": {
+                "source": "http://cgit.drupalcode.org/menu_link_config"
             }
         },
         {
@@ -9223,7 +9278,8 @@
         "drupal/redirect": 15,
         "drupal/stage_file_proxy": 15,
         "drupal/webform": 10,
-        "drupal/devel": 5
+        "drupal/devel": 5,
+        "drupal/menu_link_config": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

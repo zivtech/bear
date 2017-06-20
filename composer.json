@@ -101,7 +101,8 @@
         "drupal/environment_indicator": "^3.0",
         "drupal/field_help_helper": "^1.0",
         "drupal/simple_sitemap": "^2.9",
-        "drupal/bear_skin": "^2.3"
+        "drupal/bear_skin": "^2.3",
+        "drupal/menu_link_config": "^1.0@alpha"
     },
     "autoload": {
         "psr-4": {
