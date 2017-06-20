@@ -2,10 +2,12 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   block: 0
+  block_content: 0
   breakpoint: 0
   ckeditor: 0
   ckeditor_media_embed: 0
   coffee: 0
+  color: 0
   components: 0
   config: 0
   contextual: 0
@@ -36,6 +38,7 @@ module:
   link_attributes: 0
   menu_block: 0
   menu_link_config: 0
+  menu_link_content: 0
   menu_ui: 0
   node: 0
   options: 0
