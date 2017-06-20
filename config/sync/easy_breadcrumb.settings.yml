@@ -1,0 +1,8 @@
+include_home_segment: true
+home_segment_title: Home
+include_title_segment: true
+language_path_prefix_as_segment: false
+use_menu_title_as_fallback: false
+remove_repeated_segments: true
+_core:
+  default_config_hash: MymgTM4i959vZLJ3F-hpn_ntX-johso5eQqRm-03r0Y

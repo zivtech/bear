@@ -1,0 +1,13 @@
+uuid: b855d6d0-6259-4712-af4c-2e58b62b8126
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: jspD2HmmMbJ5IFbtHN_y03rObZ_AVF28LweObdwvCQE
+id: ethnicity
+label: Ethnicity
+category: Demographic
+options: "Caucasian: Caucasian\n'Latino/Hispanic': 'Latino/Hispanic'\n'Middle Eastern': 'Middle Eastern'\nAfrican: African\nCaribbean: Caribbean\n'South Asian': 'South Asian'\n'East Asian': 'East Asian'\nMixed: Mixed\n"

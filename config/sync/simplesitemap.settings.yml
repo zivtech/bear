@@ -1,0 +1,10 @@
+custom:
+  -
+    path: /
+    priority: 1
+entity_types: {  }
+settings:
+  max_links: 2000
+  cron_generate: true
+_core:
+  default_config_hash: uDGBx4ZNvgnxslgMEbxBCn9B9totBSlyjNkB7qQKb_I
