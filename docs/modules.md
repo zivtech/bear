@@ -4,7 +4,6 @@ Bear includes helpful modules for site builders and developers with default sett
 
 - admin_toolbar
 - ckeditor_media_embed
-- coffee
 - ctools
 - devel
 - diff
