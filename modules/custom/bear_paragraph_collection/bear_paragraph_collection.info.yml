@@ -1,5 +1,5 @@
 name: Bear Paragraph Collection
-description: Provides a Collection paragraph type.
+description: Provides a Collection paragraph type, which acts as a container for other paragraphs. The content editor can choose to render the collection as a list or a grid with a selectable number of columns (2-8). Based on the selections, the module adds appropriate CSS classes for theming.
 package: Bear
 
 type: module

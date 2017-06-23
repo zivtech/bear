@@ -1,5 +1,5 @@
 name: Bear Paragraph Text and Image
-description: Provides a Text and Image paragraph type.
+description: Provides a Text and Image paragraph type. Content editors can choose whether the image appears to the right or left of the text area. A custom template provides appropriate markup and classes for theming.
 package: Bear
 
 type: module

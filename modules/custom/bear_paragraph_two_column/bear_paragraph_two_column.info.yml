@@ -1,5 +1,5 @@
 name: Bear Paragraph Two Column
-description: Provides a two column paragraph type.
+description: Provides a two column paragraph type that, by default, has two paragraph reference fields – one for the left column and one for the right column. These columns appear next to each other in the node edit form.
 package: Bear
 
 type: module

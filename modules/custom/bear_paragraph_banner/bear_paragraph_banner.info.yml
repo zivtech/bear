@@ -1,5 +1,5 @@
 name: Bear Paragraph Banner
-description: Provides a Banner paragraph type.
+description: Provides a Banner paragraph bundle composed of an image, a title, and a subtitle. This module includes a custom template that structures the rendered paragraph using HTML5 `<figure>` and `<figcaption>` elements.
 package: Bear
 
 type: module
