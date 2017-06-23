@@ -23,7 +23,6 @@
         "drupal/admin_toolbar": "^1.19",
         "drupal/bear_skin": "^2.3",
         "drupal/ckeditor_media_embed": "^1.1",
-        "drupal/coffee": "^1.0@beta",
         "drupal/components": "^1.0",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
