@@ -7,7 +7,6 @@ module:
   breakpoint: 0
   ckeditor: 0
   ckeditor_media_embed: 0
-  coffee: 0
   color: 0
   comment: 0
   components: 0
