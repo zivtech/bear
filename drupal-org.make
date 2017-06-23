@@ -12,7 +12,6 @@ defaults[projects][subdir] = contrib
 ; Modules.
 projects[admin_toolbar][version] = 1.17
 projects[ckeditor_media_embed][version] = 1.0
-projects[coffee][version] = 1.0-beta2
 projects[ctools][version] = 3.0-alpha27
 projects[devel][version] = 1.0-alpha1
 projects[diff][version] = 1.0-beta2
