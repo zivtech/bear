@@ -11,7 +11,7 @@ The preferred way to install Bear is using our
 [Composer-based project template][template]. It's easy!
 
 ```
-$ composer create-project zivtech/bear-project MY_PROJECT
+$ composer create-project zivtech/bear-project:8.2.x-dev MYPROJECT
 ```
 
 If you don't want to use Composer, you can install Bear the traditional way
