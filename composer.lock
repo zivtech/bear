@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7dffcfa9ec36d18f7b640ec02d7a865",
+    "content-hash": "8b48593aab77db2ac7571bd0ba93fb92",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3409,17 +3409,17 @@
         },
         {
             "name": "drupal/simple_sitemap",
-            "version": "1.11.0",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/simple_sitemap",
-                "reference": "8.x-1.11"
+                "reference": "8.x-2.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "f2f339202e44288347d8802d75b089fab0f63cbf"
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-2.9.zip",
+                "reference": null,
+                "shasum": "73bc5b375a7563ee217688f752318fe044b1e9de"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3427,11 +3427,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1474270837"
+                    "version": "8.x-2.9",
+                    "datestamp": "1490775483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3440,54 +3440,23 @@
             ],
             "authors": [
                 {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
+                    "name": "Pawel Ginalski (gbyte.co)",
+                    "homepage": "https://www.drupal.org/u/gbyte.co",
+                    "email": "contact@gbyte.co",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "gbyte.co",
-                    "homepage": "https://www.drupal.org/user/2381352"
+                    "name": "Sam Becker (Sam152)",
+                    "homepage": "https://www.drupal.org/u/sam152",
+                    "role": "Co-maintainer"
                 }
             ],
-            "homepage": "https://www.drupal.org/project/simple_sitemap",
+            "description": "Simple XML sitemap creates a standard conform XML sitemap of your content.",
+            "homepage": "https://drupal.org/project/simple_sitemap",
             "support": {
-                "source": "http://cgit.drupalcode.org/simple_sitemap"
-            }
-        },
-        {
-            "name": "drupal/simplesitemap",
-            "version": "1.11.0",
-            "require": {
-                "drupal/core": "~8.0",
-                "drupal/simple_sitemap": "self.version"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1474270837"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
-                    "name": "gbyte.co",
-                    "homepage": "https://www.drupal.org/user/2381352"
-                }
-            ],
-            "description": "This module creates a standard conform xml sitemap of your content.",
-            "homepage": "https://www.drupal.org/project/simple_sitemap",
-            "support": {
-                "source": "http://cgit.drupalcode.org/simple_sitemap"
+                "source": "https://cgit.drupalcode.org/simple_sitemap",
+                "issues": "https://drupal.org/project/issues/simple_sitemap",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
