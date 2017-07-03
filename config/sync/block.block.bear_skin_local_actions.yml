@@ -1,0 +1,20 @@
+uuid: 55af787e-88da-4d35-8dc2-5d1da9bc9104
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: _TEteRXv9KOkgAF7B0XgMAAe_i5_40i2hufjwAkJhgY
+id: bear_skin_local_actions
+theme: bear_skin
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

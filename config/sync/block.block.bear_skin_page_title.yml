@@ -1,0 +1,20 @@
+uuid: ffe0d22a-8c53-43a9-b800-2b6fc56bfb45
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: 0ocpZdyTWdKend69QcVHKReae_ZKE8HmHSqsgfGoZu0
+id: bear_skin_page_title
+theme: bear_skin
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

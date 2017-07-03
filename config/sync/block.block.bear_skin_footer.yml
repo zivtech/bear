@@ -1,0 +1,26 @@
+uuid: ea4e6deb-983a-4254-a878-ad4e578c2066
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: 9pYh_GAEGjBf7Pqxzl3f1UgdU_oz95rPRD3BM0F6zMQ
+id: bear_skin_footer
+theme: bear_skin
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

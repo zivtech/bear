@@ -1,0 +1,25 @@
+uuid: 6b4c4212-c13c-4674-8fcf-a1264d2d8a82
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: tWYWP44NYZU8iknHMBroM0HGtfMJG-Tmv4sBaPtxHbc
+id: bear_skin_branding
+theme: bear_skin
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 49c798df-99f5-40c8-a969-d9caeac1e81e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: OkumC-YCpqcLJvpfNy-z1XOvJ5b2IDMi66cAYyHHX_A
+id: bear_skin_local_tasks
+theme: bear_skin
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

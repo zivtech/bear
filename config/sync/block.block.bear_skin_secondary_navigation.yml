@@ -1,0 +1,26 @@
+uuid: c03d602f-e800-464b-96cf-284d3caae0cc
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: pdi1qO62G89OVqkodSzXhZysa5j-IwzQiHjwil0kTcY
+id: bear_skin_secondary_navigation
+theme: bear_skin
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Secondary navigation'
+  provider: system
+  label_display: '0'
+  level: 2
+  depth: 0
+visibility: {  }

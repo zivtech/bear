@@ -1,0 +1,18 @@
+uuid: 7ec56448-2196-43c8-848e-6c5df3c0ff7f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wdIR_2W7xVDY3k1PNcjhgbiM4ygxF7k0JAe0ARKmfkM
+name: bear_skin_banner_mobile
+label: 'Bearskin8pl - Banner Mobile (720 x 300)'
+effects:
+  8d4f85cc-9a2d-4a30-af15-21b0833dc06z:
+    uuid: 8d4f85cc-9a2d-4a30-af15-21b0833dc06z
+    id: image_scale
+    weight: 4
+    data:
+      width: 720
+      height: 300
+      anchor: center-center
+      upscale: false

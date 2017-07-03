@@ -1,0 +1,17 @@
+uuid: 95184a0c-4c8e-40a5-94b9-e691493ae99c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qsxOVyFUQMisbGdXtL4Sk44aRkkiOI63oLIcwKdbo70
+name: bear_skin_retina_mobile_image
+label: 'Bearskin8pl - Retina Mobile Image (1000)'
+effects:
+  8d4f85cc-9a2d-4a30-af15-21b0833dc06k:
+    uuid: 8d4f85cc-9a2d-4a30-af15-21b0833dc06k
+    id: image_scale
+    weight: 12
+    data:
+      width: 1000
+      height: null
+      upscale: false
