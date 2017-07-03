@@ -1,0 +1,17 @@
+uuid: f27bc46b-28e8-401a-a753-cd47565be66a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: clhj15aoAthhbq8mrzvX5-fqVX_XjAjzcTtLeykYGH4
+name: bear_skin_mobile_image
+label: 'Bearskin8pl - Mobile Image (500)'
+effects:
+  8d4f85cc-9a2d-4a30-af15-21b0833dc06i:
+    uuid: 8d4f85cc-9a2d-4a30-af15-21b0833dc06i
+    id: image_scale
+    weight: 10
+    data:
+      width: 500
+      height: null
+      upscale: false

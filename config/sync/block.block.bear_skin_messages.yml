@@ -1,0 +1,22 @@
+uuid: c0133839-9406-4a33-b796-c589150c1226
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: L-l5dQlCipvsVckeyujIygdAN2yYa9Jv5v2T33-GqD8
+id: bear_skin_messages
+theme: bear_skin
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

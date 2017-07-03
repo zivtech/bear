@@ -1,0 +1,17 @@
+uuid: 9205ac74-06aa-44e3-adde-0cbd2bbe1b39
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 55aZ7RDMWCySysg3wS9lxZPZ22o_Mb-DtGswiAFHJno
+name: bear_skin_retina_default_image
+label: 'Bearskin8pl - Retina Default Image (1600)'
+effects:
+  8d4f85cc-9a2d-4a30-af15-21b0833dc06j:
+    uuid: 8d4f85cc-9a2d-4a30-af15-21b0833dc06j
+    id: image_scale
+    weight: 11
+    data:
+      width: 1600
+      height: null
+      upscale: false

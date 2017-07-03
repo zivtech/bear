@@ -1,0 +1,22 @@
+uuid: 19f4c698-f764-41ce-b294-08d7aa567fc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: 82jhgfLxDss6vdfXq_KZenhNbMTmSbiiHEwH0mHD13E
+id: bear_skin_help
+theme: bear_skin
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

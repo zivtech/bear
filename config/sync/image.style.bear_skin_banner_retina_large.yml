@@ -1,0 +1,18 @@
+uuid: cde3b17b-e13d-4c65-98d7-252bbce4e990
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: H-zlk3IqOPKrzqZ4Sw86YtRRFrwh5h4AOHfdZdwdL_c
+name: bear_skin_banner_retina_large
+label: 'Bearskin8pl - Banner Retina Large (3200 x 1000)'
+effects:
+  8d4f85cc-9a2d-4a30-af15-21b0833dc06u:
+    uuid: 8d4f85cc-9a2d-4a30-af15-21b0833dc06u
+    id: image_scale
+    weight: 5
+    data:
+      width: 3200
+      height: 1000
+      anchor: center-center
+      upscale: false

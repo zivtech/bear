@@ -1,0 +1,18 @@
+uuid: ea1ea1a6-e942-408a-9025-a0754729ed92
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Ip2BAqRCbl2ivfWTx3uXzM7qmQYQF36Hx8fcP_3tQSM
+name: bear_skin_banner_retina_medium
+label: 'Bearskin8pl - Banner Retina Medium (2250 x 800)'
+effects:
+  8d4f85cc-9a2d-4a30-af15-21b0833dc06v:
+    uuid: 8d4f85cc-9a2d-4a30-af15-21b0833dc06v
+    id: image_scale
+    weight: 6
+    data:
+      width: 2250
+      height: 800
+      anchor: center-center
+      upscale: false

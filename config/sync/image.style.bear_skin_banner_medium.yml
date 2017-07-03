@@ -1,0 +1,18 @@
+uuid: 185a1901-9617-4d29-95f4-b90ffcc4924c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AeBGrQ6IiCtVLHhjQ85yD8eGAQe5HRCErMQ-0n6ELWM
+name: bear_skin_banner_medium
+label: 'Bearskin8pl - Banner Medium (1125 x 400)'
+effects:
+  8d4f85cc-9a2d-4a30-af15-21b0833dc06t:
+    uuid: 8d4f85cc-9a2d-4a30-af15-21b0833dc06t
+    id: image_scale
+    weight: 2
+    data:
+      width: 1125
+      height: 400
+      anchor: center-center
+      upscale: false

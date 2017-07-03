@@ -1,0 +1,22 @@
+uuid: ef0c25bd-5da1-4f10-b51a-1d45261ca6ab
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: MmN0mIF29KF7FeSsJneAhVDwfrfpaj_vj4D-yuKuPT4
+id: bear_skin_powered
+theme: bear_skin
+region: footer
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

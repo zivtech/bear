@@ -1,0 +1,26 @@
+uuid: 9d419ad6-401e-4f1c-869a-08ed23b3de2f
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: ns8cMYqDmVmKhVmFGDa2DVQpvk2WwrO76MIOVf1sC28
+id: bear_skin_account_menu
+theme: bear_skin
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

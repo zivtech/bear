@@ -1,0 +1,26 @@
+uuid: 455dc804-c4c4-4c50-890b-60073c4d7a11
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - bear_skin
+_core:
+  default_config_hash: '-2oEimvlFtK7db-7-hqN6KLlcvAMUd3pK0A0DPIn_Ek'
+id: bear_skin_tools
+theme: bear_skin
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
