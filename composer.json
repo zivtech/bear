@@ -51,7 +51,7 @@
         "drupal/redirect": "^1.0@alpha",
         "drupal/scheduled_updates": "^1.0@alpha",
         "drupal/search_api": "^1.1",
-        "drupal/simplesitemap": "^1.11",
+        "drupal/simple_sitemap": "^2.9",
         "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/token": "^1.0",
         "drupal/video_embed_field": "^1.5",
