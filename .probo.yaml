@@ -1,3 +1,4 @@
+image: proboci/ubuntu-14.04-lamp:php5.6-nightly
 steps:
   - name: Update Composer
     command: '/usr/local/bin/composer self-update'
