@@ -5,7 +5,9 @@ steps:
   - name: Require drush 8.1.15.
     command: 'composer global require drush/drush:8.1.15'
   - name: Run the profile script
-    command: './$SRC_DIR/.probo-profile-build.sh'
+    command: '/var/www/html/probo-profile-build.sh'
+  - name: Install composer packages with dependencies.
+    command: 'composer install -d /var/www/html'
   - name: Run install
     command: "drush site-install --root=/var/www/html bear --db-url='mysqli://root:strongpassword@localhost/bear'"
   - name: Set file directory permissions
