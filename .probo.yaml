@@ -5,7 +5,7 @@ steps:
   - name: Require drush 8.1.15.
     command: 'composer global require drush/drush:8.1.15'
   - name: Install composer packages with dependencies.
-    command: 'composer install -d /var/www/html'
+    command: 'composer install -d $SRC_DIR'
   - name: Probo site setup
     plugin: Drupal
     configSyncDirectory: config/sync
