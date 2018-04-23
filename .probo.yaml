@@ -2,7 +2,7 @@ steps:
   - name: Update Composer
     command: '/usr/local/bin/composer self-update'
   - name: Require drush 8.1.15.
-    command: 'cd /src/docroot && composer global require drush/drush:8.1.15'
+    command: 'composer global require drush/drush:8.1.15'
   - name: Run the profile script
     command: './$SRC_DIR/.probo-profile-build.sh'
   - name: Run install
