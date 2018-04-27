@@ -45,3 +45,4 @@ else
   echo 'Error: Unable to copy profile to destination because it already exists.' >&2
   exit 1
 fi
+
